@@ -18,18 +18,16 @@ function Navbar() {
 
   return (
     <div
-      className={`fixed top-0 left-1/2 z-50 w-full max-w-6xl -translate-x-1/2 px-4 pt-4 transition-all duration-300 ${
-        scrolled ? 'pt-2' : 'pt-4'
-      }`}
+      className={`fixed top-0 left-1/2 z-50 w-full max-w-6xl -translate-x-1/2 px-4 pt-4 transition-all duration-300 ${scrolled ? 'pt-2' : 'pt-4'
+        }`}
     >
       <FlowbiteNavbar
         fluid
         rounded
-        className={`rounded-2xl border-0 shadow-lg transition-all duration-300 ${
-          scrolled
-            ? 'bg-white/95 backdrop-blur-md shadow-xl'
-            : 'bg-white shadow-lg'
-        }`}
+        className={`rounded-[2rem] border-0 transition-all duration-300 ${scrolled
+          ? 'bg-[#f0f0f3] shadow-[8px_8px_16px_#d1d5db,-8px_-8px_16px_#ffffff]'
+          : 'bg-white shadow-[4px_4px_8px_#e5e7eb,-4px_-4px_8px_#ffffff]'
+          }`}
       >
         <NavbarBrand href="/">
           <span className="flex items-center gap-2">
