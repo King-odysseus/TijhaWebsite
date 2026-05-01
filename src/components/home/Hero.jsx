@@ -16,7 +16,7 @@ function Hero() {
 
       <div className="container-main relative z-10 flex flex-col items-center text-center">
         {/* Headline */}
-        <h1 className="text-3xl md:text-4xl lg:text-5xl text-center max-w-3xl mx-auto text-white leading-[1.2] font-bold tracking-tight my-[70px]">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl text-center max-w-3xl mx-auto text-white leading-[1.2] font-bold tracking-tight mt-[70px]">
           Your partner in digital and operational excellence
         </h1>
 
