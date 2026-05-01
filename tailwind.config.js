@@ -17,8 +17,8 @@ export default {
         'neo-dark': '#d1d1d6',
         'neo-light': '#ffffff',
         'brand-blue': '#007BFF',
-        'brand-dark': '#1A1A1A',
-        'brand-body': '#6B7280',
+        'brand-dark': '#1f2937',
+        'brand-body': '#6b7280',
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'Helvetica', 'Arial', 'sans-serif'],
