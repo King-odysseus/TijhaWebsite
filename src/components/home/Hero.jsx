@@ -9,16 +9,21 @@ const avatars = [
 
 function Hero() {
   return (
-    <section className="w-full bg-[#F5F5F7] pt-[100px] pb-16 md:pb-32 relative overflow-hidden">
-      {/* Subtle background decoration */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-20 left-1/4 w-96 h-96 bg-brand-blue/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-brand-blue/5 rounded-full blur-3xl" />
-      </div>
+    <section
+      className="w-full pt-[100px] pb-16 md:pb-32 relative overflow-hidden bg-cover bg-center bg-no-repeat"
+      style={{
+        backgroundImage: `url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&h=1080&fit=crop')`,
+      }}
+    >
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-brand-dark/75" />
+
+      {/* Subtle gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-brand-dark/40 via-transparent to-brand-dark/60" />
 
       <div className="container-main relative z-10 flex flex-col items-center text-center">
         {/* Announcement Badge */}
-        <div className="neo-card-sm flex items-center gap-2 pl-3 pr-4 py-1.5 w-fit mb-8">
+        <div className="flex items-center gap-2 pl-3 pr-4 py-1.5 w-fit mb-8 rounded-full border border-white/20 bg-white/10 backdrop-blur-md">
           <span className="flex items-center gap-1.5 text-brand-blue text-xs sm:text-sm font-medium">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fillRule="evenodd" clipRule="evenodd" d="M5 4a.75.75 0 0 1 .738.616l.252 1.388A1.25 1.25 0 0 0 6.996 7.01l1.388.252a.75.75 0 0 1 0 1.476l-1.388.252A1.25 1.25 0 0 0 5.99 9.996l-.252 1.388a.75.75 0 0 1-1.476 0L4.01 9.996A1.25 1.25 0 0 0 3.004 8.99l-1.388-.252a.75.75 0 0 1 0-1.476l1.388-.252A1.25 1.25 0 0 0 4.01 6.004l.252-1.388A.75.75 0 0 1 5 4m7-3a.75.75 0 0 1 .721.544l.195.682c.118.415.443.74.858.858l.682.195a.75.75 0 0 1 0 1.442l-.682.195a1.25 1.25 0 0 0-.858.858l-.195.682a.75.75 0 0 1-1.442 0l-.195-.682a1.25 1.25 0 0 0-.858-.858l-.682-.195a.75.75 0 0 1 0-1.442l.682-.195a1.25 1.25 0 0 0 .858-.858l.195-.682A.75.75 0 0 1 12 1m-2 10a.75.75 0 0 1 .728.568.97.97 0 0 0 .704.704.75.75 0 0 1 0 1.456.97.97 0 0 0-.704.704.75.75 0 0 1-1.456 0 .97.97 0 0 0-.704-.704.75.75 0 0 1 0-1.456.97.97 0 0 0 .704-.704A.75.75 0 0 1 10 11" fill="#007BFF" />
@@ -35,12 +40,12 @@ function Hero() {
         </div>
 
         {/* Headline */}
-        <h1 className="text-4xl md:text-5xl lg:text-[58px] text-center max-w-4xl mx-auto text-brand-dark leading-[1.15] font-bold tracking-tight mb-6">
+        <h1 className="text-4xl md:text-5xl lg:text-[58px] text-center max-w-4xl mx-auto text-white leading-[1.15] font-bold tracking-tight mb-6">
           YOUR PARTNER IN DIGITAL AND OPERATIONAL EXCELLENCE.
         </h1>
 
         {/* Subtitle */}
-        <p className="text-base md:text-lg text-brand-body text-center max-w-2xl mx-auto mb-8 leading-relaxed">
+        <p className="text-base md:text-lg text-white/70 text-center max-w-2xl mx-auto mb-8 leading-relaxed">
           At Tijha, we bridge strategy with execution to transform how organizations operate and grow. Through data-driven insight and digital innovation, we deliver measurable impact and sustainable performance.
         </p>
 
@@ -54,7 +59,7 @@ function Hero() {
           </Link>
           <Link
             to="/contact"
-            className="neo-btn text-brand-dark text-sm md:text-base px-8 py-3.5 rounded-full transition font-semibold hover:-translate-y-0.5"
+            className="bg-white/10 hover:bg-white/20 border border-white/20 text-white text-sm md:text-base px-8 py-3.5 rounded-full transition font-semibold hover:-translate-y-0.5 backdrop-blur-sm"
           >
             Book a Call
           </Link>
@@ -68,7 +73,7 @@ function Hero() {
                 key={i}
                 src={src}
                 alt={`user${i}`}
-                className="w-10 h-10 object-cover rounded-full border-2 border-white shadow-neo-sm hover:-translate-y-0.5 transition z-[1]"
+                className="w-10 h-10 object-cover rounded-full border-2 border-white/30 hover:-translate-y-0.5 transition z-[1]"
                 loading="lazy"
               />
             ))}
@@ -81,17 +86,17 @@ function Hero() {
                 </svg>
               ))}
             </div>
-            <p className="text-xs text-brand-body mt-1">Trusted by 100+ organisations</p>
+            <p className="text-xs text-white/60 mt-1">Trusted by 100+ organisations</p>
           </div>
         </div>
 
         {/* Logo / Client Bar */}
-        <div className="flex flex-wrap items-center justify-center gap-8 md:gap-16 mx-auto opacity-50">
-          <span className="text-sm font-bold text-brand-body uppercase tracking-wider">SMEs</span>
-          <span className="text-sm font-bold text-brand-body uppercase tracking-wider">NGOs</span>
-          <span className="text-sm font-bold text-brand-body uppercase tracking-wider">Corporates</span>
-          <span className="text-sm font-bold text-brand-body uppercase tracking-wider">Government</span>
-          <span className="text-sm font-bold text-brand-body uppercase tracking-wider">Startups</span>
+        <div className="flex flex-wrap items-center justify-center gap-8 md:gap-16 mx-auto opacity-60">
+          <span className="text-sm font-bold text-white/70 uppercase tracking-wider">SMEs</span>
+          <span className="text-sm font-bold text-white/70 uppercase tracking-wider">NGOs</span>
+          <span className="text-sm font-bold text-white/70 uppercase tracking-wider">Corporates</span>
+          <span className="text-sm font-bold text-white/70 uppercase tracking-wider">Government</span>
+          <span className="text-sm font-bold text-white/70 uppercase tracking-wider">Startups</span>
         </div>
       </div>
     </section>
