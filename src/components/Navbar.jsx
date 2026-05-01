@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import logo from '../assets/Tijha New2.png';
 
 const navLinks = [
   { label: 'Home', href: '/' },
@@ -28,12 +29,12 @@ function Navbar() {
     <nav className="w-full fixed top-0 z-50 px-4 pt-4">
       <div
         className={`flex items-center justify-between px-2.5 md:pl-6 py-2 max-w-6xl rounded-full mx-auto w-full transition-all duration-300 ${scrolled
-            ? 'neo-card border border-[#d1d1d6]/40'
-            : 'border border-[#d1d1d6]/20 bg-white/30 backdrop-blur-md'
+          ? 'neo-card border border-[#d1d1d6]/40'
+          : 'border border-[#d1d1d6]/20 bg-white/30 backdrop-blur-md'
           }`}
       >
-        <Link to="/" className="text-xl font-bold text-brand-dark tracking-tight pl-2">
-          TIJHA
+        <Link to="/" className="pl-2">
+          <img src={logo} alt="Tijha" className="h-8 md:h-10 w-auto object-contain" />
         </Link>
 
         {/* Desktop links */}
@@ -43,8 +44,8 @@ function Navbar() {
               key={link.label}
               to={link.href}
               className={`text-sm font-medium transition-colors duration-200 ${location.pathname === link.href
-                  ? 'text-brand-blue'
-                  : 'text-brand-body hover:text-brand-dark'
+                ? 'text-brand-blue'
+                : 'text-brand-body hover:text-brand-dark'
                 }`}
             >
               {link.label}
@@ -88,8 +89,8 @@ function Navbar() {
                 key={link.label}
                 to={link.href}
                 className={`text-sm font-medium py-2 transition-colors ${location.pathname === link.href
-                    ? 'text-brand-blue'
-                    : 'text-brand-body hover:text-brand-dark'
+                  ? 'text-brand-blue'
+                  : 'text-brand-body hover:text-brand-dark'
                   }`}
               >
                 {link.label}

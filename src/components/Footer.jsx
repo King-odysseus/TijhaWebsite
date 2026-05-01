@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import logo from '../assets/Tijha New2.png';
 
 function Footer() {
   return (
@@ -7,8 +8,8 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
           {/* Brand */}
           <div>
-            <Link to="/" className="text-2xl font-bold text-brand-dark tracking-tight block mb-4">
-              TIJHA
+            <Link to="/" className="block mb-4">
+              <img src={logo} alt="Tijha" className="h-10 w-auto object-contain" />
             </Link>
             <p className="text-sm text-brand-body leading-relaxed">
               Your partner in digital and operational excellence. We bridge strategy with execution to transform how organizations operate and grow.
