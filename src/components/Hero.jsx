@@ -47,7 +47,7 @@ function Hero() {
   }, [next]);
 
   return (
-    <div className="w-full h-[500px] relative overflow-hidden">
+    <div className="w-full h-[700px] relative overflow-hidden">
       {/* Slides */}
       {slides.map((slide, index) => (
         <div
@@ -55,7 +55,7 @@ function Hero() {
           className={`absolute inset-0 flex transition-all duration-700 ease-in-out ${index === current ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-full'
             }`}
         >
-          <div className={`w-full h-full bg-gradient-to-r ${slide.bg} flex`}>
+          <div className={`w-full h-full bg-gradient-to-r ${slide.bg} flex px-16`}>
             {/* Text Side */}
             <div className="w-1/2 h-full flex flex-col justify-center px-12">
               <h2 className="text-4xl md:text-5xl font-extrabold text-white leading-tight">
