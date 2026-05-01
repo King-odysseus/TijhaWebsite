@@ -25,8 +25,8 @@ function Navbar() {
         fluid
         rounded
         className={`rounded-[2rem] border-0 transition-all duration-300 ${scrolled
-          ? 'bg-[#f0f0f3] shadow-[6px_6px_10px_#d1d5db,-3px_-3px_6px_#ffffff]'
-          : 'bg-white shadow-[3px_3px_6px_#e5e7eb,-2px_-2px_4px_#ffffff]'
+          ? 'bg-[#f0f0f3] shadow-[6px_6px_10px_#9ca3af,-3px_-3px_6px_#ffffff]'
+          : 'bg-white shadow-[3px_3px_6px_#9ca3af,-2px_-2px_4px_#ffffff]'
           }`}
       >
         <NavbarBrand href="/">
