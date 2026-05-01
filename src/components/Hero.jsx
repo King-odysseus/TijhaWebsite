@@ -47,7 +47,7 @@ function Hero() {
   }, [next]);
 
   return (
-    <div className="w-full h-[200px] relative overflow-hidden">
+    <div className="w-full h-[500px] relative overflow-hidden">
       {/* Slides */}
       {slides.map((slide, index) => (
         <div
@@ -58,16 +58,16 @@ function Hero() {
           <div className={`w-full h-full bg-gradient-to-r ${slide.bg} flex`}>
             {/* Text Side */}
             <div className="w-1/2 h-full flex flex-col justify-center px-12">
-              <h2 className="text-2xl md:text-3xl font-extrabold text-white leading-tight">
+              <h2 className="text-4xl md:text-5xl font-extrabold text-white leading-tight">
                 {slide.heading}
               </h2>
-              <p className="text-white/70 mt-2 text-sm max-w-md">{slide.subtext}</p>
+              <p className="text-white/70 mt-4 text-lg max-w-md">{slide.subtext}</p>
             </div>
 
             {/* Icon Side */}
             <div className="w-1/2 h-full flex items-center justify-center">
-              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white/10 backdrop-blur-sm">
-                <svg className="h-8 w-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="flex h-24 w-24 items-center justify-center rounded-full bg-white/10 backdrop-blur-sm">
+                <svg className="h-12 w-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   {slide.icon}
                 </svg>
               </div>
