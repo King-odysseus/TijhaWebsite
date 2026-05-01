@@ -6,7 +6,7 @@ function App() {
     <div data-theme="tijha">
       <Navbar />
       <h1 className="text-4xl font-extrabold text-indigo text-center pt-32 pb-20">
-        Tijha — Coming Soon
+        Tijha
       </h1>
     </div>
   )
