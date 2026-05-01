@@ -1,23 +1,28 @@
 import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 const navLinks = [
-  { label: 'Features', href: '#features' },
-  { label: 'About', href: '#values' },
-  { label: 'Portfolio', href: '#portfolio' },
-  { label: 'Pricing', href: '#pricing' },
-  { label: 'Blog', href: '#blog' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Home', href: '/' },
+  { label: 'Services', href: '/services' },
+  { label: 'About', href: '/about' },
+  { label: 'Contact', href: '/contact' },
 ];
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  useEffect(() => {
+    setMobileOpen(false);
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   return (
     <nav
@@ -27,24 +32,31 @@ function Navbar() {
         }`}
     >
       <div className="container-main flex items-center justify-between h-[70px]">
-        <a href="#" className="text-xl font-bold text-brand-dark tracking-tight">
+        <Link to="/" className="text-xl font-bold text-brand-dark tracking-tight">
           TIJHA
-        </a>
+        </Link>
 
-        {/* Desktop links */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.label}
-              href={link.href}
-              className="text-sm text-brand-body hover:text-brand-dark transition-colors duration-200 font-medium"
+              to={link.href}
+              className={`text-sm font-medium transition-colors duration-200 ${location.pathname === link.href
+                  ? 'text-brand-blue'
+                  : 'text-brand-body hover:text-brand-dark'
+                }`}
             >
               {link.label}
-            </a>
+            </Link>
           ))}
+          <Link
+            to="/contact"
+            className="px-5 py-2 bg-brand-blue text-white text-sm font-semibold rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200"
+          >
+            Get In Touch
+          </Link>
         </div>
 
-        {/* Mobile toggle */}
         <button
           className="md:hidden neo-btn w-10 h-10 flex items-center justify-center"
           onClick={() => setMobileOpen(!mobileOpen)}
@@ -60,20 +72,27 @@ function Navbar() {
         </button>
       </div>
 
-      {/* Mobile menu */}
       {mobileOpen && (
         <div className="md:hidden neo-card-sm mx-4 mb-4 p-4">
           <div className="flex flex-col gap-3">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.label}
-                href={link.href}
-                onClick={() => setMobileOpen(false)}
-                className="text-sm text-brand-body hover:text-brand-dark transition-colors duration-200 font-medium py-2"
+                to={link.href}
+                className={`text-sm font-medium py-2 transition-colors ${location.pathname === link.href
+                    ? 'text-brand-blue'
+                    : 'text-brand-body hover:text-brand-dark'
+                  }`}
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
+            <Link
+              to="/contact"
+              className="text-center py-2 bg-brand-blue text-white text-sm font-semibold rounded-lg mt-2"
+            >
+              Get In Touch
+            </Link>
           </div>
         </div>
       )}

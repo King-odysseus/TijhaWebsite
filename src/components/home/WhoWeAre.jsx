@@ -1,0 +1,39 @@
+import { Link } from 'react-router-dom';
+
+function WhoWeAre() {
+  return (
+    <section className="section-padding bg-white">
+      <div className="container-main">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-brand-blue mb-4">
+              Who We Are
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-dark leading-tight mb-6">
+              YOUR ALLY IN SUSTAINABLE GROWTH AND OPERATIONAL EXCELLENCE
+            </h2>
+            <p className="text-brand-body leading-relaxed mb-6">
+              We believe that true growth comes from aligning innovation with operational excellence, ensuring that every decision creates lasting value. By combining strategic insight with practical solutions, we help organizations not only achieve their immediate goals but also build resilient systems that thrive in the long term.
+            </p>
+            <Link
+              to="/about"
+              className="inline-block px-6 py-3 neo-btn text-brand-dark font-semibold text-sm"
+            >
+              Learn more
+            </Link>
+          </div>
+          <div className="neo-card aspect-[4/3] flex items-center justify-center overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop"
+              alt="Tijha team collaboration"
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default WhoWeAre;
