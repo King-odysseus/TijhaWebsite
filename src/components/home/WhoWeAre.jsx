@@ -13,7 +13,7 @@ function WhoWeAre() {
               loading="lazy"
             />
           </div>
-          <div className="order-1 lg:order-2">
+          <div className="order-1 lg:order-2 lg:pl-8">
             <h2 className="text-3xl md:text-4xl font-bold text-indigo leading-tight mb-8">
               <span className="border-b-2 border-bronze pb-1">Our</span> Vision For You
             </h2>

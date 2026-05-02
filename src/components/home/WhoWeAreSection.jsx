@@ -22,7 +22,7 @@ function WhoWeAreSection() {
               Learn more
             </Link>
           </div>
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center lg:pl-8">
             <img
               src="/images/support%20team.png"
               alt="Tijha support team"
