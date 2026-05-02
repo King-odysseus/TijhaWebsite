@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 function Hero() {
   return (
     <section
-      className="w-full pt-20 pb-16 md:pb-24 relative overflow-hidden"
+      className="w-full pt-20 pb-0 relative overflow-hidden"
       style={{
         backgroundImage: `url('/images/Globe.png')`,
         backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundPosition: 'center top',
       }}
     >
       {/* White overlay so text is readable */}
