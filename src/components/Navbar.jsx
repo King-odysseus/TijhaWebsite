@@ -28,7 +28,7 @@ function Navbar() {
 
   return (
     <nav className="w-full fixed top-0 z-50 bg-white border-b border-gray-200">
-      <div className="container-main grid grid-cols-3 items-center h-16">
+      <div className="w-full px-6 md:px-12 lg:px-20 grid grid-cols-3 items-center h-16">
         {/* Left: Logo */}
         <Link to="/" className="flex items-center justify-start">
           <img src={logo} alt="Tijha" className="h-8 md:h-10 w-auto object-contain" />
@@ -82,7 +82,7 @@ function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-white border-t border-gray-200 px-4 py-4">
+        <div className="md:hidden bg-white border-t border-gray-200 px-6 md:px-12 lg:px-20 py-4">
           <div className="flex flex-col gap-3">
             {navLinks.map((link) => (
               <Link
