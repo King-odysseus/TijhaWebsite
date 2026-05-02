@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 function WhoWeAre() {
   return (
-    <section className="bg-white my-16 md:my-24">
+    <section className="bg-white py-16 md:py-24">
       <div className="w-full px-8 md:px-16 lg:px-28">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
