@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className="bg-indigo py-[150px] border-t border-white/10">
       <div className="w-full px-12 md:px-24 lg:px-40">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
           {/* Brand */}
           <div>
             <Link to="/" className="block mb-4">
@@ -24,6 +24,17 @@ function Footer() {
               <Link to="/about" className="text-[15px] text-white/70 hover:text-bronze transition-colors">About Us</Link>
               <Link to="/services" className="text-[15px] text-white/70 hover:text-bronze transition-colors">Services</Link>
               <Link to="/contact" className="text-[15px] text-white/70 hover:text-bronze transition-colors">Contact</Link>
+            </div>
+          </div>
+
+          {/* Solutions */}
+          <div>
+            <h4 className="text-[15px] font-bold text-white uppercase tracking-wider mb-4">Solutions</h4>
+            <div className="flex flex-col gap-2">
+              <Link to="/services" className="text-[15px] text-white/70 hover:text-bronze transition-colors">Management Consulting</Link>
+              <Link to="/services" className="text-[15px] text-white/70 hover:text-bronze transition-colors">Project Management</Link>
+              <Link to="/services" className="text-[15px] text-white/70 hover:text-bronze transition-colors">Digital Solutions</Link>
+              <Link to="/services" className="text-[15px] text-white/70 hover:text-bronze transition-colors">Training & Capacity</Link>
             </div>
           </div>
 
