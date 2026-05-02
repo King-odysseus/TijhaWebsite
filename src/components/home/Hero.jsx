@@ -7,7 +7,7 @@ function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="pl-8 md:pl-16">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-brand-dark leading-tight mb-6">
-              Your partner in digital and operational excellence
+              Your Partner In Digital And Operational Excellence
             </h1>
             <p className="text-brand-body leading-relaxed mb-8 text-base md:text-lg">
               At Tijha, we bridge strategy with execution to transform how organizations operate and grow. Through data-driven insight and digital innovation, we deliver measurable impact and sustainable performance.
