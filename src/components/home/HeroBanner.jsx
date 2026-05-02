@@ -25,8 +25,20 @@ function HeroBanner() {
         </h2>
 
         <p className="text-base md:text-lg text-white/70 text-center max-w-2xl mx-auto mb-10 leading-relaxed">
-          We believe that real progress isn't built in isolation — it's forged through collaboration, shared purpose, and mutual trust. By aligning individual strengths toward a common goal, we help teams move faster, think bigger, and achieve what none could alone. Because when we work as one, the dream doesn't just stay a vision, it becomes the plan.
+          We believe that real progress isn't built in isolation, it is forged through collaboration, shared purpose, and mutual trust. By aligning individual strengths toward a common goal, we help teams move faster, think bigger, and achieve what none could alone. Because when we work as one, the dream doesn't just stay a vision, it becomes the plan and reality.
         </p>
+
+        <p className="text-base md:text-lg text-white/80 text-center font-medium mb-6">
+          So reach out whether you are
+        </p>
+
+        <div className="flex flex-wrap items-center justify-center gap-8 md:gap-16 mx-auto mb-10">
+          <span className="text-sm font-bold text-white uppercase tracking-wider">An SME</span>
+          <span className="text-sm font-bold text-white uppercase tracking-wider">NGO</span>
+          <span className="text-sm font-bold text-white uppercase tracking-wider">Corporate Organisation</span>
+          <span className="text-sm font-bold text-white uppercase tracking-wider">Government</span>
+          <span className="text-sm font-bold text-white uppercase tracking-wider">Or Startup</span>
+        </div>
 
         <Link
           to="/about"
@@ -34,14 +46,6 @@ function HeroBanner() {
         >
           Learn more
         </Link>
-
-        <div className="flex flex-wrap items-center justify-center gap-8 md:gap-16 mx-auto mt-16">
-          <span className="text-sm font-bold text-white uppercase tracking-wider">SMEs</span>
-          <span className="text-sm font-bold text-white uppercase tracking-wider">NGOs</span>
-          <span className="text-sm font-bold text-white uppercase tracking-wider">Corporates</span>
-          <span className="text-sm font-bold text-white uppercase tracking-wider">Government</span>
-          <span className="text-sm font-bold text-white uppercase tracking-wider">Startups</span>
-        </div>
       </div>
     </section>
   );
