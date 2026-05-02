@@ -77,7 +77,7 @@ const processes = [
 
 function Processes() {
   return (
-    <section className="bg-[#F5F5F7] pt-20 md:pt-32 pb-36 md:pb-52">
+    <section className="bg-[#F5F5F7] pt-[100px] md:pt-[148px] pb-36 md:pb-52">
       <div className="w-full px-8 md:px-16 lg:px-28">
         <div className="text-center mb-5">
           <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-indigo mb-4">
@@ -86,7 +86,7 @@ function Processes() {
           <h2 className="text-3xl md:text-4xl font-bold text-brand-dark">Our Processes</h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {processes.map((p) => (
             <div key={p.step} className="neo-card p-8 hover:-translate-y-1 transition-transform duration-300">
               <div className="flex items-center justify-between mb-5">
