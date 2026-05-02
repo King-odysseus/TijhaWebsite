@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 function WhoWeAre() {
   return (
     <section className="section-padding bg-white">
-      <div className="w-full px-6 md:px-12 lg:px-20">
+      <div className="w-full px-8 md:px-16 lg:px-28">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <span className="inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-indigo mb-4">
