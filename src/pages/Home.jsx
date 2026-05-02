@@ -12,8 +12,8 @@ function Home() {
   return (
     <>
       <Hero />
-      <WhoWeAre />
       <WhoWeAreSection />
+      <WhoWeAre />
       <Processes />
       <HeroBanner />
       <ServiceOverview />
