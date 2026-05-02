@@ -15,7 +15,7 @@ function Stats() {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
           {stats.map((s) => (
             <div key={s.label} className="neo-card p-8 text-center">
-              <div className="text-4xl md:text-5xl font-extrabold text-brand-blue mb-2">{s.value}</div>
+              <div className="text-4xl md:text-5xl font-extrabold text-indigo mb-2">{s.value}</div>
               <div className="text-sm text-brand-body font-medium">{s.label}</div>
             </div>
           ))}

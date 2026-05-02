@@ -40,7 +40,7 @@ function Services() {
                   <button
                     onClick={() => setOpen(isOpen ? null : s.id)}
                     className={`w-full flex items-center justify-between px-6 py-5 text-left font-semibold transition-colors ${
-                      isOpen ? 'text-brand-blue bg-brand-blue/5' : 'text-brand-dark hover:text-brand-blue'
+                      isOpen ? 'text-indigo bg-brand-blue/5' : 'text-brand-dark hover:text-indigo'
                     }`}
                   >
                     <span>{s.title}</span>

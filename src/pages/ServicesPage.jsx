@@ -159,7 +159,7 @@ function ServicesPage() {
       {/* Header */}
       <section className="py-20 bg-white">
         <div className="container-main text-center max-w-4xl">
-          <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-brand-blue mb-4">
+          <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-indigo mb-4">
             Our Services
           </span>
           <h1 className="text-4xl md:text-5xl font-bold text-brand-dark mb-6">What We Offer</h1>
@@ -181,14 +181,14 @@ function ServicesPage() {
                     onClick={() => setOpenCat(isOpen ? null : i)}
                     className="w-full flex items-center gap-4 px-6 py-5 text-left"
                   >
-                    <div className={`neo-circle w-12 h-12 flex-shrink-0 ${isOpen ? 'text-brand-blue' : 'text-brand-body'}`}>
+                    <div className={`neo-circle w-12 h-12 flex-shrink-0 ${isOpen ? 'text-indigo' : 'text-brand-body'}`}>
                       {cat.icon}
                     </div>
                     <div className="flex-1">
-                      <h3 className={`text-lg font-bold ${isOpen ? 'text-brand-blue' : 'text-brand-dark'}`}>{cat.title}</h3>
+                      <h3 className={`text-lg font-bold ${isOpen ? 'text-indigo' : 'text-brand-dark'}`}>{cat.title}</h3>
                       <p className="text-sm text-brand-body mt-1 hidden sm:block">{cat.desc}</p>
                     </div>
-                    <svg className={`w-5 h-5 flex-shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180 text-brand-blue' : 'text-brand-body'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className={`w-5 h-5 flex-shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180 text-indigo' : 'text-brand-body'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
                   </button>

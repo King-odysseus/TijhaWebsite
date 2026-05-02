@@ -35,7 +35,7 @@ function CompanyValues() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {values.map((v) => (
             <div key={v.num} className="neo-card p-8 text-center hover:-translate-y-1 transition-transform duration-300">
-              <span className="block text-4xl font-extrabold text-brand-blue/20 mb-4">{v.num}</span>
+              <span className="block text-4xl font-extrabold text-indigo/20 mb-4">{v.num}</span>
               <h3 className="text-lg font-bold text-brand-dark mb-3">{v.title}</h3>
               <p className="text-sm text-brand-body leading-relaxed">{v.desc}</p>
             </div>

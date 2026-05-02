@@ -11,7 +11,7 @@ function Testimonials() {
 
         <div className="max-w-3xl mx-auto">
           <div className="neo-card p-10 text-center">
-            <div className="neo-circle w-16 h-16 mx-auto mb-6 text-brand-blue text-lg font-bold">AE</div>
+            <div className="neo-circle w-16 h-16 mx-auto mb-6 text-indigo text-lg font-bold">AE</div>
             <blockquote className="text-lg md:text-xl text-brand-dark leading-relaxed mb-6 italic">
               "Tijha transformed our approach to operations. Their hands-on methodology and deep expertise helped us reduce costs by 30% while improving team productivity."
             </blockquote>

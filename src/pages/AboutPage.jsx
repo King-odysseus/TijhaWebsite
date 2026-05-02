@@ -4,7 +4,7 @@ function AboutPage() {
       {/* Hero */}
       <section className="py-20 bg-white">
         <div className="container-main text-center max-w-4xl">
-          <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-brand-blue mb-4">
+          <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-indigo mb-4">
             About Us
           </span>
           <h1 className="text-4xl md:text-5xl font-bold text-brand-dark mb-6">
@@ -54,7 +54,7 @@ function AboutPage() {
               { title: 'Support', desc: 'Monitor KPIs, provide ongoing mentoring, and continuously refine strategies for sustainable growth.' },
             ].map((step) => (
               <div key={step.title} className="neo-card p-6 text-center">
-                <h3 className="text-lg font-bold text-brand-blue mb-3">{step.title}</h3>
+                <h3 className="text-lg font-bold text-indigo mb-3">{step.title}</h3>
                 <p className="text-sm text-brand-body leading-relaxed">{step.desc}</p>
               </div>
             ))}
@@ -97,11 +97,11 @@ function AboutPage() {
                 <h3 className="text-xl font-bold text-brand-dark mb-3">{group.title}</h3>
                 <p className="text-sm text-brand-body leading-relaxed mb-4">{group.desc}</p>
                 <div className="mb-3">
-                  <span className="text-xs font-bold uppercase tracking-wider text-brand-blue">Expertise</span>
+                  <span className="text-xs font-bold uppercase tracking-wider text-indigo">Expertise</span>
                   <p className="text-sm text-brand-body mt-1">{group.expertise}</p>
                 </div>
                 <div>
-                  <span className="text-xs font-bold uppercase tracking-wider text-brand-blue">Qualifications</span>
+                  <span className="text-xs font-bold uppercase tracking-wider text-indigo">Qualifications</span>
                   <p className="text-sm text-brand-body mt-1">{group.quals}</p>
                 </div>
               </div>

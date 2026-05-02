@@ -20,10 +20,10 @@ function Footer() {
           <div>
             <h4 className="text-sm font-bold text-brand-dark uppercase tracking-wider mb-4">Useful Links</h4>
             <div className="flex flex-col gap-2">
-              <Link to="/" className="text-sm text-brand-body hover:text-brand-blue transition-colors">Home</Link>
-              <Link to="/about" className="text-sm text-brand-body hover:text-brand-blue transition-colors">About Us</Link>
-              <Link to="/services" className="text-sm text-brand-body hover:text-brand-blue transition-colors">Services</Link>
-              <Link to="/contact" className="text-sm text-brand-body hover:text-brand-blue transition-colors">Contact</Link>
+              <Link to="/" className="text-sm text-brand-body hover:text-indigo transition-colors">Home</Link>
+              <Link to="/about" className="text-sm text-brand-body hover:text-indigo transition-colors">About Us</Link>
+              <Link to="/services" className="text-sm text-brand-body hover:text-indigo transition-colors">Services</Link>
+              <Link to="/contact" className="text-sm text-brand-body hover:text-indigo transition-colors">Contact</Link>
             </div>
           </div>
 

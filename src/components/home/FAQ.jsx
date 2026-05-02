@@ -38,9 +38,9 @@ function FAQ() {
                   onClick={() => setOpen(isOpen ? null : i)}
                   className="w-full flex items-center justify-between px-6 py-5 text-left font-semibold transition-colors"
                 >
-                  <span className={isOpen ? 'text-brand-blue' : 'text-brand-dark'}>{f.q}</span>
+                  <span className={isOpen ? 'text-indigo' : 'text-brand-dark'}>{f.q}</span>
                   <svg
-                    className={`w-5 h-5 flex-shrink-0 ml-4 transition-transform duration-300 ${isOpen ? 'rotate-180 text-brand-blue' : 'text-brand-body'}`}
+                    className={`w-5 h-5 flex-shrink-0 ml-4 transition-transform duration-300 ${isOpen ? 'rotate-180 text-indigo' : 'text-brand-body'}`}
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"

@@ -36,7 +36,7 @@ function Processes() {
     <section className="section-padding bg-[#F5F5F7]">
       <div className="container-main">
         <div className="text-center mb-16">
-          <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-brand-blue mb-4">
+          <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-indigo mb-4">
             How We Work
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-brand-dark">Our Processes</h2>
@@ -45,7 +45,7 @@ function Processes() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {processes.map((p) => (
             <div key={p.step} className="neo-card p-8 hover:-translate-y-1 transition-transform duration-300">
-              <span className="block text-5xl font-extrabold text-brand-blue/10 mb-4">{p.step}</span>
+              <span className="block text-5xl font-extrabold text-indigo/10 mb-4">{p.step}</span>
               <h3 className="text-lg font-bold text-brand-dark mb-3">{p.title}</h3>
               <p className="text-sm text-brand-body leading-relaxed">{p.desc}</p>
             </div>

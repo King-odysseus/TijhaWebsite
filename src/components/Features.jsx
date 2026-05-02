@@ -46,7 +46,7 @@ function Features() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {features.map((f) => (
               <div key={f.title} className="neo-card p-6">
-                <div className="neo-circle w-12 h-12 text-brand-blue mb-4">
+                <div className="neo-circle w-12 h-12 text-indigo mb-4">
                   {f.icon}
                 </div>
                 <h3 className="text-base font-bold text-brand-dark mb-2">{f.title}</h3>
@@ -59,7 +59,7 @@ function Features() {
           <div className="relative">
             <div className="neo-card aspect-video flex items-center justify-center relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-[#e0e0e5] to-[#f0f0f3]" />
-              <button className="relative z-10 neo-circle w-16 h-16 text-brand-blue hover:scale-105 transition-transform">
+              <button className="relative z-10 neo-circle w-16 h-16 text-indigo hover:scale-105 transition-transform">
                 <svg className="w-6 h-6 ml-1" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M8 5v14l11-7z" />
                 </svg>

@@ -52,7 +52,7 @@ function Blog() {
               </div>
               <div>
                 <p className="text-xs text-brand-body mb-1">{post.meta}</p>
-                <h3 className="text-base font-bold text-brand-dark mb-2 group-hover:text-brand-blue transition-colors">
+                <h3 className="text-base font-bold text-brand-dark mb-2 group-hover:text-indigo transition-colors">
                   {post.title}
                 </h3>
                 <p className="text-sm text-brand-body line-clamp-2">{post.excerpt}</p>
@@ -62,7 +62,7 @@ function Blog() {
         </div>
 
         <div className="text-center mt-10">
-          <a href="#" className="inline-block text-brand-blue font-semibold hover:underline">
+          <a href="#" className="inline-block text-indigo font-semibold hover:underline">
             Explore All
           </a>
         </div>

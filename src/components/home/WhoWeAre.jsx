@@ -6,7 +6,7 @@ function WhoWeAre() {
       <div className="container-main">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <span className="inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-brand-blue mb-4">
+            <span className="inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-indigo mb-4">
               <span className="inline-block w-8 h-0.5 bg-bronze rounded-full" />
               Who We Are
             </span>
