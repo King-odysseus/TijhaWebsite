@@ -5,7 +5,7 @@ function Hero() {
     <section
       className="w-full pt-[100px] pb-16 md:pb-32 relative overflow-hidden bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: `url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1920&h=1080&fit=crop&q=80')`,
+        backgroundImage: `url('/images/Team.png')`,
       }}
     >
       {/* Dark overlay */}
