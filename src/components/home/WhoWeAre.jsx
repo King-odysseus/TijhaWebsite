@@ -5,7 +5,15 @@ function WhoWeAre() {
     <section className="bg-white py-36 md:py-52">
       <div className="w-full px-8 md:px-16 lg:px-28">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div>
+          <div className="flex items-center justify-center order-2 lg:order-1">
+            <img
+              src="/images/Team.png"
+              alt="Tijha team"
+              className="w-4/5 h-auto object-contain rounded-2xl"
+              loading="lazy"
+            />
+          </div>
+          <div className="order-1 lg:order-2">
             <h2 className="text-3xl md:text-4xl font-bold text-indigo leading-tight mb-8">
               <span className="border-b-2 border-bronze pb-1">Our</span> Vision For You
             </h2>
@@ -21,14 +29,6 @@ function WhoWeAre() {
             >
               Learn more
             </Link>
-          </div>
-          <div className="flex items-center justify-center">
-            <img
-              src="/images/Team.png"
-              alt="Tijha team"
-              className="w-4/5 h-auto object-contain rounded-2xl"
-              loading="lazy"
-            />
           </div>
         </div>
       </div>
