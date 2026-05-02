@@ -5,7 +5,7 @@ function HeroBanner() {
     <section
       className="w-full py-20 md:py-32 py-[50px] relative overflow-hidden bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: `url('/images/Team.png')`,
+        backgroundImage: `url('/images/Best Team.png')`,
       }}
     >
       {/* Dark overlay */}
