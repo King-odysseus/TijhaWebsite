@@ -17,7 +17,7 @@ function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="pl-8 md:pl-16">
             <h1 className="animate-fade-in-up text-3xl md:text-4xl lg:text-6xl font-bold text-brand-dark leading-tight mb-6">
-              Your Partner In Digital And Operational Excellence
+              Your Partner In <span className="text-bronze">Digital And Operational</span> Excellence
             </h1>
             <p className="animate-fade-in-up-delay-1 text-brand-body leading-relaxed mb-8 text-base md:text-lg">
               At Tijha, we bridge strategy with execution to transform how organizations operate and grow. Through data-driven insight and digital innovation, we deliver measurable impact and sustainable performance.
