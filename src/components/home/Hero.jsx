@@ -5,7 +5,7 @@ function Hero() {
     <section className="w-full bg-white pt-12 pb-0">
       <div className="w-full px-6 md:px-12 lg:px-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="lg:pl-8">
+          <div className="lg:pl-16">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-brand-dark leading-tight mb-6">
               Your partner in digital and operational excellence
             </h1>
