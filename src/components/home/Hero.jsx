@@ -34,12 +34,12 @@ function Hero() {
         </Link>
 
         {/* Client Bar */}
-        <div className="flex flex-wrap items-center justify-center gap-8 md:gap-16 mx-auto mt-16 opacity-60">
-          <span className="text-sm font-bold text-white/70 uppercase tracking-wider">SMEs</span>
-          <span className="text-sm font-bold text-white/70 uppercase tracking-wider">NGOs</span>
-          <span className="text-sm font-bold text-white/70 uppercase tracking-wider">Corporates</span>
-          <span className="text-sm font-bold text-white/70 uppercase tracking-wider">Government</span>
-          <span className="text-sm font-bold text-white/70 uppercase tracking-wider">Startups</span>
+        <div className="flex flex-wrap items-center justify-center gap-8 md:gap-16 mx-auto mt-16">
+          <span className="text-sm font-bold text-white uppercase tracking-wider">SMEs</span>
+          <span className="text-sm font-bold text-white uppercase tracking-wider">NGOs</span>
+          <span className="text-sm font-bold text-white uppercase tracking-wider">Corporates</span>
+          <span className="text-sm font-bold text-white uppercase tracking-wider">Government</span>
+          <span className="text-sm font-bold text-white uppercase tracking-wider">Startups</span>
         </div>
       </div>
     </section>
