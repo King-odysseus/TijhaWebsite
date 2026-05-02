@@ -17,15 +17,15 @@ function HeroBanner() {
       <div className="container-main relative z-10 flex flex-col items-center text-center">
         <span className="inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-bronze mb-4">
           <span className="inline-block w-8 h-0.5 bg-bronze rounded-full" />
-          Who We Are
+          Team Work, Makes The Dream Work
         </span>
 
         <h2 className="text-3xl md:text-4xl lg:text-5xl text-center max-w-3xl mx-auto text-white leading-[1.2] font-bold tracking-tight mt-[40px] mb-[20px]">
-          Your Partner In <span className="text-bronze">Digital And Operational</span> Excellence
+          Together, We Turn Your Vision into Reality
         </h2>
 
         <p className="text-base md:text-lg text-white/70 text-center max-w-2xl mx-auto mb-10 leading-relaxed">
-          We believe that true growth comes from aligning innovation with operational excellence, ensuring that every decision creates lasting value. By combining strategic insight with practical solutions, we help organizations not only achieve their immediate goals but also build resilient systems that thrive in the long term.
+          We believe that real progress isn't built in isolation — it's forged through collaboration, shared purpose, and mutual trust. By aligning individual strengths toward a common goal, we help teams move faster, think bigger, and achieve what none could alone. Because when we work as one, the dream doesn't just stay a vision, it becomes the plan.
         </p>
 
         <Link
