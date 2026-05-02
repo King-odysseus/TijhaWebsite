@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 function HeroBanner() {
   return (
     <section
-      className="w-full py-20 md:py-32 relative overflow-hidden bg-cover bg-center bg-no-repeat"
+      className="w-full py-20 md:py-32 my-[50px] relative overflow-hidden bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage: `url('/images/Team.png')`,
       }}
