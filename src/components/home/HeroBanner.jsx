@@ -33,11 +33,11 @@ function HeroBanner() {
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-8 md:gap-16 mx-auto mb-10">
-          <span className="text-sm font-bold text-white uppercase tracking-wider">An SME</span>
+          <span className="text-sm font-bold text-white uppercase tracking-wider">SME</span>
           <span className="text-sm font-bold text-white uppercase tracking-wider">NGO</span>
-          <span className="text-sm font-bold text-white uppercase tracking-wider">Corporate Organisation</span>
+          <span className="text-sm font-bold text-white uppercase tracking-wider">Company</span>
           <span className="text-sm font-bold text-white uppercase tracking-wider">Government</span>
-          <span className="text-sm font-bold text-white uppercase tracking-wider">Or Startup</span>
+          <span className="text-sm font-bold text-white uppercase tracking-wider">Startup</span>
         </div>
 
         <Link
