@@ -20,11 +20,11 @@ function AboutPage() {
       <section className="section-padding bg-[#F5F5F7]">
         <div className="container-main">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
-            <div className="neo-card aspect-[4/3] flex items-center justify-center overflow-hidden">
+            <div className="shadow-neo rounded-2xl overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop"
-                alt="Tijha team"
-                className="w-full h-full object-cover"
+                src="/images/Freidnly%20ally.png"
+                alt="Friendly ally illustration"
+                className="w-full h-auto object-contain"
                 loading="lazy"
               />
             </div>
