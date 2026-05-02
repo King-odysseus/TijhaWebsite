@@ -1,6 +1,7 @@
 import Hero from '../components/home/Hero'
-import Processes from '../components/home/Processes'
 import WhoWeAre from '../components/home/WhoWeAre'
+import WhoWeAreSection from '../components/home/WhoWeAreSection'
+import Processes from '../components/home/Processes'
 import HeroBanner from '../components/home/HeroBanner'
 import ServiceOverview from '../components/home/ServiceOverview'
 import Stats from '../components/home/Stats'
@@ -12,6 +13,7 @@ function Home() {
     <>
       <Hero />
       <WhoWeAre />
+      <WhoWeAreSection />
       <Processes />
       <HeroBanner />
       <ServiceOverview />
