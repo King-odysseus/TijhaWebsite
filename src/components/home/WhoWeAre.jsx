@@ -4,13 +4,17 @@ function WhoWeAre() {
   return (
     <section className="section-padding bg-white">
       <div className="container-main">
+        {/* Gold divider line */}
+        <div className="flex justify-center mb-12">
+          <div className="w-20 h-1 bg-bronze rounded-full" />
+        </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-brand-blue mb-4">
               Who We Are
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-brand-dark leading-tight mb-6">
-              YOUR ALLY IN SUSTAINABLE GROWTH AND OPERATIONAL EXCELLENCE
+              Your ally in sustainable growth and operational excellence
             </h2>
             <p className="text-brand-body leading-relaxed mb-6">
               We believe that true growth comes from aligning innovation with operational excellence, ensuring that every decision creates lasting value. By combining strategic insight with practical solutions, we help organizations not only achieve their immediate goals but also build resilient systems that thrive in the long term.
