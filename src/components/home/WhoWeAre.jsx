@@ -11,10 +11,13 @@ function WhoWeAre() {
               Who We Are
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-brand-dark leading-tight mb-8">
-              Your Ally In Sustainable Growth And Operational Excellence
+              Our Vision For You
             </h2>
             <p className="text-brand-body leading-relaxed mb-8 text-base md:text-lg">
-              We believe that true growth comes from aligning innovation with operational excellence, ensuring that every decision creates lasting value. By combining strategic insight with practical solutions, we help organizations not only achieve their immediate goals but also build resilient systems that thrive in the long term.
+              We don't just offer help—we give you the knowledge and digital tools to seamlessly integrate change.
+            </p>
+            <p className="text-brand-body leading-relaxed mb-8 text-base md:text-lg">
+              We believe that true transformation comes from pairing expert guidance with practical digital tools—ensuring every update integrates smoothly and creates lasting impact. By combining deep knowledge with seamless execution, we help you not only implement changes quickly but also build adaptable systems that keep delivering value over time.
             </p>
             <Link
               to="/about"
