@@ -11,8 +11,8 @@ function Home() {
   return (
     <>
       <Hero />
-      <Processes />
       <WhoWeAre />
+      <Processes />
       <HeroBanner />
       <ServiceOverview />
       <Stats />
