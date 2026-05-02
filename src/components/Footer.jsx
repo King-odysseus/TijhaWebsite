@@ -4,7 +4,7 @@ import logo from '../assets/Tijha New2.png';
 function Footer() {
   return (
     <footer className="bg-indigo py-[150px] border-t border-white/10">
-      <div className="w-full px-6 md:px-12 lg:px-20">
+      <div className="w-full px-12 md:px-24 lg:px-40">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
           {/* Brand */}
           <div>
