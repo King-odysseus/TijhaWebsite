@@ -23,11 +23,11 @@ function WhoWeAre() {
               Learn more
             </Link>
           </div>
-          <div className="neo-card aspect-[4/3] flex items-center justify-center overflow-hidden">
+          <div className="neo-card p-4 flex items-center justify-center">
             <img
               src="/images/Freidnly%20ally.png"
               alt="Friendly ally illustration"
-              className="w-full h-full object-cover object-top"
+              className="w-full h-auto object-contain rounded-lg"
               loading="lazy"
             />
           </div>
