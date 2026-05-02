@@ -11,7 +11,7 @@ function WhoWeAre() {
               Who We Are
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-brand-dark leading-tight mb-8">
-              Your ally in sustainable growth and operational excellence
+              Your Ally In Sustainable Growth And Operational Excellence
             </h2>
             <p className="text-brand-body leading-relaxed mb-8 text-base md:text-lg">
               We believe that true growth comes from aligning innovation with operational excellence, ensuring that every decision creates lasting value. By combining strategic insight with practical solutions, we help organizations not only achieve their immediate goals but also build resilient systems that thrive in the long term.
