@@ -27,7 +27,7 @@ function WhoWeAre() {
             <img
               src="/images/Freidnly%20ally.png"
               alt="Friendly ally illustration"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-top"
               loading="lazy"
             />
           </div>
