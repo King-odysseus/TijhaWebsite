@@ -2,44 +2,35 @@ import { Link } from 'react-router-dom';
 
 function Hero() {
   return (
-    <section
-      className="w-full pt-[100px] pb-16 md:pb-32 relative overflow-hidden bg-cover bg-center bg-no-repeat"
-      style={{
-        backgroundImage: `url('/images/Team.png')`,
-      }}
-    >
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-indigo/75" />
-
-      {/* Subtle gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-indigo/40 via-transparent to-indigo/60" />
-
-      <div className="container-main relative z-10 flex flex-col items-center text-center">
-        {/* Headline */}
-        <h1 className="text-3xl md:text-4xl lg:text-5xl text-center max-w-3xl mx-auto text-white leading-[1.2] font-bold tracking-tight mt-[70px] mb-[20px]">
-          Your partner in digital and operational excellence
-        </h1>
-
-        {/* Subtitle */}
-        <p className="text-base md:text-lg text-white/70 text-center max-w-2xl mx-auto mb-10 leading-relaxed">
-          At Tijha, we bridge strategy with execution to transform how organizations operate and grow. Through data-driven insight and digital innovation, we deliver measurable impact and sustainable performance.
-        </p>
-
-        {/* CTA Button */}
-        <Link
-          to="/services"
-          className="bg-bronze hover:bg-[#b8895c] text-indigo text-sm md:text-base px-8 py-3.5 rounded-full transition shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-semibold"
-        >
-          See Services
-        </Link>
-
-        {/* Client Bar */}
-        <div className="flex flex-wrap items-center justify-center gap-8 md:gap-16 mx-auto mt-16">
-          <span className="text-sm font-bold text-white uppercase tracking-wider">SMEs</span>
-          <span className="text-sm font-bold text-white uppercase tracking-wider">NGOs</span>
-          <span className="text-sm font-bold text-white uppercase tracking-wider">Corporates</span>
-          <span className="text-sm font-bold text-white uppercase tracking-wider">Government</span>
-          <span className="text-sm font-bold text-white uppercase tracking-wider">Startups</span>
+    <section className="w-full bg-white pt-[100px] pb-16 md:pb-24">
+      <div className="container-main">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <span className="inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-indigo mb-4">
+              <span className="inline-block w-8 h-0.5 bg-bronze rounded-full" />
+              Who We Are
+            </span>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-brand-dark leading-tight mb-6">
+              Your ally in sustainable growth and operational excellence
+            </h1>
+            <p className="text-brand-body leading-relaxed mb-8 text-base md:text-lg">
+              We believe that true growth comes from aligning innovation with operational excellence, ensuring that every decision creates lasting value. By combining strategic insight with practical solutions, we help organizations not only achieve their immediate goals but also build resilient systems that thrive in the long term.
+            </p>
+            <Link
+              to="/about"
+              className="inline-block px-8 py-4 neo-btn text-brand-dark font-semibold text-sm hover:text-bronze transition-colors"
+            >
+              Learn more
+            </Link>
+          </div>
+          <div className="flex items-center justify-center">
+            <img
+              src="/images/Friendly%20ally.png"
+              alt="Friendly ally illustration"
+              className="w-full h-auto object-contain"
+              loading="lazy"
+            />
+          </div>
         </div>
       </div>
     </section>

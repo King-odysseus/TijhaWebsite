@@ -1,5 +1,4 @@
 import Hero from '../components/home/Hero'
-import WhoWeAre from '../components/home/WhoWeAre'
 import Processes from '../components/home/Processes'
 import ServiceOverview from '../components/home/ServiceOverview'
 import Stats from '../components/home/Stats'
@@ -10,7 +9,6 @@ function Home() {
   return (
     <>
       <Hero />
-      <WhoWeAre />
       <Processes />
       <ServiceOverview />
       <Stats />
