@@ -27,7 +27,7 @@ function WhoWeAre() {
             <img
               src="/images/Team.png"
               alt="Tijha team"
-              className="w-full h-auto object-contain"
+              className="w-full h-auto object-contain rounded-2xl"
               loading="lazy"
             />
           </div>
