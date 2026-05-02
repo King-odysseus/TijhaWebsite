@@ -77,9 +77,9 @@ const processes = [
 
 function Processes() {
   return (
-    <section className="bg-[#F5F5F7] pt-28 md:pt-44 pb-36 md:pb-52">
+    <section className="bg-[#F5F5F7] pt-20 md:pt-32 pb-36 md:pb-52">
       <div className="w-full px-8 md:px-16 lg:px-28">
-        <div className="text-center mb-10">
+        <div className="text-center mb-5">
           <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-indigo mb-4">
             How We Work
           </span>
