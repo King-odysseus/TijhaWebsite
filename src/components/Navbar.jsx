@@ -27,13 +27,14 @@ function Navbar() {
 
   return (
     <nav className="w-full fixed top-0 z-50 bg-white border-b border-gray-200">
-      <div className="container-main flex items-center justify-between h-16">
-        <Link to="/" className="flex items-center">
+      <div className="container-main grid grid-cols-3 items-center h-16">
+        {/* Left: Logo */}
+        <Link to="/" className="flex items-center justify-start">
           <img src={logo} alt="Tijha" className="h-8 md:h-10 w-auto object-contain" />
         </Link>
 
-        {/* Desktop links */}
-        <div className="hidden md:flex items-center gap-8">
+        {/* Center: Nav links */}
+        <div className="hidden md:flex items-center justify-center gap-8">
           {navLinks.map((link) => (
             <Link
               key={link.label}
@@ -50,7 +51,8 @@ function Navbar() {
           ))}
         </div>
 
-        <div className="flex items-center gap-3">
+        {/* Right: CTA */}
+        <div className="flex items-center justify-end gap-3">
           <Link
             to="/contact"
             className="hidden md:flex bg-bronze text-indigo pr-6 pl-2 py-2 rounded-full text-sm font-semibold hover:bg-[#b8895c] transition items-center"
