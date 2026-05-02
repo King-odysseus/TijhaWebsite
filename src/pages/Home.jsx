@@ -1,6 +1,7 @@
 import Hero from '../components/home/Hero'
 import WhoWeAre from '../components/home/WhoWeAre'
 import WhoWeAreSection from '../components/home/WhoWeAreSection'
+import TrustBar from '../components/home/TrustBar'
 import Processes from '../components/home/Processes'
 import HeroBanner from '../components/home/HeroBanner'
 import ServiceOverview from '../components/home/ServiceOverview'
@@ -13,6 +14,7 @@ function Home() {
     <>
       <Hero />
       <WhoWeAreSection />
+      <TrustBar />
       <WhoWeAre />
       <Processes />
       <HeroBanner />
