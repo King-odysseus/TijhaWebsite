@@ -33,8 +33,8 @@ const processes = [
 
 function Processes() {
   return (
-    <section className="section-padding bg-[#F5F5F7]">
-      <div className="container-main">
+    <section className="bg-[#F5F5F7] py-36 md:py-52">
+      <div className="w-full px-8 md:px-16 lg:px-28">
         <div className="text-center mb-16">
           <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-indigo mb-4">
             How We Work
