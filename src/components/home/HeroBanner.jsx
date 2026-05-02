@@ -21,12 +21,8 @@ function HeroBanner() {
         </span>
 
         <h2 className="text-3xl md:text-4xl lg:text-5xl text-center max-w-3xl mx-auto text-white leading-[1.2] font-bold tracking-tight mt-[40px] mb-[20px]">
-          Your ally in sustainable growth and operational excellence
+          Your Partner In <span className="text-bronze">Digital And Operational</span> Excellence
         </h2>
-
-        <p className="text-bronze text-lg md:text-xl font-semibold mb-10">
-          Digital And Operational
-        </p>
 
         <p className="text-base md:text-lg text-white/70 text-center max-w-2xl mx-auto mb-10 leading-relaxed">
           We believe that true growth comes from aligning innovation with operational excellence, ensuring that every decision creates lasting value. By combining strategic insight with practical solutions, we help organizations not only achieve their immediate goals but also build resilient systems that thrive in the long term.
