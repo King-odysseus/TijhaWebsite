@@ -17,7 +17,7 @@ function Footer() {
           </div>
 
           {/* Useful Links */}
-          <div>
+          <div className="pl-8 lg:pl-12">
             <h4 className="text-[15px] font-bold text-white uppercase tracking-wider mb-4">Useful Links</h4>
             <div className="flex flex-col gap-2">
               <Link to="/" className="text-[15px] text-white/70 hover:text-bronze transition-colors">Home</Link>
