@@ -47,7 +47,7 @@ function Hero() {
               See Services
             </Link>
           </div>
-          <div className="flex items-center justify-center pl-8 md:pl-16">
+          <div className="flex items-end justify-center pl-8 md:pl-16">
             <img
               src="/images/Friendly%20ally.png"
               alt="Friendly ally illustration"
