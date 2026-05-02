@@ -2,18 +2,18 @@ import { Link } from 'react-router-dom';
 
 function WhoWeAre() {
   return (
-    <section className="section-padding bg-white">
+    <section className="bg-white my-16 md:my-24">
       <div className="w-full px-8 md:px-16 lg:px-28">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <span className="inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-indigo mb-4">
+            <span className="inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-indigo mb-6">
               <span className="inline-block w-8 h-0.5 bg-bronze rounded-full" />
               Who We Are
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-brand-dark leading-tight mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-dark leading-tight mb-8">
               Your ally in sustainable growth and operational excellence
             </h2>
-            <p className="text-brand-body leading-relaxed mb-6 text-base md:text-lg">
+            <p className="text-brand-body leading-relaxed mb-8 text-base md:text-lg">
               We believe that true growth comes from aligning innovation with operational excellence, ensuring that every decision creates lasting value. By combining strategic insight with practical solutions, we help organizations not only achieve their immediate goals but also build resilient systems that thrive in the long term.
             </p>
             <Link
