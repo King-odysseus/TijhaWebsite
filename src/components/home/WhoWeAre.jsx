@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 function WhoWeAre() {
   return (
     <section className="section-padding bg-white">
-      <div className="container-main">
+      <div className="w-full px-6 md:px-12 lg:px-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <span className="inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-indigo mb-4">
@@ -13,7 +13,7 @@ function WhoWeAre() {
             <h2 className="text-3xl md:text-4xl font-bold text-brand-dark leading-tight mb-6">
               Your ally in sustainable growth and operational excellence
             </h2>
-            <p className="text-brand-body leading-relaxed mb-6">
+            <p className="text-brand-body leading-relaxed mb-6 text-base md:text-lg">
               We believe that true growth comes from aligning innovation with operational excellence, ensuring that every decision creates lasting value. By combining strategic insight with practical solutions, we help organizations not only achieve their immediate goals but also build resilient systems that thrive in the long term.
             </p>
             <Link
@@ -25,8 +25,8 @@ function WhoWeAre() {
           </div>
           <div className="flex items-center justify-center">
             <img
-              src="/images/Friendly%20ally.png"
-              alt="Friendly ally illustration"
+              src="/images/Team.png"
+              alt="Tijha team"
               className="w-full h-auto object-contain"
               loading="lazy"
             />
