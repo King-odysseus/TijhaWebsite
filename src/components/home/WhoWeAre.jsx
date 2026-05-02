@@ -17,10 +17,10 @@ function WhoWeAre() {
             <h2 className="text-3xl md:text-4xl font-bold text-indigo leading-tight mb-8">
               <span className="border-b-2 border-bronze pb-1">Our</span> Vision For You
             </h2>
-            <p className="text-brand-body leading-relaxed mb-8 text-base md:text-lg">
+            <p className="text-brand-body leading-relaxed mb-8 text-base md:text-lg text-justify">
               We don't just offer advise we give you the knowledge and digital tools to seamlessly integrate change.
             </p>
-            <p className="text-brand-body leading-relaxed mb-8 text-base md:text-lg">
+            <p className="text-brand-body leading-relaxed mb-8 text-base md:text-lg text-justify">
               We believe that true transformation comes from pairing expert guidance with practical digital tools, ensuring every update integrates smoothly and creates lasting impact. By combining deep knowledge with seamless execution, we help you not only implement changes quickly but also build adaptable systems that keep delivering value over time.
             </p>
             <Link

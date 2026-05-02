@@ -9,10 +9,10 @@ function WhoWeAreSection() {
             <h2 className="text-3xl md:text-4xl font-bold text-indigo leading-tight mb-8">
               <span className="border-b-2 border-bronze pb-1">Who</span> We Are
             </h2>
-            <p className="text-brand-body leading-relaxed mb-8 text-base md:text-lg">
+            <p className="text-brand-body leading-relaxed mb-8 text-base md:text-lg text-justify">
               Tijha is a forward-thinking consulting firm dedicated to helping organizations navigate complex challenges and unlock sustainable growth.
             </p>
-            <p className="text-brand-body leading-relaxed mb-8 text-base md:text-lg">
+            <p className="text-brand-body leading-relaxed mb-8 text-base md:text-lg text-justify">
               We combine deep industry expertise with innovative digital solutions to deliver measurable results. Our team of seasoned consultants, strategists, and technologists work alongside you to build resilient systems, streamline operations, and create lasting value for your business.
             </p>
             <Link
