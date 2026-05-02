@@ -5,6 +5,7 @@ import logo from '../assets/Tijha New2.png';
 const navLinks = [
   { label: 'Home', href: '/' },
   { label: 'Services', href: '/services' },
+  { label: 'Solutions', href: '/services' },
   { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' },
 ];
@@ -40,8 +41,8 @@ function Navbar() {
               key={link.label}
               to={link.href}
               className={`relative text-sm font-medium transition-colors duration-200 group ${location.pathname === link.href
-                  ? 'text-bronze'
-                  : 'text-indigo hover:text-bronze'
+                ? 'text-bronze'
+                : 'text-indigo hover:text-bronze'
                 }`}
             >
               {link.label}
@@ -88,8 +89,8 @@ function Navbar() {
                 key={link.label}
                 to={link.href}
                 className={`text-sm font-medium py-2 transition-colors ${location.pathname === link.href
-                    ? 'text-bronze'
-                    : 'text-indigo hover:text-bronze'
+                  ? 'text-bronze'
+                  : 'text-indigo hover:text-bronze'
                   }`}
               >
                 {link.label}
