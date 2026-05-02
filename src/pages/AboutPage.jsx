@@ -20,7 +20,7 @@ function AboutPage() {
       <section className="section-padding bg-[#F5F5F7]">
         <div className="container-main">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
-            <div className="shadow-neo rounded-2xl overflow-hidden">
+            <div className="flex items-center justify-center">
               <img
                 src="/images/Friendly%20ally.png"
                 alt="Friendly ally illustration"

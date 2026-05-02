@@ -23,7 +23,7 @@ function WhoWeAre() {
               Learn more
             </Link>
           </div>
-          <div className="shadow-neo rounded-2xl overflow-hidden">
+          <div className="flex items-center justify-center">
             <img
               src="/images/Friendly%20ally.png"
               alt="Friendly ally illustration"
