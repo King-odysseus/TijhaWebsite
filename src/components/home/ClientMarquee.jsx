@@ -1,15 +1,15 @@
 const clients = [
   {
-    name: 'Zenith Holdings',
+    name: 'Century Group',
     icon: (
       <svg className="w-8 h-8" viewBox="0 0 48 48" fill="none">
-        <polygon points="24,4 46,44 2,44" stroke="currentColor" strokeWidth="2.5" strokeLinejoin="round" />
-        <circle cx="24" cy="28" r="6" stroke="currentColor" strokeWidth="2" />
+        <circle cx="24" cy="24" r="18" stroke="currentColor" strokeWidth="2.5" />
+        <polygon points="24,4 46,44 2,44" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
       </svg>
     ),
   },
   {
-    name: 'Dangote Group',
+    name: 'Braige',
     icon: (
       <svg className="w-8 h-8" viewBox="0 0 48 48" fill="none">
         <rect x="8" y="6" width="32" height="36" rx="4" stroke="currentColor" strokeWidth="2.5" />
@@ -19,17 +19,16 @@ const clients = [
     ),
   },
   {
-    name: 'First Atlantic',
+    name: 'Jefnox Group',
     icon: (
       <svg className="w-8 h-8" viewBox="0 0 48 48" fill="none">
-        <path d="M4 36 Q12 28, 24 36 Q36 44, 44 36" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" fill="none" />
-        <path d="M4 24 Q12 16, 24 24 Q36 32, 44 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" fill="none" />
-        <path d="M4 12 Q12 4, 24 12 Q36 20, 44 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none" />
+        <polygon points="24,2 38,38 10,38" stroke="currentColor" strokeWidth="2.5" strokeLinejoin="round" />
+        <line x1="24" y1="14" x2="24" y2="38" stroke="currentColor" strokeWidth="1.5" />
       </svg>
     ),
   },
   {
-    name: 'Sahara Energy',
+    name: 'BeneAlpha Group',
     icon: (
       <svg className="w-8 h-8" viewBox="0 0 48 48" fill="none">
         <circle cx="24" cy="24" r="18" stroke="currentColor" strokeWidth="2.5" />
@@ -42,36 +41,7 @@ const clients = [
     ),
   },
   {
-    name: 'Globacom',
-    icon: (
-      <svg className="w-8 h-8" viewBox="0 0 48 48" fill="none">
-        <circle cx="24" cy="24" r="18" stroke="currentColor" strokeWidth="2.5" />
-        <ellipse cx="24" cy="24" rx="18" ry="10" stroke="currentColor" strokeWidth="1.5" />
-        <line x1="6" y1="24" x2="42" y2="24" stroke="currentColor" strokeWidth="1.5" />
-        <line x1="24" y1="6" x2="24" y2="42" stroke="currentColor" strokeWidth="1.5" />
-      </svg>
-    ),
-  },
-  {
-    name: 'UBA Group',
-    icon: (
-      <svg className="w-8 h-8" viewBox="0 0 48 48" fill="none">
-        <polygon points="24,2 38,38 10,38" stroke="currentColor" strokeWidth="2.5" strokeLinejoin="round" />
-        <line x1="24" y1="14" x2="24" y2="38" stroke="currentColor" strokeWidth="1.5" />
-      </svg>
-    ),
-  },
-  {
-    name: 'Access Corp',
-    icon: (
-      <svg className="w-8 h-8" viewBox="0 0 48 48" fill="none">
-        <circle cx="16" cy="32" r="12" stroke="currentColor" strokeWidth="2.5" />
-        <circle cx="32" cy="16" r="12" stroke="currentColor" strokeWidth="2.5" />
-      </svg>
-    ),
-  },
-  {
-    name: 'Bua Industries',
+    name: 'ZuriLoft',
     icon: (
       <svg className="w-8 h-8" viewBox="0 0 48 48" fill="none">
         <rect x="6" y="10" width="16" height="16" rx="3" stroke="currentColor" strokeWidth="2.5" />
