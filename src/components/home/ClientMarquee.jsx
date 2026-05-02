@@ -1,21 +1,23 @@
 const clients = [
-  { name: 'Acme Corp', initial: 'A' },
-  { name: 'Globex', initial: 'G' },
-  { name: 'Initech', initial: 'I' },
-  { name: 'Umbrella', initial: 'U' },
-  { name: 'Massive', initial: 'M' },
-  { name: 'Stark Ind', initial: 'S' },
-  { name: 'Wayne Ent', initial: 'W' },
-  { name: 'Oscorp', initial: 'O' },
+  { name: 'Transistor', src: 'https://tailwindcss.com/plus-assets/img/logos/158x48/transistor-logo-gray-900.svg' },
+  { name: 'Reform', src: 'https://tailwindcss.com/plus-assets/img/logos/158x48/reform-logo-gray-900.svg' },
+  { name: 'Tuple', src: 'https://tailwindcss.com/plus-assets/img/logos/158x48/tuple-logo-gray-900.svg' },
+  { name: 'SavvyCal', src: 'https://tailwindcss.com/plus-assets/img/logos/158x48/savvycal-logo-gray-900.svg' },
+  { name: 'Statamic', src: 'https://tailwindcss.com/plus-assets/img/logos/158x48/statamic-logo-gray-900.svg' },
+  { name: 'Laravel', src: 'https://tailwindcss.com/plus-assets/img/logos/158x48/laravel-logo-gray-900.svg' },
+  { name: 'Mirage', src: 'https://tailwindcss.com/plus-assets/img/logos/158x48/mirage-logo-gray-900.svg' },
+  { name: 'Primer', src: 'https://tailwindcss.com/plus-assets/img/logos/158x48/primer-logo-gray-900.svg' },
 ];
 
-function LogoItem({ name, initial }) {
+function LogoItem({ name, src }) {
   return (
-    <div className="flex items-center gap-3 px-6 flex-shrink-0">
-      <div className="w-10 h-10 rounded-full bg-indigo/10 flex items-center justify-center text-indigo font-bold text-sm border border-indigo/20">
-        {initial}
-      </div>
-      <span className="text-brand-body font-medium text-sm whitespace-nowrap">{name}</span>
+    <div className="flex items-center justify-center px-8 md:px-12 flex-shrink-0">
+      <img
+        src={src}
+        alt={name}
+        className="h-8 md:h-10 w-auto object-contain opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300"
+        loading="lazy"
+      />
     </div>
   );
 }
@@ -24,17 +26,21 @@ function ClientMarquee() {
   const duplicated = [...clients, ...clients, ...clients];
 
   return (
-    <section className="py-8 overflow-hidden">
+    <section className="bg-white py-16 md:py-24 overflow-hidden">
       <div className="w-full px-8 md:px-16 lg:px-28">
-        <div className="relative">
-          <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" />
-          <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
+        <h2 className="text-center text-base md:text-lg font-semibold text-brand-dark mb-10 md:mb-14">
+          Trusted by industry leaders across sectors
+        </h2>
+      </div>
 
-          <div className="flex animate-marquee">
-            {duplicated.map((client, i) => (
-              <LogoItem key={`${client.name}-${i}`} name={client.name} initial={client.initial} />
-            ))}
-          </div>
+      <div className="relative">
+        <div className="absolute left-0 top-0 bottom-0 w-16 md:w-24 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" />
+        <div className="absolute right-0 top-0 bottom-0 w-16 md:w-24 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
+
+        <div className="flex animate-marquee">
+          {duplicated.map((client, i) => (
+            <LogoItem key={`${client.name}-${i}`} name={client.name} src={client.src} />
+          ))}
         </div>
       </div>
     </section>
