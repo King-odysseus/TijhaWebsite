@@ -25,8 +25,8 @@ function WhoWeAre() {
           </div>
           <div className="neo-card aspect-[4/3] flex items-center justify-center overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop"
-              alt="Tijha team collaboration"
+              src="/images/Freidnly%20ally.png"
+              alt="Friendly ally illustration"
               className="w-full h-full object-cover"
               loading="lazy"
             />
