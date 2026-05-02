@@ -15,25 +15,26 @@ function HeroBanner() {
       <div className="absolute inset-0 bg-gradient-to-b from-indigo/40 via-transparent to-indigo/60" />
 
       <div className="container-main relative z-10 flex flex-col items-center text-center">
-        {/* Headline */}
+        <span className="inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-bronze mb-4">
+          <span className="inline-block w-8 h-0.5 bg-bronze rounded-full" />
+          Who We Are
+        </span>
+
         <h2 className="text-3xl md:text-4xl lg:text-5xl text-center max-w-3xl mx-auto text-white leading-[1.2] font-bold tracking-tight mt-[40px] mb-[20px]">
-          Your partner in digital and operational excellence
+          Your ally in sustainable growth and operational excellence
         </h2>
 
-        {/* Subtitle */}
         <p className="text-base md:text-lg text-white/70 text-center max-w-2xl mx-auto mb-10 leading-relaxed">
-          At Tijha, we bridge strategy with execution to transform how organizations operate and grow. Through data-driven insight and digital innovation, we deliver measurable impact and sustainable performance.
+          We believe that true growth comes from aligning innovation with operational excellence, ensuring that every decision creates lasting value. By combining strategic insight with practical solutions, we help organizations not only achieve their immediate goals but also build resilient systems that thrive in the long term.
         </p>
 
-        {/* CTA Button */}
         <Link
-          to="/services"
+          to="/about"
           className="bg-bronze hover:bg-[#b8895c] text-indigo text-sm md:text-base px-8 py-3.5 rounded-full transition shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-semibold"
         >
-          See Services
+          Learn more
         </Link>
 
-        {/* Client Bar */}
         <div className="flex flex-wrap items-center justify-center gap-8 md:gap-16 mx-auto mt-16">
           <span className="text-sm font-bold text-white uppercase tracking-wider">SMEs</span>
           <span className="text-sm font-bold text-white uppercase tracking-wider">NGOs</span>
