@@ -41,7 +41,7 @@ function Hero() {
             <img
               src="/images/Friendly%20ally.png"
               alt="Friendly ally illustration"
-              className="w-full h-auto object-contain"
+              className="w-4/5 h-auto object-contain"
               loading="lazy"
             />
           </div>
