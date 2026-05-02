@@ -86,7 +86,7 @@ function Processes() {
           <h2 className="text-3xl md:text-4xl font-bold text-brand-dark">Our Processes</h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pt-[30px]">
           {processes.map((p) => (
             <div key={p.step} className="neo-card p-8 hover:-translate-y-1 transition-transform duration-300">
               <div className="flex items-center justify-between mb-5">
