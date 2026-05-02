@@ -14,8 +14,8 @@ function Home() {
     <>
       <Hero />
       <WhoWeAreSection />
-      <ClientMarquee />
       <WhoWeAre />
+      <ClientMarquee />
       <Processes />
       <HeroBanner />
       <ServiceOverview />
