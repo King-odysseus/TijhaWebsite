@@ -3,7 +3,7 @@ import logo from '../assets/Tijha New2.png';
 
 function Footer() {
   return (
-    <footer className="bg-indigo pt-12 pb-8 border-t border-white/10">
+    <footer className="bg-indigo py-[50px] border-t border-white/10">
       <div className="container-main">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
           {/* Brand */}
