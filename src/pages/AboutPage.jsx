@@ -22,7 +22,7 @@ function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
             <div className="shadow-neo rounded-2xl overflow-hidden">
               <img
-                src="/images/Freidnly%20ally.png"
+                src="/images/Friendly%20ally.png"
                 alt="Friendly ally illustration"
                 className="w-full h-auto object-contain"
                 loading="lazy"
