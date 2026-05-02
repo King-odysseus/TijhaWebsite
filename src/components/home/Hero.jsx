@@ -21,12 +21,12 @@ function Hero() {
                 </svg>
                 <span>Trusted by</span>
               </div>
-              <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
-                <span className="text-sm font-semibold text-indigo">SMEs</span>
-                <span className="text-sm font-semibold text-indigo">NGOs</span>
-                <span className="text-sm font-semibold text-indigo">Corporates</span>
-                <span className="text-sm font-semibold text-indigo">Government</span>
-                <span className="text-sm font-semibold text-indigo">Startups</span>
+              <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
+                <span className="text-base md:text-lg font-bold text-indigo">SMEs</span>
+                <span className="text-base md:text-lg font-bold text-indigo">NGOs</span>
+                <span className="text-base md:text-lg font-bold text-indigo">Corporates</span>
+                <span className="text-base md:text-lg font-bold text-indigo">Government</span>
+                <span className="text-base md:text-lg font-bold text-indigo">Startups</span>
               </div>
             </div>
 
