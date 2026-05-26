@@ -16,7 +16,7 @@ function Hero() {
       <div className="w-full px-6 md:px-12 lg:px-20 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="pl-8 md:pl-16">
-            <h1 className="animate-fade-in-up text-xl sm:text-2xl md:text-3xl lg:text-5xl font-bold text-indigo leading-tight mb-6">
+            <h1 className="animate-fade-in-up text-base sm:text-lg md:text-xl lg:text-2xl xl:text-4xl font-bold text-indigo leading-tight mb-6">
               Your Partner In <span className="text-bronze">Digital And Operational</span> Excellence
             </h1>
             <p className="animate-fade-in-up-delay-1 text-brand-body leading-relaxed mb-8 text-sm sm:text-base md:text-lg">
