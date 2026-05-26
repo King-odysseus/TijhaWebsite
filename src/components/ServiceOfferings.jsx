@@ -112,7 +112,7 @@ function ServiceOfferings() {
         </div>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto">
           {pillars.map((pillar) => {
             const isHovered = hovered === pillar.id;
             const isBronze = pillar.bgGradient.includes('C49A6C');
