@@ -34,7 +34,7 @@ const processes = [
 function Processes() {
   return (
     <section className="bg-[#F5F5F7] py-20 md:py-28">
-      <div className="max-w-5xl mx-auto px-6">
+      <div className="max-w-4xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
           <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-[#C49A6C] mb-4">
@@ -48,28 +48,30 @@ function Processes() {
         {/* Timeline */}
         <div className="relative">
           {/* Vertical line */}
-          <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-px bg-[#C49A6C]/30 md:-translate-x-px" />
+          <div className="absolute left-8 md:left-1/2 top-4 bottom-4 w-0.5 bg-[#C49A6C]/25 md:-translate-x-px" />
 
-          {processes.map((p, i) => {
-            const isEven = i % 2 === 0;
-            return (
-              <div
-                key={p.step}
-                className={`relative flex items-start gap-8 md:gap-0 mb-12 last:mb-0 ${
-                  isEven ? 'md:flex-row' : 'md:flex-row-reverse'
-                }`}
-              >
-                {/* Content card */}
-                <div
-                  className={`flex-1 md:w-[45%] ${
-                    isEven ? 'md:pr-12 md:text-right' : 'md:pl-12 md:text-left'
-                  }`}
-                >
-                  <div className="bg-white rounded-2xl shadow-md p-6 md:p-8 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-                    <span className="inline-block text-[10px] font-bold uppercase tracking-[0.15em] text-[#C49A6C] mb-2">
+          <div className="space-y-10">
+            {processes.map((p) => (
+              <div key={p.step} className="relative flex items-start gap-6 md:gap-0">
+                {/* Step circle — left on mobile, center on desktop */}
+                <div className="absolute left-8 md:left-1/2 -translate-x-1/2 z-10">
+                  <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-[#C49A6C] flex items-center justify-center shadow-lg">
+                    <span className="text-[#262262] font-bold text-base md:text-lg">
+                      {p.step}
+                    </span>
+                  </div>
+                </div>
+
+                {/* Spacer for left side on desktop */}
+                <div className="hidden md:block md:w-1/2 md:pr-12" />
+
+                {/* Card */}
+                <div className="ml-20 md:ml-0 md:w-1/2 md:pl-12">
+                  <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow duration-300 border-t-4 border-[#C49A6C]">
+                    <span className="text-[10px] font-bold uppercase tracking-[0.15em] text-[#C49A6C] mb-1 block">
                       Step {p.step}
                     </span>
-                    <h3 className="text-lg md:text-xl font-bold text-[#262262] mb-3">
+                    <h3 className="text-lg md:text-xl font-bold text-[#262262] mb-2">
                       {p.title}
                     </h3>
                     <p className="text-sm text-[#6b7280] leading-relaxed">
@@ -77,21 +79,9 @@ function Processes() {
                     </p>
                   </div>
                 </div>
-
-                {/* Center node */}
-                <div className="absolute left-8 md:left-1/2 -translate-x-1/2 z-10">
-                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#262262] to-[#1e1a4e] flex items-center justify-center shadow-lg">
-                    <span className="text-white font-bold text-lg">
-                      {p.step}
-                    </span>
-                  </div>
-                </div>
-
-                {/* Spacer for opposite side */}
-                <div className="hidden md:block md:w-[45%]" />
               </div>
-            );
-          })}
+            ))}
+          </div>
         </div>
       </div>
     </section>
