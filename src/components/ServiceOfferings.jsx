@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const pillars = [
@@ -60,11 +61,39 @@ const pillars = [
 ];
 
 function ServiceOfferings() {
+  const [animated, setAnimated] = useState({});
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const id = entry.target.dataset.id;
+            setAnimated((prev) => ({ ...prev, [id]: true }));
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: '0px 0px -30px 0px' }
+    );
+
+    const elements = sectionRef.current?.querySelectorAll('[data-id]');
+    elements?.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <section id="services" className="py-16 md:py-24 bg-white">
+    <section id="services" ref={sectionRef} className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div
+          data-id="header"
+          className={`text-center max-w-3xl mx-auto mb-16 transition-all duration-700 ease-out ${
+            animated['header'] ? 'opacity-100 translate-y-0' : ''
+          }`}
+        >
           <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-[#C49A6C] mb-4">
             What We Do
           </span>
@@ -78,13 +107,20 @@ function ServiceOfferings() {
 
         {/* Cards Grid — 2 per row */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-          {pillars.map((pillar) => (
+          {pillars.map((pillar, i) => (
             <div
               key={pillar.id}
-              className="group relative rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-[#D9D9D9]/50"
+              data-id={pillar.id}
+              className={`group relative rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-xl border border-[#D9D9D9]/50 transition-all duration-700 ease-out ${
+                animated[pillar.id]
+                  ? 'opacity-100 translate-y-0'
+                  : 'opacity-100'
+              }`}
+              style={{ transitionDelay: `${i * 120}ms` }}
             >
               {/* Bronze left accent bar */}
-              <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-[#C49A6C]" />
+              <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-[#C49A6C]/20" />
+              <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-[#C49A6C] origin-top scale-y-0 group-hover:scale-y-100 transition-transform duration-500" />
 
               <div className="p-6 md:p-8 pl-8 md:pl-10">
                 {/* Tagline */}
@@ -93,7 +129,7 @@ function ServiceOfferings() {
                 </span>
 
                 {/* Title */}
-                <h3 className="text-xl md:text-2xl font-bold text-[#262262] mb-3">
+                <h3 className="text-xl md:text-2xl font-bold text-[#262262] mb-3 group-hover:text-[#C49A6C] transition-colors duration-300">
                   {pillar.title}
                 </h3>
 
@@ -127,14 +163,14 @@ function ServiceOfferings() {
                   ))}
                 </ul>
 
-                {/* CTA Button — always bronze */}
+                {/* CTA Button */}
                 <Link
                   to="/services"
-                  className="inline-flex items-center gap-1.5 px-6 py-2.5 rounded-full text-sm font-semibold bg-[#C49A6C] text-[#262262] hover:bg-[#b8895c] transition-colors duration-200"
+                  className="inline-flex items-center gap-1.5 px-6 py-2.5 rounded-full text-sm font-semibold bg-[#C49A6C] text-[#262262] hover:bg-[#b8895c] hover:scale-105 active:scale-95 transition-all duration-200"
                 >
                   View Services
                   <svg
-                    className="w-3.5 h-3.5"
+                    className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform duration-200"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
