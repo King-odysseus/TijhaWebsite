@@ -59,7 +59,7 @@ function Processes() {
 
   return (
     <section className="bg-[#F5F5F7] py-20 md:py-28" ref={sectionRef}>
-      <div className="max-w-4xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-6">
         {/* Header */}
         <div
           data-id="header"
@@ -85,52 +85,46 @@ function Processes() {
             }`}
           />
 
-          <div className="space-y-10">
-            {processes.map((p, i) => (
-              <div
-                key={p.step}
-                data-id={p.step}
-                className={`relative flex items-start gap-6 md:gap-0 transition-all duration-700 ease-out ${
-                  animated[p.step] ? 'opacity-100 translate-x-0' : 'opacity-100'
-                }`}
-                style={{ transitionDelay: `${i * 150}ms` }}
-              >
-                {/* Step circle */}
-                <div className="absolute left-8 md:left-1/2 -translate-x-1/2 z-10">
+          <div className="space-y-12 md:space-y-16">
+            {processes.map((p, i) => {
+              const isLeft = i % 2 === 0;
+              return (
+                <div
+                  key={p.step}
+                  data-id={p.step}
+                  className="relative md:flex md:items-start md:justify-center"
+                  style={{ transitionDelay: `${i * 150}ms` }}
+                >
+                  {/* Step circle */}
+                  <div className="absolute left-8 md:left-1/2 -translate-x-1/2 z-10 top-0">
+                    <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-[#C49A6C] flex items-center justify-center shadow-lg">
+                      <span className="text-[#262262] font-bold text-base md:text-lg">
+                        {p.step}
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Card — left on even, right on odd */}
                   <div
-                    className={`w-14 h-14 md:w-16 md:h-16 rounded-full bg-[#C49A6C] flex items-center justify-center shadow-lg transition-transform duration-500 ${
-                      animated[p.step] ? 'scale-100' : 'scale-100'
+                    className={`ml-20 md:ml-0 md:w-[46%] ${
+                      isLeft ? 'md:mr-auto md:pr-12' : 'md:ml-auto md:pl-12'
                     }`}
-                    style={{
-                      transitionDelay: `${i * 150 + 100}ms`,
-                      transitionTimingFunction: 'cubic-bezier(0.34, 1.56, 0.64, 1)',
-                    }}
                   >
-                    <span className="text-[#262262] font-bold text-base md:text-lg">
-                      {p.step}
-                    </span>
+                    <div className="group bg-white rounded-xl shadow-md p-6 md:p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-500 border-t-4 border-[#C49A6C]">
+                      <span className="text-[10px] font-bold uppercase tracking-[0.15em] text-[#C49A6C] mb-2 block">
+                        Step {p.step}
+                      </span>
+                      <h3 className="text-lg md:text-xl font-bold text-[#262262] mb-3 group-hover:text-[#C49A6C] transition-colors duration-300">
+                        {p.title}
+                      </h3>
+                      <p className="text-sm md:text-base text-[#6b7280] leading-relaxed">
+                        {p.desc}
+                      </p>
+                    </div>
                   </div>
                 </div>
-
-                {/* Spacer for left side on desktop */}
-                <div className="hidden md:block md:w-1/2 md:pr-12" />
-
-                {/* Card */}
-                <div className="ml-20 md:ml-0 md:w-1/2 md:pl-12">
-                  <div className="group bg-white rounded-xl shadow-md p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-500 border-t-4 border-[#C49A6C]">
-                    <span className="text-[10px] font-bold uppercase tracking-[0.15em] text-[#C49A6C] mb-1 block">
-                      Step {p.step}
-                    </span>
-                    <h3 className="text-lg md:text-xl font-bold text-[#262262] mb-2 group-hover:text-[#C49A6C] transition-colors duration-300">
-                      {p.title}
-                    </h3>
-                    <p className="text-sm text-[#6b7280] leading-relaxed">
-                      {p.desc}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>
