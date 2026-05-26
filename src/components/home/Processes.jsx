@@ -83,7 +83,7 @@ function Processes() {
           <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-indigo mb-4">
             How We Work
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-brand-dark">Our Processes</h2>
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-brand-dark">Our Processes</h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pt-[30px]">

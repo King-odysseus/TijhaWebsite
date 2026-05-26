@@ -162,8 +162,8 @@ function ServicesPage() {
           <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-indigo mb-4">
             Our Services
           </span>
-          <h1 className="text-4xl md:text-5xl font-bold text-brand-dark mb-6">What We Offer</h1>
-          <p className="text-lg text-brand-body leading-relaxed">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-brand-dark mb-6">What We Offer</h1>
+          <p className="text-sm sm:text-base md:text-lg text-brand-body leading-relaxed">
             At Tijha, we provide a suite of consulting and digital solutions designed to help organisations operate smarter, faster, and more sustainably. Our services span business process optimisation, project management, and digital transformation.
           </p>
         </div>
@@ -231,7 +231,7 @@ function ServicesPage() {
       <section className="section-padding bg-white">
         <div className="container-main max-w-4xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-brand-dark mb-4">Recommended Monthly Retainers</h2>
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-brand-dark mb-4">Recommended Monthly Retainers</h2>
             <p className="text-brand-body">Ongoing advisory and management support tailored to your needs.</p>
           </div>
           <div className="neo-inset rounded-xl overflow-hidden">

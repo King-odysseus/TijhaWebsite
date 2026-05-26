@@ -4,7 +4,7 @@ function CTABanner() {
   return (
     <section className="py-24 bg-white">
       <div className="container-main text-center max-w-4xl">
-        <h2 className="text-3xl md:text-4xl font-bold text-brand-dark mb-4">
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-brand-dark mb-4">
           READY TO TRANSFORM YOUR ORGANISATION?
         </h2>
         <p className="text-brand-body leading-relaxed mb-10 max-w-2xl mx-auto">

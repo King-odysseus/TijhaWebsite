@@ -7,10 +7,10 @@ function AboutPage() {
           <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-indigo mb-4">
             About Us
           </span>
-          <h1 className="text-4xl md:text-5xl font-bold text-brand-dark mb-6">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-brand-dark mb-6">
             A TEAM THAT STANDS BESIDE YOU, NOT JUST BEHIND YOU.
           </h1>
-          <p className="text-lg text-brand-body leading-relaxed">
+          <p className="text-sm sm:text-base md:text-lg text-brand-body leading-relaxed">
             We combine sharp technological and management consulting with hands-on support to deliver the right solutions and strengthen your team's capability to carry them forward.
           </p>
         </div>
@@ -29,7 +29,7 @@ function AboutPage() {
               />
             </div>
             <div>
-              <h2 className="text-3xl font-bold text-brand-dark mb-6">Our Mission</h2>
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-brand-dark mb-6">Our Mission</h2>
               <p className="text-brand-body leading-relaxed mb-4">
                 At Tijha, we help organisations achieve measurable growth by combining strategy, execution, and tailored solutions. Our approach is built around four key steps: Understand, Plan, Deliver, and Support.
               </p>
@@ -44,7 +44,7 @@ function AboutPage() {
 
           {/* How We Work */}
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-brand-dark mb-4">How We Work</h2>
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-brand-dark mb-4">How We Work</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
@@ -66,7 +66,7 @@ function AboutPage() {
       <section className="section-padding bg-white">
         <div className="container-main">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-brand-dark mb-4">Our People</h2>
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-brand-dark mb-4">Our People</h2>
             <p className="text-brand-body max-w-2xl mx-auto leading-relaxed">
               At Tijha, our strength lies in the calibre, diversity, and dedication of the people behind our work.
             </p>

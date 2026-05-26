@@ -22,8 +22,8 @@ function ContactPage() {
           <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-indigo mb-4">
             Get In Touch
           </span>
-          <h1 className="text-4xl md:text-5xl font-bold text-brand-dark mb-6">Contact Us</h1>
-          <p className="text-lg text-brand-body leading-relaxed">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-brand-dark mb-6">Contact Us</h1>
+          <p className="text-sm sm:text-base md:text-lg text-brand-body leading-relaxed">
             We're always ready to connect, answer your questions, and explore how Tijha can help your organisation achieve its goals.
           </p>
         </div>

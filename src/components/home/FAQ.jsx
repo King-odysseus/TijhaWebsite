@@ -26,7 +26,7 @@ function FAQ() {
     <section className="section-padding bg-[#F5F5F7]">
       <div className="container-main max-w-3xl">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-brand-dark mb-4">Frequently Asked Questions</h2>
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-brand-dark mb-4">Frequently Asked Questions</h2>
         </div>
 
         <div className="space-y-4">

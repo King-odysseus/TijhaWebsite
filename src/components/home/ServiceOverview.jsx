@@ -47,7 +47,7 @@ function ServiceOverview() {
           <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-indigo mb-4">
             What We Do
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-brand-dark mb-6">Our Service Offerings</h2>
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-brand-dark mb-6">Our Service Offerings</h2>
           <p className="text-brand-body max-w-3xl mx-auto leading-relaxed">
             At Tijha, we provide a suite of consulting and digital solutions designed to help organisations operate smarter, faster, and more sustainably. Our services span business process optimisation, project management, and digital transformation enabling clients to streamline operations, improve efficiency, and deliver measurable results.
           </p>
