@@ -32,11 +32,7 @@ function Hero() {
                 <span>Trusted by</span>
               </div>
               <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
-                <span className="text-base md:text-lg font-bold text-indigo">SMEs</span>
-                <span className="text-base md:text-lg font-bold text-indigo">NGOs</span>
-                <span className="text-base md:text-lg font-bold text-indigo">Corporates</span>
-                <span className="text-base md:text-lg font-bold text-indigo">Government</span>
-                <span className="text-base md:text-lg font-bold text-indigo">Startups</span>
+                <span className="text-base md:text-lg font-bold text-indigo">SMEs, NGOs, Corporates, Government, Startups</span>
               </div>
             </div>
 
