@@ -1,7 +1,7 @@
 # CLAUDE.md — Claude Code Instructions
 
-## AI Wiki
-At session start, read `~/ai-wiki/README.md` and relevant `knowledge/*.md` files for full project context. Update `agents/claude-code.md` and `daily/` log as you work.
+## Cognitive1
+At session start, read `Instruct.md` in the cognitive1 project and relevant `knowledge/*.md` files for full project context. Update `daily/` log as you work.
 
 ## Git
 Auto commit + push to origin/main after every edit.
