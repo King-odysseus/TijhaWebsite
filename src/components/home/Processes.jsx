@@ -59,7 +59,7 @@ function Processes() {
 
   return (
     <section className="bg-[#F5F5F7] py-20 md:py-28" ref={sectionRef}>
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div
           data-id="header"
@@ -75,57 +75,88 @@ function Processes() {
           </h2>
         </div>
 
-        {/* Timeline */}
-        <div className="relative">
-          {/* Vertical line — draws from bottom up */}
+        {/* Desktop: 3x2 grid with horizontal line at bottom */}
+        <div className="hidden md:block relative">
+          {/* Horizontal line at bottom — draws left to right */}
           <div
             data-id="line"
-            className={`absolute left-8 md:left-1/2 top-4 bottom-4 w-0.5 bg-[#C49A6C]/25 md:-translate-x-px transition-transform duration-[1500ms] ease-out origin-bottom ${
-              animated['line'] ? 'scale-y-100' : 'scale-y-0'
+            className={`absolute left-0 right-0 bottom-6 h-0.5 bg-[#C49A6C]/25 transition-transform duration-[1500ms] ease-out origin-left ${
+              animated['line'] ? 'scale-x-100' : 'scale-x-0'
             }`}
           />
 
-          <div className="space-y-12 md:space-y-16">
-            {processes.map((p, i) => {
-              const isLeft = i % 2 === 0;
-              return (
-                <div
-                  key={p.step}
-                  data-id={p.step}
-                  className="relative md:flex md:items-start md:justify-center"
-                  style={{ transitionDelay: `${i * 150}ms` }}
-                >
-                  {/* Step circle */}
-                  <div className="absolute left-8 md:left-1/2 -translate-x-1/2 z-10 top-0">
-                    <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-[#C49A6C] flex items-center justify-center shadow-lg">
-                      <span className="text-[#262262] font-bold text-base md:text-lg">
-                        {p.step}
-                      </span>
-                    </div>
-                  </div>
+          <div className="grid grid-cols-3 gap-x-8 gap-y-12 pb-16">
+            {processes.map((p, i) => (
+              <div
+                key={p.step}
+                data-id={p.step}
+                className={`relative flex flex-col items-center text-center transition-all duration-700 ease-out ${
+                  animated[p.step] ? 'opacity-100 translate-y-0' : 'opacity-100'
+                }`}
+                style={{ transitionDelay: `${i * 120}ms` }}
+              >
+                {/* Card */}
+                <div className="group bg-white rounded-xl shadow-md p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-500 border-t-4 border-[#C49A6C] w-full">
+                  <span className="text-[10px] font-bold uppercase tracking-[0.15em] text-[#C49A6C] mb-2 block">
+                    Step {p.step}
+                  </span>
+                  <h3 className="text-lg font-bold text-[#262262] mb-3 group-hover:text-[#C49A6C] transition-colors duration-300">
+                    {p.title}
+                  </h3>
+                  <p className="text-sm text-[#6b7280] leading-relaxed">
+                    {p.desc}
+                  </p>
+                </div>
 
-                  {/* Card — left on even, right on odd */}
-                  <div
-                    className={`ml-20 md:ml-0 md:w-[46%] ${
-                      isLeft ? 'md:mr-auto md:pr-12' : 'md:ml-auto md:pl-12'
-                    }`}
-                  >
-                    <div className="group bg-white rounded-xl shadow-md p-6 md:p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-500 border-t-4 border-[#C49A6C]">
-                      <span className="text-[10px] font-bold uppercase tracking-[0.15em] text-[#C49A6C] mb-2 block">
-                        Step {p.step}
-                      </span>
-                      <h3 className="text-lg md:text-xl font-bold text-[#262262] mb-3 group-hover:text-[#C49A6C] transition-colors duration-300">
-                        {p.title}
-                      </h3>
-                      <p className="text-sm md:text-base text-[#6b7280] leading-relaxed">
-                        {p.desc}
-                      </p>
-                    </div>
+                {/* Step circle on the bottom line */}
+                <div className="mt-8 relative z-10">
+                  <div className="w-12 h-12 rounded-full bg-[#C49A6C] flex items-center justify-center shadow-lg">
+                    <span className="text-[#262262] font-bold text-sm">
+                      {p.step}
+                    </span>
                   </div>
                 </div>
-              );
-            })}
+              </div>
+            ))}
           </div>
+        </div>
+
+        {/* Mobile: vertical stack */}
+        <div className="md:hidden space-y-8">
+          {processes.map((p, i) => (
+            <div
+              key={p.step}
+              data-id={`m-${p.step}`}
+              className="relative"
+            >
+              {/* Connector line */}
+              {i < processes.length - 1 && (
+                <div className="absolute left-6 top-14 bottom-0 w-0.5 h-[calc(100%-2rem)] bg-[#C49A6C]/25" />
+              )}
+
+              <div className="flex items-start gap-4">
+                {/* Step circle */}
+                <div className="w-12 h-12 rounded-full bg-[#C49A6C] flex items-center justify-center shadow-lg flex-shrink-0 z-10">
+                  <span className="text-[#262262] font-bold text-sm">
+                    {p.step}
+                  </span>
+                </div>
+
+                {/* Card */}
+                <div className="group flex-1 bg-white rounded-xl shadow-md p-5 hover:shadow-xl transition-all duration-500 border-t-4 border-[#C49A6C]">
+                  <span className="text-[10px] font-bold uppercase tracking-[0.15em] text-[#C49A6C] mb-1 block">
+                    Step {p.step}
+                  </span>
+                  <h3 className="text-base font-bold text-[#262262] mb-2 group-hover:text-[#C49A6C] transition-colors duration-300">
+                    {p.title}
+                  </h3>
+                  <p className="text-sm text-[#6b7280] leading-relaxed">
+                    {p.desc}
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

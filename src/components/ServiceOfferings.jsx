@@ -11,6 +11,7 @@ const pillars = [
       'Market Research & Intelligence',
       'Go-to-Market Strategy',
       'Sales Strategy & Revenue Growth',
+      'Pricing & Competitor Analysis',
     ],
   },
   {
@@ -22,6 +23,7 @@ const pillars = [
       'Business Plan Development',
       'Investor Pitch Decks',
       'Grant Identification & Writing',
+      'Change Management & Rollout',
     ],
   },
   {
@@ -33,6 +35,7 @@ const pillars = [
       'Workflow Optimization & Automation',
       'Cost & Resource Optimization',
       'Project Planning & Scheduling',
+      'Risk Management & Reporting',
     ],
   },
   {
@@ -41,6 +44,7 @@ const pillars = [
     tagline: 'Capability, systems & scale',
     services: [
       'Leadership & Management Training',
+      'Executive Coaching & Workshops',
       'Website & App Development',
       'E-commerce & System Integration',
       'Cloud Migration & Dashboards',
@@ -121,7 +125,7 @@ function ServiceOfferings() {
                   {pillar.title}
                 </h3>
 
-                {/* Service bullets — compact */}
+                {/* Service bullets */}
                 <ul className="space-y-1 mb-4">
                   {pillar.services.map((svc) => (
                     <li
