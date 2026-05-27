@@ -121,19 +121,19 @@ function ServiceOfferings() {
                 </span>
 
                 {/* Title */}
-                <h3 className="text-xl font-bold text-[#262262] mb-2 group-hover:text-[#C49A6C] transition-colors duration-300">
+                <h3 className="text-xl font-bold text-[#262262] mb-3 group-hover:text-[#C49A6C] transition-colors duration-300">
                   {pillar.title}
                 </h3>
 
-                {/* Service bullets */}
-                <ul className="space-y-1 mb-4">
+                {/* Service bullets — 2 columns for compactness */}
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1.5 mb-5">
                   {pillar.services.map((svc) => (
                     <li
                       key={svc}
-                      className="flex items-start gap-2 text-sm text-[#1f2937]"
+                      className="flex items-start gap-2 text-xs text-[#1f2937]"
                     >
                       <svg
-                        className="w-3.5 h-3.5 text-[#C49A6C] flex-shrink-0 mt-0.5"
+                        className="w-3 h-3 text-[#C49A6C] flex-shrink-0 mt-0.5"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -145,7 +145,7 @@ function ServiceOfferings() {
                           d="M5 13l4 4L19 7"
                         />
                       </svg>
-                      {svc}
+                      <span className="leading-tight">{svc}</span>
                     </li>
                   ))}
                 </ul>
