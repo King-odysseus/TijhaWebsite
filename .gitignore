@@ -17,6 +17,13 @@ dist-ssr
 !.vscode/extensions.json
 .idea
 .DS_Store
+
+# Agent config dirs (keep out of repo)
+.qwen/
+.claude/
+.kimi/
+.continue/
+.kilo/
 *.suo
 *.ntvs*
 *.njsproj

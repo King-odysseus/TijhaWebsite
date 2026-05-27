@@ -166,7 +166,7 @@ function Processes() {
 
   return (
     <section className="bg-[#F5F5F7] py-20 md:py-28 overflow-hidden" ref={sectionRef}>
-      <div className="max-w-5xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-6">
         {/* Header */}
         <div
           data-id="header"
