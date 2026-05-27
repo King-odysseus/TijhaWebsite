@@ -14,7 +14,7 @@ function ParticleBackground() {
     const particles = Array.from({ length: 50 }, () => ({
       x: Math.random() * w,
       y: Math.random() * h,
-      r: Math.random() * 2 + 1,
+      r: Math.random() * 4 + 2,
       vx: (Math.random() - 0.5) * 0.3,
       vy: (Math.random() - 0.5) * 0.3,
       color: Math.random() > 0.6 ? '#262262' : '#C49A6C',
@@ -36,7 +36,7 @@ function ParticleBackground() {
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
         ctx.fillStyle = p.color;
-        ctx.globalAlpha = 0.12;
+        ctx.globalAlpha = 0.22;
         ctx.fill();
       }
 
@@ -47,12 +47,12 @@ function ParticleBackground() {
           const dy = particles[i].y - particles[j].y;
           const dist = Math.sqrt(dx * dx + dy * dy);
 
-          if (dist < 120) {
+          if (dist < 150) {
             ctx.beginPath();
             ctx.moveTo(particles[i].x, particles[i].y);
             ctx.lineTo(particles[j].x, particles[j].y);
             ctx.strokeStyle = '#C49A6C';
-            ctx.globalAlpha = 0.04 * (1 - dist / 120);
+            ctx.globalAlpha = 0.07 * (1 - dist / 150);
             ctx.lineWidth = 0.5;
             ctx.stroke();
           }
@@ -259,7 +259,7 @@ function Processes() {
   }, []);
 
   return (
-    <section className="relative bg-[#F5F5F7] py-20 md:py-28 overflow-hidden" ref={sectionRef}>
+    <section className="relative bg-[#FAFAFC] py-20 md:py-28 overflow-hidden" ref={sectionRef}>
       <ParticleBackground />
       <div className="relative z-10 max-w-6xl mx-auto px-6">
         {/* Header */}
