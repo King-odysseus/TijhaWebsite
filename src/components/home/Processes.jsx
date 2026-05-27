@@ -82,14 +82,23 @@ function TimelineStep({ process, index, visible }) {
           <span className="text-[#262262] font-bold text-sm">{process.step}</span>
         </div>
         <div className="flex-1">
-          <div className="group bg-white rounded-xl shadow-md p-5 hover:shadow-xl transition-all duration-500 border-l-4 border-[#C49A6C]">
-            <span className="text-[10px] font-bold uppercase tracking-[0.15em] text-[#C49A6C] mb-1 block">
+          <div className="group relative rounded-xl shadow-md p-6 hover:shadow-xl transition-all duration-500 border-l-4 border-[#C49A6C] overflow-hidden bg-gradient-to-br from-white via-[#faf9ff] to-[#C49A6C]/5">
+            {/* Abstract decorative shapes */}
+            <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#C49A6C]/8 to-transparent rounded-bl-3xl -mr-2 -mt-2" />
+            <div className="absolute bottom-0 left-0 w-20 h-20 bg-gradient-to-tr from-[#262262]/5 to-transparent rounded-tr-3xl -ml-2 -mb-2" />
+
+            {/* Faint step number watermark */}
+            <span className="absolute top-1 right-3 text-5xl font-black text-[#262262]/3 select-none leading-none">
+              {process.step}
+            </span>
+
+            <span className="relative text-[10px] font-bold uppercase tracking-[0.15em] text-[#C49A6C] mb-1 block">
               Step {process.step}
             </span>
-            <h3 className="text-base font-bold text-[#262262] mb-2 group-hover:text-[#C49A6C] transition-colors duration-300">
+            <h3 className="relative text-base font-bold text-[#262262] mb-2 group-hover:text-[#C49A6C] transition-colors duration-300">
               {process.title}
             </h3>
-            <p className="text-sm text-[#6b7280] leading-relaxed">
+            <p className="relative text-sm text-[#6b7280] leading-relaxed">
               {process.desc}
             </p>
           </div>
@@ -107,15 +116,24 @@ function TimelineCard({ process, index, align }) {
 
   return (
     <div
-      className={`group bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition-all duration-500 border-t-4 border-[#C49A6C] ${slideClass}`}
+      className={`group relative rounded-xl shadow-md p-8 hover:shadow-xl transition-all duration-500 border-t-4 border-[#C49A6C] overflow-hidden bg-gradient-to-br from-white via-[#faf9ff] to-[#C49A6C]/5 ${slideClass}`}
     >
-      <span className="text-[10px] font-bold uppercase tracking-[0.15em] text-[#C49A6C] mb-2 block">
+      {/* Abstract decorative shapes */}
+      <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-[#C49A6C]/8 to-transparent rounded-bl-3xl -mr-4 -mt-4" />
+      <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-[#262262]/5 to-transparent rounded-tr-3xl -ml-4 -mb-4" />
+
+      {/* Faint large step number watermark */}
+      <span className="absolute top-2 right-4 text-6xl font-black text-[#262262]/3 select-none leading-none">
+        {process.step}
+      </span>
+
+      <span className="relative text-[10px] font-bold uppercase tracking-[0.15em] text-[#C49A6C] mb-2 block">
         Step {process.step}
       </span>
-      <h3 className="text-lg font-bold text-[#262262] mb-3 group-hover:text-[#C49A6C] transition-colors duration-300">
+      <h3 className="relative text-lg font-bold text-[#262262] mb-3 group-hover:text-[#C49A6C] transition-colors duration-300">
         {process.title}
       </h3>
-      <p className="text-sm text-[#6b7280] leading-relaxed">
+      <p className="relative text-sm text-[#6b7280] leading-relaxed">
         {process.desc}
       </p>
     </div>
