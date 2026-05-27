@@ -77,10 +77,10 @@ function Processes() {
 
         {/* Timeline */}
         <div className="relative">
-          {/* Vertical line */}
+          {/* Vertical line — draws from bottom up */}
           <div
             data-id="line"
-            className={`absolute left-8 md:left-1/2 top-4 bottom-4 w-0.5 bg-[#C49A6C]/25 md:-translate-x-px transition-transform duration-[1500ms] ease-out origin-top ${
+            className={`absolute left-8 md:left-1/2 top-4 bottom-4 w-0.5 bg-[#C49A6C]/25 md:-translate-x-px transition-transform duration-[1500ms] ease-out origin-bottom ${
               animated['line'] ? 'scale-y-100' : 'scale-y-0'
             }`}
           />
