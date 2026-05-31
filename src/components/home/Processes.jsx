@@ -154,9 +154,7 @@ function TimelineStep({ process, index, visible }) {
 
         {/* Center circle */}
         <div className="relative flex flex-col items-center">
-          <div className="w-12 h-12 rounded-full bg-[#C49A6C] flex items-center justify-center shadow-lg z-10 transition-transform duration-300 hover:scale-110">
-            <span className="text-[#262262] font-bold text-sm">{process.step}</span>
-          </div>
+          <div className="w-12 h-12 rounded-full bg-[#C49A6C] flex items-center justify-center shadow-lg z-10 transition-transform duration-300 hover:scale-110" />
         </div>
 
         {/* Right side card (even steps) */}
@@ -172,9 +170,7 @@ function TimelineStep({ process, index, visible }) {
 
       {/* Mobile: all left side */}
       <div className="md:hidden flex items-start gap-4 w-full">
-        <div className="w-12 h-12 rounded-full bg-[#C49A6C] flex items-center justify-center shadow-lg flex-shrink-0 z-10">
-          <span className="text-[#262262] font-bold text-sm">{process.step}</span>
-        </div>
+        <div className="w-12 h-12 rounded-full bg-[#C49A6C] flex items-center justify-center shadow-lg flex-shrink-0 z-10" />
         <div className="flex-1">
           <div className="group relative rounded-xl shadow-md p-6 hover:shadow-xl transition-all duration-500 border-l-4 border-[#C49A6C] overflow-hidden bg-gradient-to-br from-white via-[#faf9ff] to-[#C49A6C]/5">
             {/* Abstract decorative shapes */}
