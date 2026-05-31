@@ -122,6 +122,7 @@ function ServiceOfferings() {
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
+                <div className="absolute inset-0 bg-[#262262]/30" />
               </div>
 
               {/* Text content */}
