@@ -5,7 +5,6 @@ import ClientMarquee from '../components/home/ClientMarquee'
 import Processes from '../components/home/Processes'
 import HeroBanner from '../components/home/HeroBanner'
 import ServiceOfferings from '../components/ServiceOfferings'
-import Stats from '../components/home/Stats'
 import CTABanner from '../components/home/CTABanner'
 import FAQ from '../components/home/FAQ'
 
@@ -19,7 +18,6 @@ function Home() {
       <Processes />
       <HeroBanner />
       <ServiceOfferings />
-      <Stats />
       <CTABanner />
       <FAQ />
     </>

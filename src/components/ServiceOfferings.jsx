@@ -81,8 +81,8 @@ function ServiceOfferings() {
   }, []);
 
   return (
-    <section id="services" ref={sectionRef} className="py-16 md:py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="services" ref={sectionRef} className="py-16 md:py-28 bg-white">
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
         {/* Section Header */}
         <div
           data-id="header"
@@ -102,7 +102,7 @@ function ServiceOfferings() {
         </div>
 
         {/* Cards Grid — 2 per row */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
           {pillars.map((pillar, i) => (
             <div
               key={pillar.id}
@@ -125,7 +125,7 @@ function ServiceOfferings() {
               </div>
 
               {/* Text content */}
-              <div className="p-5 md:p-6">
+              <div className="p-6 md:p-8">
                 {/* Tagline */}
                 <span className="text-[10px] font-bold uppercase tracking-[0.15em] text-[#C49A6C] mb-1 block">
                   {pillar.tagline}
