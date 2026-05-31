@@ -2,20 +2,16 @@ import { Link } from 'react-router-dom';
 
 const gallery = [
   {
-    src: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80&auto=format&fit=crop',
-    alt: 'Team collaborating around a table',
+    src: 'https://images.unsplash.com/photo-1573164574511-73c773193279?w=800&q=80&auto=format&fit=crop',
+    alt: 'Team collaborating around a meeting table',
   },
   {
-    src: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80&auto=format&fit=crop',
-    alt: 'Business meeting and partnership',
+    src: 'https://images.unsplash.com/photo-1573164574397-dd250bc8a598?w=800&q=80&auto=format&fit=crop',
+    alt: 'Colleagues discussing strategy in a meeting',
   },
   {
-    src: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80&auto=format&fit=crop',
-    alt: 'Consultants discussing strategy',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&q=80&auto=format&fit=crop',
-    alt: 'Team reviewing data on a laptop',
+    src: 'https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=800&q=80&auto=format&fit=crop',
+    alt: 'Boardroom team planning session',
   },
 ];
 
@@ -51,9 +47,9 @@ function WhoWeAreSection() {
           </div>
         </div>
 
-        {/* Image grid + supporting text */}
+        {/* Image grid with an inline text tile in the fourth cell */}
         <div className="mt-20 md:mt-28">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
             {gallery.map((img) => (
               <div
                 key={img.src}
@@ -62,20 +58,21 @@ function WhoWeAreSection() {
                 <img
                   src={img.src}
                   alt={img.alt}
-                  className="w-full h-44 md:h-56 object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="w-full h-full min-h-[14rem] object-cover transition-transform duration-500 group-hover:scale-105"
                   loading="lazy"
                 />
               </div>
             ))}
-          </div>
 
-          <div className="max-w-3xl mx-auto text-center mt-12 md:mt-14">
-            <h3 className="text-2xl md:text-3xl font-bold text-indigo leading-tight mb-4">
-              Built On <span className="text-bronze">Collaboration</span>, Driven By Results
-            </h3>
-            <p className="text-brand-body leading-relaxed text-base md:text-lg">
-              From strategy and market research to digital systems and hands-on delivery, we work alongside your team at every stage. Our consultants pair deep expertise with practical tools, turning ambitious goals into measurable, lasting outcomes.
-            </p>
+            {/* Text tile */}
+            <div className="flex flex-col justify-center rounded-2xl bg-[#F5F5F7] p-8 md:p-10 min-h-[14rem]">
+              <h3 className="text-2xl md:text-3xl font-bold text-indigo leading-tight mb-4">
+                Built On <span className="text-bronze">Collaboration</span>, Driven By Results
+              </h3>
+              <p className="text-brand-body leading-relaxed text-base md:text-lg">
+                From strategy and market research to digital systems and hands-on delivery, we work alongside your team at every stage. Our consultants pair deep expertise with practical tools, turning ambitious goals into measurable, lasting outcomes.
+              </p>
+            </div>
           </div>
         </div>
       </div>
