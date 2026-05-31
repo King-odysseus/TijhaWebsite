@@ -1,83 +1,128 @@
-const clients = [
+import { useState, useEffect, useCallback } from 'react';
+
+const testimonials = [
   {
-    name: 'Century Group',
-    icon: (
-      <svg className="w-8 h-8" viewBox="0 0 48 48" fill="none">
-        <circle cx="24" cy="24" r="18" stroke="currentColor" strokeWidth="2.5" />
-        <polygon points="24,4 46,44 2,44" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
-      </svg>
-    ),
+    id: 1,
+    quote:
+      "Tijha transformed how we approach strategy. Their diagnostic process uncovered blind spots we didn't know existed, and their implementation support made the transition seamless.",
+    name: 'Amina Okafor',
+    role: 'CEO, Century Group',
   },
   {
-    name: 'Braige',
-    icon: (
-      <svg className="w-8 h-8" viewBox="0 0 48 48" fill="none">
-        <rect x="8" y="6" width="32" height="36" rx="4" stroke="currentColor" strokeWidth="2.5" />
-        <line x1="24" y1="6" x2="24" y2="42" stroke="currentColor" strokeWidth="2" />
-        <line x1="8" y1="24" x2="40" y2="24" stroke="currentColor" strokeWidth="2" />
-      </svg>
-    ),
+    id: 2,
+    quote:
+      "What sets Tijha apart is their genuine partnership approach. They didn't just deliver a report — they stayed with us through execution, adapting at every turn. The results speak for themselves.",
+    name: 'David Mensah',
+    role: 'Operations Director, Braige',
   },
   {
-    name: 'Jefnox Group',
-    icon: (
-      <svg className="w-8 h-8" viewBox="0 0 48 48" fill="none">
-        <polygon points="24,2 38,38 10,38" stroke="currentColor" strokeWidth="2.5" strokeLinejoin="round" />
-        <line x1="24" y1="14" x2="24" y2="38" stroke="currentColor" strokeWidth="1.5" />
-      </svg>
-    ),
+    id: 3,
+    quote:
+      "We needed digital tools that fit our workflows, not the other way around. Tijha built solutions that our team actually adopted — and our productivity has never been higher.",
+    name: 'Folakemi Adeyemi',
+    role: 'Founder, ZuriLoft',
   },
   {
-    name: 'BeneAlpha Group',
-    icon: (
-      <svg className="w-8 h-8" viewBox="0 0 48 48" fill="none">
-        <circle cx="24" cy="24" r="18" stroke="currentColor" strokeWidth="2.5" />
-        <circle cx="24" cy="24" r="6" stroke="currentColor" strokeWidth="2" />
-        <line x1="24" y1="6" x2="24" y2="18" stroke="currentColor" strokeWidth="2" />
-        <line x1="24" y1="30" x2="24" y2="42" stroke="currentColor" strokeWidth="2" />
-        <line x1="6" y1="24" x2="18" y2="24" stroke="currentColor" strokeWidth="2" />
-        <line x1="30" y1="24" x2="42" y2="24" stroke="currentColor" strokeWidth="2" />
-      </svg>
-    ),
-  },
-  {
-    name: 'ZuriLoft',
-    icon: (
-      <svg className="w-8 h-8" viewBox="0 0 48 48" fill="none">
-        <rect x="6" y="10" width="16" height="16" rx="3" stroke="currentColor" strokeWidth="2.5" />
-        <rect x="26" y="22" width="16" height="16" rx="3" stroke="currentColor" strokeWidth="2.5" />
-      </svg>
-    ),
+    id: 4,
+    quote:
+      "Working with Tijha gave us the confidence to scale. From market research to go-to-market execution, every step was grounded in data and delivered with clarity.",
+    name: 'Chidi Nwankwo',
+    role: 'Managing Partner, Jefnox Group',
   },
 ];
 
-function LogoItem({ name, icon }) {
-  return (
-    <div className="flex items-center justify-center gap-3 px-8 md:px-12 flex-shrink-0 opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300">
-      <span className="text-brand-dark">{icon}</span>
-      <span className="text-sm md:text-base font-semibold text-brand-dark whitespace-nowrap">{name}</span>
-    </div>
-  );
-}
-
 function ClientMarquee() {
-  const duplicated = [...clients, ...clients, ...clients];
+  const [active, setActive] = useState(0);
+  const [visible, setVisible] = useState(true);
+
+  const advance = useCallback(() => {
+    setVisible(false);
+    setTimeout(() => {
+      setActive((prev) => (prev + 1) % testimonials.length);
+      setVisible(true);
+    }, 300);
+  }, []);
+
+  useEffect(() => {
+    const timer = setInterval(advance, 6000);
+    return () => clearInterval(timer);
+  }, [advance]);
 
   return (
-    <section className="bg-white py-16 md:py-24 overflow-hidden">
-      <div className="w-full px-8 md:px-16 lg:px-28">
-        <h2 className="text-center text-base md:text-lg font-semibold text-brand-dark mb-10 md:mb-14">
-          Trusted by industry leaders across sectors
-        </h2>
-      </div>
+    <section className="bg-[#FAFAFC] py-16 md:py-24 overflow-hidden">
+      <div className="max-w-3xl mx-auto px-6">
+        {/* Section header */}
+        <div className="text-center mb-12">
+          <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-[#C49A6C] mb-4">
+            Testimonials
+          </span>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#262262]">
+            What Our Clients Say
+          </h2>
+        </div>
 
-      <div className="relative">
-        <div className="absolute left-0 top-0 bottom-0 w-16 md:w-24 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" />
-        <div className="absolute right-0 top-0 bottom-0 w-16 md:w-24 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
+        {/* Rotating card */}
+        <div className="relative min-h-[260px] md:min-h-[220px]">
+          <div
+            className={`transition-opacity duration-300 ${
+              visible ? 'opacity-100' : 'opacity-0'
+            }`}
+          >
+            <div className="relative rounded-2xl bg-white shadow-lg border border-[#D9D9D9]/40 p-8 md:p-10">
+              {/* Quote mark */}
+              <svg
+                className="absolute top-6 left-6 w-10 h-10 text-[#C49A6C]/20"
+                fill="currentColor"
+                viewBox="0 0 48 48"
+              >
+                <path d="M13 12C8 12 4 16.5 4 22.5V38h14V24H10c0-5 2.5-8 7-8V12zm20 0c-5 0-9 4.5-9 10.5V38h14V24H30c0-5 2.5-8 7-8V12z" />
+              </svg>
 
-        <div className="flex animate-marquee">
-          {duplicated.map((client, i) => (
-            <LogoItem key={`${client.name}-${i}`} name={client.name} icon={client.icon} />
+              {/* Quote text */}
+              <p className="relative text-sm md:text-base text-[#6b7280] leading-relaxed italic mb-8 pt-4">
+                "{testimonials[active].quote}"
+              </p>
+
+              {/* Author */}
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full bg-[#C49A6C]/15 flex items-center justify-center flex-shrink-0">
+                  <span className="text-[#C49A6C] font-bold text-sm">
+                    {testimonials[active].name
+                      .split(' ')
+                      .map((n) => n[0])
+                      .join('')}
+                  </span>
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-[#262262]">
+                    {testimonials[active].name}
+                  </p>
+                  <p className="text-xs text-[#6b7280]">{testimonials[active].role}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Dots */}
+        <div className="flex items-center justify-center gap-2 mt-8">
+          {testimonials.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => {
+                setVisible(false);
+                setTimeout(() => {
+                  setActive(i);
+                  setVisible(true);
+                }, 200);
+              }}
+              className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
+                i === active
+                  ? 'bg-[#C49A6C] w-6'
+                  : 'bg-[#D9D9D9] hover:bg-[#C49A6C]/40'
+              }`}
+              aria-label={`Testimonial ${i + 1}`}
+            />
           ))}
         </div>
       </div>
