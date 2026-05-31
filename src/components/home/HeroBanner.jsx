@@ -16,7 +16,6 @@ function HeroBanner() {
 
       <div className="container-main relative z-10 flex flex-col items-center text-center">
         <span className="inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-bronze mb-4">
-          <span className="inline-block w-8 h-0.5 bg-bronze rounded-full" />
           Team Work, Makes The Dream Work
         </span>
 
