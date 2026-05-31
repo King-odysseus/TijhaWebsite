@@ -17,7 +17,7 @@ function WhoWeAreSection() {
             </p>
             <Link
               to="/about"
-              className="btn-gold px-7 py-3.5 text-sm"
+              className="inline-block px-6 py-3 neo-btn text-brand-dark font-semibold text-sm hover:text-bronze transition-colors"
             >
               Learn more
             </Link>

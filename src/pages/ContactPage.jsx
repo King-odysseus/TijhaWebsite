@@ -132,7 +132,7 @@ function ContactPage() {
                   </div>
                   <button
                     type="submit"
-                    className="btn-gold w-full py-3.5"
+                    className="w-full py-3 bg-brand-blue text-white font-semibold rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200"
                   >
                     Send Message
                   </button>

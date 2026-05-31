@@ -176,7 +176,7 @@ function ServicesPage() {
             {serviceCategories.map((cat, i) => {
               const isOpen = openCat === i;
               return (
-                <div key={cat.title} className={`neo-card overflow-hidden transition-all duration-300 ${isOpen ? 'ring-2 ring-bronze/30' : ''}`}>
+                <div key={cat.title} className={`neo-card overflow-hidden transition-all duration-300 ${isOpen ? 'ring-2 ring-brand-blue/20' : ''}`}>
                   <button
                     onClick={() => setOpenCat(isOpen ? null : i)}
                     className="w-full flex items-center gap-4 px-6 py-5 text-left"
@@ -197,7 +197,7 @@ function ServicesPage() {
                     <div className="px-6 pb-6">
                       <div className="neo-inset rounded-xl overflow-hidden">
                         <table className="w-full text-sm">
-                          <thead className="bg-indigo/5">
+                          <thead className="bg-brand-blue/5">
                             <tr>
                               <th className="text-left px-5 py-3 font-semibold text-brand-dark">Service</th>
                               <th className="text-left px-5 py-3 font-semibold text-brand-dark">Typical Price</th>
@@ -236,7 +236,7 @@ function ServicesPage() {
           </div>
           <div className="neo-inset rounded-xl overflow-hidden">
             <table className="w-full text-sm">
-              <thead className="bg-indigo/5">
+              <thead className="bg-brand-blue/5">
                 <tr>
                   <th className="text-left px-6 py-4 font-semibold text-brand-dark">Service Type</th>
                   <th className="text-left px-6 py-4 font-semibold text-brand-dark">Monthly Retainer</th>

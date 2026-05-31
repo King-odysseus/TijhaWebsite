@@ -33,7 +33,7 @@ function FAQ() {
           {faqs.map((f, i) => {
             const isOpen = open === i;
             return (
-              <div key={i} className={`neo-card overflow-hidden transition-all duration-300 ${isOpen ? 'ring-2 ring-bronze/30' : ''}`}>
+              <div key={i} className={`neo-card overflow-hidden transition-all duration-300 ${isOpen ? 'ring-2 ring-brand-blue/20' : ''}`}>
                 <button
                   onClick={() => setOpen(isOpen ? null : i)}
                   className="w-full flex items-center justify-between px-6 py-5 text-left font-semibold transition-colors"
