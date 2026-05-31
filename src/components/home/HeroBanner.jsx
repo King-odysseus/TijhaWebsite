@@ -1,29 +1,13 @@
 import { Link } from 'react-router-dom';
-import useParallax from '../../hooks/useParallax';
 
 function HeroBanner() {
-  const { ref: parallaxRef, style: parallaxStyle } = useParallax({ speed: 0.2 });
-
   return (
-    <section className="w-full py-12 md:py-20 relative overflow-hidden">
-      {/* Parallax background layer */}
-      <div
-        ref={parallaxRef}
-        className="parallax-bg"
-        style={{
-          backgroundImage: `url('/images/Best Team.png')`,
-          ...parallaxStyle,
-        }}
-      />
-
-      {/* Hidden preload image to force early download */}
-      <img
-        src="/images/Best Team.png"
-        alt=""
-        aria-hidden="true"
-        className="hidden"
-      />
-
+    <section
+      className="w-full py-12 md:py-20 relative overflow-hidden bg-cover bg-top bg-no-repeat"
+      style={{
+        backgroundImage: `url('/images/Best Team.png')`,
+      }}
+    >
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-indigo/75" />
 

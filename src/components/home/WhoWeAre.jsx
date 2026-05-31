@@ -1,21 +1,17 @@
 import { Link } from 'react-router-dom';
-import useParallax from '../../hooks/useParallax';
 
 function WhoWeAre() {
-  const { ref: imgRef, style: imgStyle } = useParallax({ speed: -0.04 });
   return (
     <section className="bg-white py-[30px] py-[50px]">
       <div className="w-full px-8 md:px-16 lg:px-28">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="flex items-center justify-center order-2 lg:order-1">
-            <div ref={imgRef} className="parallax-element" style={imgStyle}>
-              <img
-                src="/images/Team.png"
-                alt="Tijha team"
-                className="w-full h-auto object-contain rounded-2xl"
-                loading="lazy"
-              />
-            </div>
+            <img
+              src="/images/Team.png"
+              alt="Tijha team"
+              className="w-full h-auto object-contain rounded-2xl"
+              loading="lazy"
+            />
           </div>
           <div className="order-1 lg:order-2 lg:pl-8 lg:pr-12">
             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-indigo leading-tight mb-8">
