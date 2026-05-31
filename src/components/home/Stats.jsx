@@ -19,8 +19,8 @@ function Stats() {
               className="neo-card p-8 text-center opacity-0 animate-fade-in-up"
               style={{ animationDelay: `${i * 150}ms` }}
             >
-              <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-indigo mb-2">{s.value}</div>
-              <div className="text-xs text-brand-body font-medium">{s.label}</div>
+              <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-extrabold text-indigo mb-2">{s.value}</div>
+              <div className="text-[0.65rem] text-brand-body font-medium">{s.label}</div>
             </div>
           ))}
         </div>
