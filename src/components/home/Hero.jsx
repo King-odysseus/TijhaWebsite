@@ -1,15 +1,29 @@
 import { Link } from 'react-router-dom';
+import useParallax from '../../hooks/useParallax';
 
 function Hero() {
+  const { ref: parallaxRef, style: parallaxStyle } = useParallax({ speed: 0.25 });
+
   return (
-    <section
-      className="w-full pt-20 pb-0 relative overflow-hidden"
-      style={{
-        backgroundImage: `url('/images/Globe.png')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center top',
-      }}
-    >
+    <section className="w-full pt-20 pb-0 relative overflow-hidden">
+      {/* Parallax background layer */}
+      <div
+        ref={parallaxRef}
+        className="parallax-bg"
+        style={{
+          backgroundImage: `url('/images/Globe.png')`,
+          ...parallaxStyle,
+        }}
+      />
+
+      {/* Hidden preload image to force early download */}
+      <img
+        src="/images/Globe.png"
+        alt=""
+        aria-hidden="true"
+        className="hidden"
+      />
+
       {/* White overlay so text is readable */}
       <div className="absolute inset-0 bg-white/85" />
 

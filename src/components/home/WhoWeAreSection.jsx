@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
+import useParallax from '../../hooks/useParallax';
 
 function WhoWeAreSection() {
+  const { ref: imgRef, style: imgStyle } = useParallax({ speed: -0.03 });
   return (
     <section className="bg-white py-[150px]">
       <div className="w-full px-8 md:px-16 lg:px-28">
@@ -23,12 +25,14 @@ function WhoWeAreSection() {
             </Link>
           </div>
           <div className="flex items-center justify-center lg:pl-8">
-            <img
-              src="/images/support%20team.png"
-              alt="Tijha support team"
-              className="w-full h-auto object-contain rounded-2xl"
-              loading="lazy"
-            />
+            <div ref={imgRef} className="parallax-element" style={imgStyle}>
+              <img
+                src="/images/support%20team.png"
+                alt="Tijha support team"
+                className="w-full h-auto object-contain rounded-2xl"
+                loading="lazy"
+              />
+            </div>
           </div>
         </div>
       </div>
