@@ -13,10 +13,14 @@ function Stats() {
           <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-brand-dark mb-4">Our Reach So Far</h2>
         </div>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
-          {stats.map((s) => (
-            <div key={s.label} className="neo-card p-8 text-center">
-              <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-indigo mb-2">{s.value}</div>
-              <div className="text-sm text-brand-body font-medium">{s.label}</div>
+          {stats.map((s, i) => (
+            <div
+              key={s.label}
+              className="neo-card p-8 text-center opacity-0 animate-fade-in-up"
+              style={{ animationDelay: `${i * 150}ms` }}
+            >
+              <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-indigo mb-2">{s.value}</div>
+              <div className="text-xs text-brand-body font-medium">{s.label}</div>
             </div>
           ))}
         </div>

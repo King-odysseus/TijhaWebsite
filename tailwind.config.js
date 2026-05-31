@@ -23,6 +23,15 @@ export default {
       fontFamily: {
         sans: ['Inter', 'system-ui', 'Helvetica', 'Arial', 'sans-serif'],
       },
+      keyframes: {
+        'fade-in-up': {
+          '0%': { opacity: '0', transform: 'translateY(24px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+      },
+      animation: {
+        'fade-in-up': 'fade-in-up 0.6s ease-out forwards',
+      },
       boxShadow: {
         'neo': '8px 8px 16px #d1d1d6, -8px -8px 16px #ffffff',
         'neo-sm': '4px 4px 8px #d1d1d6, -4px -4px 8px #ffffff',
