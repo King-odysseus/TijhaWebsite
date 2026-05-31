@@ -17,6 +17,21 @@ const testimonials = [
   },
 ];
 
+const gallery = [
+  {
+    src: 'https://images.unsplash.com/photo-1573879404555-3f82d0582798?w=800&q=80&auto=format&fit=crop',
+    alt: 'Consultant in discussion with a client',
+  },
+  {
+    src: 'https://images.unsplash.com/photo-1573496130141-209d200cebd8?w=800&q=80&auto=format&fit=crop',
+    alt: 'Two professionals collaborating',
+  },
+  {
+    src: 'https://images.unsplash.com/photo-1573164574001-518958d9baa2?w=800&q=80&auto=format&fit=crop',
+    alt: 'Professional working on a laptop',
+  },
+];
+
 function ClientMarquee() {
   const [active, setActive] = useState(0);
   const [visible, setVisible] = useState(true);
@@ -110,6 +125,35 @@ function ClientMarquee() {
               aria-label={`Testimonial ${i + 1}`}
             />
           ))}
+        </div>
+      </div>
+
+      {/* Image grid with an inline text tile in the fourth cell */}
+      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 mt-16 md:mt-24">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
+          {gallery.map((img) => (
+            <div
+              key={img.src}
+              className="group overflow-hidden rounded-2xl shadow-md"
+            >
+              <img
+                src={img.src}
+                alt={img.alt}
+                className="w-full h-full min-h-[14rem] object-cover transition-transform duration-500 group-hover:scale-105"
+                loading="lazy"
+              />
+            </div>
+          ))}
+
+          {/* Text tile */}
+          <div className="flex flex-col justify-center rounded-2xl bg-white shadow-md p-8 md:p-10 min-h-[14rem]">
+            <h3 className="text-2xl md:text-3xl font-bold text-[#262262] leading-tight mb-4">
+              Your Success Is Our <span className="text-[#C49A6C]">Commitment</span>
+            </h3>
+            <p className="text-[#6b7280] leading-relaxed text-base md:text-lg">
+              Every engagement is a partnership. We stay close to your team, measure what matters, and refine as we go, so the results we deliver keep compounding long after the project wraps.
+            </p>
+          </div>
         </div>
       </div>
     </section>
