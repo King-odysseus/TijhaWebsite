@@ -5,10 +5,10 @@ function CTABanner() {
     <section className="py-24 bg-white">
       <div className="container-main text-center max-w-4xl">
         <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-brand-dark mb-4">
-          READY TO TRANSFORM YOUR ORGANISATION?
+          Ready to transform your organisation?
         </h2>
         <p className="text-brand-body leading-relaxed mb-10 max-w-2xl mx-auto">
-          YOUR GOALS DESERVE MORE THAN IDEAS, THEY REQUIRE STRUCTURED SOLUTIONS, DISCIPLINED EXECUTION, AND TEAMS EMPOWERED TO SUCCEED.
+          Your goals deserve more than ideas, they require structured solutions, disciplined execution, and teams empowered to succeed.
         </p>
         <Link
           to="/contact"
