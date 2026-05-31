@@ -6,9 +6,7 @@ const pillars = [
     id: 'strategy',
     title: 'Strategy & Growth',
     tagline: 'From vision to market leadership',
-    gradient: 'from-indigo/10 via-indigo/5 to-[#C49A6C]/10',
-    iconColor: '#262262',
-    accentColor: '#C49A6C',
+    image: '/images/strategy-growth.jpg',
     services: [
       'Business Strategy Development',
       'Market Research & Intelligence',
@@ -21,9 +19,7 @@ const pillars = [
     id: 'development',
     title: 'Business Development',
     tagline: 'Partnerships, funding & expansion',
-    gradient: 'from-[#C49A6C]/15 via-[#C49A6C]/8 to-indigo/10',
-    iconColor: '#C49A6C',
-    accentColor: '#262262',
+    image: '/images/business-development.jpg',
     services: [
       'Stakeholder Engagement Strategy',
       'Business Plan Development',
@@ -36,9 +32,7 @@ const pillars = [
     id: 'operations',
     title: 'Operations & Delivery',
     tagline: 'Efficiency, control & execution',
-    gradient: 'from-indigo/10 via-[#C49A6C]/10 to-indigo/5',
-    iconColor: '#262262',
-    accentColor: '#C49A6C',
+    image: '/images/operations-delivery.jpg',
     services: [
       'Operational Diagnostics & Mapping',
       'Workflow Optimization & Automation',
@@ -51,9 +45,7 @@ const pillars = [
     id: 'people',
     title: 'People & Technology',
     tagline: 'Capability, systems & scale',
-    gradient: 'from-[#C49A6C]/15 via-indigo/10 to-[#C49A6C]/8',
-    iconColor: '#C49A6C',
-    accentColor: '#262262',
+    image: '/images/people-technology.jpg',
     services: [
       'Leadership & Management Training',
       'Executive Coaching & Workshops',
@@ -63,57 +55,6 @@ const pillars = [
     ],
   },
 ];
-
-function PillarIcon({ id, color, accent }) {
-  const size = 56;
-  switch (id) {
-    case 'strategy':
-      // Rising chart/growth arrow
-      return (
-        <svg width={size} height={size} viewBox="0 0 56 56" fill="none">
-          <rect x="4" y="4" width="48" height="48" rx="12" stroke={color} strokeWidth="1.5" opacity="0.15" />
-          <path d="M16 36L26 24L32 30L42 18" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-          <path d="M36 18H42V24" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-          <circle cx="42" cy="16" r="3" fill={accent} />
-        </svg>
-      );
-    case 'development':
-      // Handshake / partnership
-      return (
-        <svg width={size} height={size} viewBox="0 0 56 56" fill="none">
-          <rect x="4" y="4" width="48" height="48" rx="12" stroke={color} strokeWidth="1.5" opacity="0.15" />
-          <path d="M18 22V32C18 34.2091 19.7909 36 22 36H24L28 30L32 36H34C36.2091 36 38 34.2091 38 32V28" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-          <path d="M18 22C16.8954 22 16 22.8954 16 24V28C16 29.1046 16.8954 30 18 30" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-          <path d="M38 28C39.1046 28 40 27.1046 40 26V22C40 20.8954 39.1046 20 38 20" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-          <circle cx="22" cy="20" r="3" fill={accent} />
-        </svg>
-      );
-    case 'operations':
-      // Gear / operations
-      return (
-        <svg width={size} height={size} viewBox="0 0 56 56" fill="none">
-          <rect x="4" y="4" width="48" height="48" rx="12" stroke={color} strokeWidth="1.5" opacity="0.15" />
-          <circle cx="28" cy="28" r="8" stroke={color} strokeWidth="2" />
-          <path d="M28 16V12M28 44V40M16 28H12M44 28H40M19.51 19.51L16.69 16.69M39.31 39.31L36.49 36.49M19.51 36.49L16.69 39.31M39.31 16.69L36.49 19.51" stroke={color} strokeWidth="2" strokeLinecap="round" />
-          <circle cx="28" cy="28" r="3" fill={accent} />
-        </svg>
-      );
-    case 'people':
-      // People / team
-      return (
-        <svg width={size} height={size} viewBox="0 0 56 56" fill="none">
-          <rect x="4" y="4" width="48" height="48" rx="12" stroke={color} strokeWidth="1.5" opacity="0.15" />
-          <circle cx="20" cy="22" r="5" stroke={color} strokeWidth="2" />
-          <path d="M10 36C10 30.477 14.477 26 20 26C25.523 26 30 30.477 30 36" stroke={color} strokeWidth="2" strokeLinecap="round" />
-          <path d="M26 22C29.314 22 32 19.314 32 16C32 12.686 29.314 10 26 10C25.176 10 24.392 10.153 23.667 10.437" stroke={accent} strokeWidth="2" strokeLinecap="round" />
-          <circle cx="36" cy="24" r="4" stroke={accent} strokeWidth="2" />
-          <path d="M28 34H44C44 29.582 40.418 26 36 26C31.582 26 28 29.582 28 34Z" stroke={accent} strokeWidth="2" strokeLinecap="round" />
-        </svg>
-      );
-    default:
-      return null;
-  }
-}
 
 function ServiceOfferings() {
   const [animated, setAnimated] = useState({});
@@ -152,7 +93,7 @@ function ServiceOfferings() {
           <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-[#C49A6C] mb-4">
             What We Do
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#262262] mb-6">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#262262] mb-6">
             Our Service Offerings
           </h2>
           <p className="text-base md:text-lg text-[#6b7280] leading-relaxed">
@@ -173,10 +114,14 @@ function ServiceOfferings() {
               }`}
               style={{ transitionDelay: `${i * 120}ms` }}
             >
-              {/* Image area — gradient with icon */}
-              <div className={`relative h-44 bg-gradient-to-br ${pillar.gradient} flex items-center justify-center`}>
-                {/* Pillar icon */}
-                <PillarIcon id={pillar.id} color={pillar.iconColor} accent={pillar.accentColor} />
+              {/* Image area */}
+              <div className="relative h-44 overflow-hidden">
+                <img
+                  src={pillar.image}
+                  alt={pillar.title}
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
               </div>
 
               {/* Text content */}
