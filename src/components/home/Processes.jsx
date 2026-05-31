@@ -186,7 +186,7 @@ function TimelineStep({ process, index, visible }) {
               {process.step}
             </span>
 
-            <span className="relative text-[10px] font-bold uppercase tracking-[0.15em] text-[#C49A6C] mb-1 block">
+            <span className="relative text-[10px] font-bold uppercase tracking-[0.15em] text-[#C49A6C] mb-1 block text-shadow-bronze">
               Step {process.step}
             </span>
             <h3 className="relative text-base font-bold text-[#262262] mb-2 group-hover:text-[#C49A6C] transition-colors duration-300">
@@ -221,7 +221,7 @@ function TimelineCard({ process, index, align }) {
         {process.step}
       </span>
 
-      <span className="relative text-[10px] font-bold uppercase tracking-[0.15em] text-[#C49A6C] mb-2 block">
+      <span className="relative text-[10px] font-bold uppercase tracking-[0.15em] text-[#C49A6C] mb-2 block text-shadow-bronze">
         Step {process.step}
       </span>
       <h3 className="relative text-lg font-bold text-[#262262] mb-3 group-hover:text-[#C49A6C] transition-colors duration-300">
@@ -269,7 +269,7 @@ function Processes() {
             animated['header'] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
           }`}
         >
-          <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-[#C49A6C] mb-4">
+          <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-[#C49A6C] mb-4 text-shadow-bronze">
             How We Work
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-[#262262]">

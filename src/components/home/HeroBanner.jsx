@@ -15,7 +15,7 @@ function HeroBanner() {
       <div className="absolute inset-0 bg-gradient-to-b from-indigo/40 via-transparent to-indigo/60" />
 
       <div className="container-main relative z-10 flex flex-col items-center text-center">
-        <span className="inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-bronze mb-4">
+        <span className="inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-bronze mb-4 text-shadow-bronze">
           Team Work, Makes The Dream Work
         </span>
 

@@ -90,7 +90,7 @@ function ServiceOfferings() {
             animated['header'] ? 'opacity-100 translate-y-0' : ''
           }`}
         >
-          <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-[#C49A6C] mb-4">
+          <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-[#C49A6C] mb-4 text-shadow-bronze">
             What We Do
           </span>
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#262262] mb-6">
@@ -128,7 +128,7 @@ function ServiceOfferings() {
               {/* Text content */}
               <div className="p-6 md:p-8 text-center">
                 {/* Tagline */}
-                <span className="text-[10px] font-bold uppercase tracking-[0.15em] text-[#C49A6C] mb-1 block">
+                <span className="text-[10px] font-bold uppercase tracking-[0.15em] text-[#C49A6C] mb-1 block text-shadow-bronze">
                   {pillar.tagline}
                 </span>
 

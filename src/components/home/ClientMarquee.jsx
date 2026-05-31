@@ -39,7 +39,7 @@ function ClientMarquee() {
       <div className="max-w-3xl mx-auto px-6">
         {/* Section header */}
         <div className="text-center mb-12">
-          <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-[#C49A6C] mb-4">
+          <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-[#C49A6C] mb-4 text-shadow-bronze">
             Testimonials
           </span>
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#262262]">
