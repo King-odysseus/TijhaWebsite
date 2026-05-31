@@ -32,7 +32,7 @@ function HeroBanner() {
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-8 md:gap-16 mx-auto mb-6">
-          <span className="text-sm font-bold text-white tracking-wider">SME, NGO, Company, Government, Startup</span>
+          <span className="text-sm font-bold text-white tracking-wider">Powering growth for SMEs, NGOs, enterprises, government, and startups</span>
         </div>
 
         <Link
