@@ -166,6 +166,16 @@ function ServiceOfferings() {
             </div>
           ))}
         </div>
+
+        {/* CTA */}
+        <div className="text-center mt-16 md:mt-20">
+          <h3 className="text-lg md:text-xl font-bold text-[#262262] mb-3">
+            Ready to transform your organisation?
+          </h3>
+          <p className="text-sm text-[#6b7280] leading-relaxed max-w-2xl mx-auto">
+            Your goals deserve more than ideas, they require structured solutions, disciplined execution, and teams empowered to succeed.
+          </p>
+        </div>
       </div>
     </section>
   );
