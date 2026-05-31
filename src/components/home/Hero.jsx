@@ -26,8 +26,8 @@ function Hero() {
             {/* Trusted by */}
             <div className="animate-fade-in-up-delay-2 flex flex-wrap items-center gap-4 mb-8">
               <div className="flex items-center gap-2 text-brand-body text-sm font-medium">
-                <svg className="w-5 h-5 text-bronze" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 4.9c1.67 0 3.07 1.13 3.55 2.67l-1.16.39c-.33-.99-1.26-1.71-2.39-1.71s-2.06.72-2.39 1.71l-1.16-.39C8.93 7.03 10.33 5.9 12 5.9zM12 19c-3.86-1.14-6.83-4.58-7.15-8.9h1.52c.29 3.22 2.53 5.93 5.63 6.78V19zm0-2.23V10h1.5v3.41l2.33 2.33-1.06 1.06L12 14.65z" />
+                <svg className="w-5 h-5 text-bronze" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.746 3.746 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
                 </svg>
                 <span>Trusted by</span>
               </div>
