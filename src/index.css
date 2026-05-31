@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -12,70 +12,113 @@
 
 body {
   font-family: 'Inter', system-ui, sans-serif;
-  background-color: #F5F5F7;
-  color: #1A1A1A;
+  background-color: #ffffff;
+  color: #1f2937;
   -webkit-font-smoothing: antialiased;
 }
 
-/* Neomorphism utilities */
+/* Premium serif headlines — the signature look. Display headings (h1/h2)
+   use Playfair Display; smaller headings stay on Inter. */
+h1,
+h2 {
+  font-family: 'Playfair Display', Georgia, Cambria, serif;
+  letter-spacing: -0.01em;
+}
+
+/* ---------------------------------------------------------------------------
+   Flat / premium component utilities.
+   (Names kept as `neo-*` so existing markup picks up the new look; the soft-UI
+   neumorphism was replaced with crisp white cards, hairline indigo borders and
+   soft drop shadows in the brand colours.)
+--------------------------------------------------------------------------- */
 .neo-card {
-  background: #F5F5F7;
+  background: #ffffff;
   border-radius: 16px;
-  box-shadow: 8px 8px 16px #d1d1d6, -8px -8px 16px #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 10px 30px rgba(38, 34, 98, 0.08);
+  border: 1px solid rgba(38, 34, 98, 0.06);
 }
 
 .neo-card-sm {
-  background: #F5F5F7;
+  background: #ffffff;
   border-radius: 12px;
-  box-shadow: 4px 4px 8px #d1d1d6, -4px -4px 8px #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 6px 18px rgba(38, 34, 98, 0.07);
+  border: 1px solid rgba(38, 34, 98, 0.06);
 }
 
+/* Secondary / outline button — clean bordered pill */
 .neo-btn {
-  background: linear-gradient(145deg, #e6e6e9, #ffffff);
-  border-radius: 8px;
-  box-shadow: 6px 6px 12px #d1d1d6, -6px -6px 12px #ffffff;
+  background: #ffffff;
+  border-radius: 9999px;
+  border: 1px solid rgba(38, 34, 98, 0.18);
+  box-shadow: 0 4px 14px rgba(38, 34, 98, 0.06);
   transition: all 0.2s ease;
 }
 
 .neo-btn:hover {
-  box-shadow: 8px 8px 16px #d1d1d6, -8px -8px 16px #ffffff;
+  border-color: #C49A6C;
+  box-shadow: 0 8px 22px rgba(196, 154, 108, 0.18);
   transform: translateY(-1px);
 }
 
 .neo-btn:active {
-  box-shadow: inset 4px 4px 8px #d1d1d6, inset -4px -4px 8px #ffffff;
+  transform: translateY(0);
+  box-shadow: 0 3px 10px rgba(38, 34, 98, 0.08);
+}
+
+/* Primary button — solid gold pill (matches the reference CTAs) */
+.btn-gold {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: #C49A6C;
+  color: #ffffff;
+  border-radius: 9999px;
+  font-weight: 600;
+  box-shadow: 0 10px 24px rgba(196, 154, 108, 0.3);
+  transition: all 0.2s ease;
+}
+
+.btn-gold:hover {
+  background: #b8895c;
+  box-shadow: 0 14px 30px rgba(196, 154, 108, 0.38);
+  transform: translateY(-1px);
+}
+
+.btn-gold:active {
   transform: translateY(0);
 }
 
 .neo-inset {
-  background: #F5F5F7;
+  background: #ffffff;
   border-radius: 12px;
-  box-shadow: inset 4px 4px 8px #d1d1d6, inset -4px -4px 8px #ffffff;
+  box-shadow: 0 6px 20px rgba(38, 34, 98, 0.06);
+  border: 1px solid rgba(38, 34, 98, 0.08);
 }
 
 .neo-circle {
-  background: #F5F5F7;
+  background: #ffffff;
   border-radius: 50%;
-  box-shadow: 6px 6px 12px #d1d1d6, -6px -6px 12px #ffffff;
+  box-shadow: 0 6px 16px rgba(38, 34, 98, 0.1);
+  border: 1px solid rgba(38, 34, 98, 0.06);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .neo-input {
-  background: #F5F5F7;
-  border-radius: 8px;
-  box-shadow: inset 3px 3px 6px #d1d1d6, inset -3px -3px 6px #ffffff;
-  border: none;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid rgba(38, 34, 98, 0.15);
+  box-shadow: none;
   outline: none;
   padding: 0.75rem 1rem;
   transition: all 0.2s ease;
 }
 
 .neo-input:focus {
-  box-shadow: inset 5px 5px 10px #d1d1d6, inset -5px -5px 10px #ffffff;
+  border-color: #C49A6C;
+  box-shadow: 0 0 0 3px rgba(196, 154, 108, 0.18);
 }
 
 .section-padding {
