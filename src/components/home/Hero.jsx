@@ -26,8 +26,8 @@ function Hero() {
             {/* Trusted by */}
             <div className="animate-fade-in-up-delay-2 flex flex-wrap items-center gap-4 mb-8">
               <div className="flex items-center gap-2 text-brand-body text-sm font-medium">
-                <svg className="w-7 h-7 text-emerald-600" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.746 3.746 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+                <svg className="w-9 h-9 text-emerald-600" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 01-.982-3.172M9.497 14.25a7.454 7.454 0 00.981-3.172m-.981 3.172a2.25 2.25 0 01-2.41-2.923 2.237 2.237 0 011.857-1.667 2.248 2.248 0 012.249 1.418 7.507 7.507 0 013.585 0 2.248 2.248 0 012.249-1.418c.903.13 1.636.85 1.857 1.667a2.25 2.25 0 01-2.41 2.923m-4.996 0c-.276.868-.706 2.05-1.499 2.828m0 0c-.793-.779-1.223-1.96-1.499-2.828" />
                 </svg>
                 <span>Trusted by</span>
               </div>
