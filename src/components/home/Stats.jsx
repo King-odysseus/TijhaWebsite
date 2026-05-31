@@ -16,7 +16,7 @@ function Stats() {
           {stats.map((s, i) => (
             <div
               key={s.label}
-              className="neo-card p-8 text-center opacity-0 animate-fade-in-up"
+              className="neo-card p-5 text-center opacity-0 animate-fade-in-up"
               style={{ animationDelay: `${i * 150}ms` }}
             >
               <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-extrabold text-indigo mb-2">{s.value}</div>
