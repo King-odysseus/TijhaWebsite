@@ -4,30 +4,16 @@ const testimonials = [
   {
     id: 1,
     quote:
-      "Tijha transformed how we approach strategy. Their diagnostic process uncovered blind spots we didn't know existed, and their implementation support made the transition seamless.",
-    name: 'Amina Okafor',
-    role: 'CEO, Century Group',
+      "Tijha delivered an outstanding website for us and their accounting tool has completely streamlined our financial operations. We couldn't be more pleased with the results — professional, on time, and exactly what we needed.",
+    name: 'Braige',
+    role: 'Client',
   },
   {
     id: 2,
     quote:
-      "What sets Tijha apart is their genuine partnership approach. They didn't just deliver a report — they stayed with us through execution, adapting at every turn. The results speak for themselves.",
-    name: 'David Mensah',
-    role: 'Operations Director, Braige',
-  },
-  {
-    id: 3,
-    quote:
-      "We needed digital tools that fit our workflows, not the other way around. Tijha built solutions that our team actually adopted — and our productivity has never been higher.",
-    name: 'Folakemi Adeyemi',
-    role: 'Founder, ZuriLoft',
-  },
-  {
-    id: 4,
-    quote:
-      "Working with Tijha gave us the confidence to scale. From market research to go-to-market execution, every step was grounded in data and delivered with clarity.",
-    name: 'Chidi Nwankwo',
-    role: 'Managing Partner, Jefnox Group',
+      "From brand design to social media setup and sharp business development insights, Tijha exceeded every expectation. They didn't just give us a look — they gave us a strategy that's already driving real growth. Extremely satisfied.",
+    name: 'Vlad Clothing',
+    role: 'Client',
   },
 ];
 
