@@ -37,7 +37,7 @@ function HeroBanner() {
 
         <Link
           to="/about"
-          className="bg-bronze hover:bg-[#b8895c] text-indigo text-sm md:text-base px-8 py-3.5 rounded-full transition shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-semibold"
+          className="bg-bronze hover:bg-[#b8895c] text-white text-sm md:text-base px-8 py-3.5 rounded-full transition shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-semibold"
         >
           Learn more
         </Link>

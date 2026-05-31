@@ -56,7 +56,7 @@ function Navbar() {
         <div className="flex items-center justify-end gap-3">
           <Link
             to="/contact"
-            className="hidden md:flex bg-bronze text-indigo pr-5 pl-2 py-2 rounded-full text-sm font-semibold hover:bg-[#b8895c] transition items-center animate-pulse-glow"
+            className="hidden md:flex bg-bronze text-white pr-5 pl-2 py-2 rounded-full text-sm font-semibold hover:bg-[#b8895c] transition items-center animate-pulse-glow"
           >
             <div className="w-8 h-8 rounded-full text-bronze bg-white mr-2 flex items-center justify-center">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 8L22 12L18 16" /><path d="M2 12H22" /></svg>
@@ -98,7 +98,7 @@ function Navbar() {
             ))}
             <Link
               to="/contact"
-              className="text-center py-3 bg-bronze text-indigo text-sm font-semibold rounded-full mt-2"
+              className="text-center py-3 bg-bronze text-white text-sm font-semibold rounded-full mt-2"
             >
               Get In Touch
             </Link>

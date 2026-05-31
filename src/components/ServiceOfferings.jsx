@@ -145,7 +145,7 @@ function ServiceOfferings() {
                 {/* CTA Button */}
                 <Link
                   to="/services"
-                  className="inline-flex items-center gap-1.5 px-5 py-2 rounded-full text-xs font-semibold bg-[#C49A6C] text-[#262262] hover:bg-[#b8895c] hover:scale-105 active:scale-95 transition-all duration-200"
+                  className="inline-flex items-center gap-1.5 px-5 py-2 rounded-full text-xs font-semibold bg-[#C49A6C] text-white hover:bg-[#b8895c] hover:scale-105 active:scale-95 transition-all duration-200"
                 >
                   View Services
                   <svg

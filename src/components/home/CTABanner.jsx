@@ -12,7 +12,7 @@ function CTABanner() {
         </p>
         <Link
           to="/contact"
-          className="inline-block px-8 py-3.5 bg-bronze hover:bg-[#b8895c] text-indigo font-semibold rounded-full shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200"
+          className="inline-block px-8 py-3.5 bg-bronze hover:bg-[#b8895c] text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200"
         >
           Book a consultation
         </Link>
