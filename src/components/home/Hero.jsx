@@ -20,7 +20,7 @@ function Hero() {
               Your Partner In <span className="text-bronze text-shadow-bronze">Digital And Operational</span> Excellence
             </h1>
             <p className="animate-fade-in-up-delay-1 text-brand-body leading-relaxed mb-8 text-sm sm:text-base md:text-lg">
-              At Tijha, we bridge strategy with execution to transform how organizations operate and grow. Through data-driven insight and digital innovation, we deliver measurable impact and sustainable performance — powering growth for SMEs, NGOs, enterprises, government, and startups.
+              At Tijha, we bridge strategy with execution to transform how organizations operate and grow. Through data-driven insight and digital innovation, we deliver measurable impact and sustainable performance, powering growth for SMEs, NGOs, enterprises, government, and startups.
             </p>
 
             <Link

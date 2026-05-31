@@ -27,9 +27,9 @@ const serviceCategories = [
     ),
     desc: 'Data-driven insights to inform your strategic decisions and market positioning.',
     items: [
-      { name: 'Market Research & Analysis', price: '₦300,000 – ₦2,000,000', layman: 'Market Study — finding out what customers want and where the demand is.' },
-      { name: 'Competitor Analysis & Benchmarking', price: '₦250,000 – ₦1,200,000', layman: 'Competitor Check — studying what competitors are doing so you can do better.' },
-      { name: 'Pricing Research / Willingness-to-Pay', price: '₦200,000 – ₦1,000,000', layman: 'Product Pricing Study — know the best price customers are willing to pay.' },
+      { name: 'Market Research & Analysis', price: '₦300,000 – ₦2,000,000', layman: 'Market Study: finding out what customers want and where the demand is.' },
+      { name: 'Competitor Analysis & Benchmarking', price: '₦250,000 – ₦1,200,000', layman: 'Competitor Check: studying what competitors are doing so you can do better.' },
+      { name: 'Pricing Research / Willingness-to-Pay', price: '₦200,000 – ₦1,000,000', layman: 'Product Pricing Study: know the best price customers are willing to pay.' },
     ],
   },
   {
@@ -41,9 +41,9 @@ const serviceCategories = [
     ),
     desc: 'Helping businesses increase sales and build reliable revenue streams.',
     items: [
-      { name: 'Sales Strategy Development', price: '₦300,000 – ₦1,500,000', layman: 'Sales Growth Plan — helping a business increase sales.' },
-      { name: 'Customer Acquisition Strategy', price: '₦250,000 – ₦1,300,000', layman: 'Customer Attraction Plan — find and win new customers consistently.' },
-      { name: 'Lead Generation Systems', price: '₦400,000 – ₦1,200,000', layman: 'Customer Lead System — setting up systems that bring potential customers regularly.' },
+      { name: 'Sales Strategy Development', price: '₦300,000 – ₦1,500,000', layman: 'Sales Growth Plan: helping a business increase sales.' },
+      { name: 'Customer Acquisition Strategy', price: '₦250,000 – ₦1,300,000', layman: 'Customer Attraction Plan: find and win new customers consistently.' },
+      { name: 'Lead Generation Systems', price: '₦400,000 – ₦1,200,000', layman: 'Customer Lead System: setting up systems that bring potential customers regularly.' },
     ],
   },
   {
@@ -56,12 +56,12 @@ const serviceCategories = [
     desc: 'Building partnerships, securing funding, and creating growth opportunities.',
     items: [
       { name: 'Stakeholder Engagement Strategy', price: '₦300,000 – ₦1,200,000', layman: 'Partner & Stakeholder Management Plan' },
-      { name: 'Business Plan Development', price: '₦300,000 – ₦900,000', layman: 'Business Plan Preparation — create a clear plan to guide or attract investors.' },
-      { name: 'Investor Pitch Deck', price: '₦250,000 – ₦700,000', layman: 'Investor Presentation — convince investors to fund the business.' },
+      { name: 'Business Plan Development', price: '₦300,000 – ₦900,000', layman: 'Business Plan Preparation: create a clear plan to guide or attract investors.' },
+      { name: 'Investor Pitch Deck', price: '₦250,000 – ₦700,000', layman: 'Investor Presentation: convince investors to fund the business.' },
       { name: 'Grant Identification', price: '₦200,000 – ₦500,000', layman: 'Grant Opportunity Search' },
       { name: 'Grant Proposal Writing', price: '₦250,000 – ₦800,000', layman: 'Grant Application Support' },
       { name: 'Change Management Strategy', price: '₦600,000 – ₦1,800,000', layman: 'Business Change Implementation Plan' },
-      { name: 'Operational Rollout Support', price: '₦500,000 – ₦1,500,000', layman: 'Business Implementation Support — put new strategies into action.' },
+      { name: 'Operational Rollout Support', price: '₦500,000 – ₦1,500,000', layman: 'Business Implementation Support: put new strategies into action.' },
     ],
   },
   {
@@ -73,10 +73,10 @@ const serviceCategories = [
     ),
     desc: 'Streamlining workflows, cutting costs, and boosting team productivity.',
     items: [
-      { name: 'Operational Diagnostics', price: '₦200,000 – ₦1,800,000', layman: 'Business Health Check — find problems and inefficiencies.' },
-      { name: 'Business Process Mapping', price: '₦250,000 – ₦1,200,000', layman: 'Step-by-Step Workflow Review — see which steps are slow or wasteful.' },
-      { name: 'Workflow Optimization & Automation', price: '₦400,000 – ₦2,000,000', layman: 'Work Process Improvement & Automation — make work faster and simpler.' },
-      { name: 'Process Redesign', price: '₦200,000 – ₦1,800,000', layman: 'Better Way to Work Plan — tasks done smarter and faster.' },
+      { name: 'Operational Diagnostics', price: '₦200,000 – ₦1,800,000', layman: 'Business Health Check: find problems and inefficiencies.' },
+      { name: 'Business Process Mapping', price: '₦250,000 – ₦1,200,000', layman: 'Step-by-Step Workflow Review: see which steps are slow or wasteful.' },
+      { name: 'Workflow Optimization & Automation', price: '₦400,000 – ₦2,000,000', layman: 'Work Process Improvement & Automation: make work faster and simpler.' },
+      { name: 'Process Redesign', price: '₦200,000 – ₦1,800,000', layman: 'Better Way to Work Plan: tasks done smarter and faster.' },
       { name: 'Cost Optimization', price: '₦500,000 – ₦1,500,000', layman: 'Cost Cutting & Savings Plan' },
       { name: 'Resource Utilization Analysis', price: '₦400,000 – ₦1,200,000', layman: 'Make the Most of Your Resources plan' },
       { name: 'Supplier & Contract Optimization', price: '₦400,000 – ₦1,200,000', layman: 'Better Supplier Deals' },

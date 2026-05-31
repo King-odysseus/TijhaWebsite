@@ -4,14 +4,14 @@ const testimonials = [
   {
     id: 1,
     quote:
-      "Tijha delivered an outstanding website for us and their accounting tool has completely streamlined our financial operations. We couldn't be more pleased with the results — professional, on time, and exactly what we needed.",
+      "Tijha delivered an outstanding website for us and their accounting tool has completely streamlined our financial operations. We couldn't be more pleased with the results. Professional, on time, and exactly what we needed.",
     name: 'Braige',
     role: 'Client',
   },
   {
     id: 2,
     quote:
-      "From brand design to social media setup and sharp business development insights, Tijha exceeded every expectation. They didn't just give us a look — they gave us a strategy that's already driving real growth. Extremely satisfied.",
+      "From brand design to social media setup and sharp business development insights, Tijha exceeded every expectation. They didn't just give us a look, they gave us a strategy that's already driving real growth. Extremely satisfied.",
     name: 'Vlad Clothing',
     role: 'Client',
   },
