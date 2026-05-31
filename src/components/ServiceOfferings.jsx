@@ -126,7 +126,7 @@ function ServiceOfferings() {
               </div>
 
               {/* Text content */}
-              <div className="p-6 md:p-8">
+              <div className="p-6 md:p-8 text-center">
                 {/* Tagline */}
                 <span className="text-[10px] font-bold uppercase tracking-[0.15em] text-[#C49A6C] mb-1 block">
                   {pillar.tagline}
