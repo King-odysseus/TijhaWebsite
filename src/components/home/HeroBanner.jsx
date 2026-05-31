@@ -20,7 +20,7 @@ function HeroBanner() {
           Team Work, Makes The Dream Work
         </span>
 
-        <h2 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl text-center max-w-3xl mx-auto text-white leading-[1.2] font-bold tracking-tight mt-[40px] mb-[20px]">
+        <h2 className="text-base sm:text-lg md:text-2xl lg:text-3xl text-center max-w-3xl mx-auto text-white leading-[1.2] font-bold tracking-tight mt-[40px] mb-[20px]">
           Together, We Turn Your Vision into Reality
         </h2>
 
