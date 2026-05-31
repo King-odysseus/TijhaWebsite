@@ -17,7 +17,7 @@ function ParticleBackground() {
       r: Math.random() * 4 + 2,
       vx: (Math.random() - 0.5) * 0.3,
       vy: (Math.random() - 0.5) * 0.3,
-      color: Math.random() > 0.6 ? '#262262' : '#C49A6C',
+      color: '#262262',
     }));
 
     let raf;
@@ -51,7 +51,7 @@ function ParticleBackground() {
             ctx.beginPath();
             ctx.moveTo(particles[i].x, particles[i].y);
             ctx.lineTo(particles[j].x, particles[j].y);
-            ctx.strokeStyle = '#C49A6C';
+            ctx.strokeStyle = '#262262';
             ctx.globalAlpha = 0.07 * (1 - dist / 150);
             ctx.lineWidth = 0.5;
             ctx.stroke();
