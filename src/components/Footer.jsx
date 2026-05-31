@@ -42,21 +42,22 @@ function Footer() {
           <div>
             <h4 className="text-[15px] font-bold text-white uppercase tracking-wider mb-4">Solutions</h4>
             <div className="flex flex-col gap-2">
-              <Link to="/services" className="text-[15px] text-white/70 hover:text-bronze transition-colors">Management Consulting</Link>
-              <Link to="/services" className="text-[15px] text-white/70 hover:text-bronze transition-colors">Project Management</Link>
-              <Link to="/services" className="text-[15px] text-white/70 hover:text-bronze transition-colors">Digital Solutions</Link>
-              <Link to="/services" className="text-[15px] text-white/70 hover:text-bronze transition-colors">Training & Capacity</Link>
+              <Link to="/services" className="text-[15px] text-white/70 hover:text-bronze transition-colors">Website &amp; web app development</Link>
+              <Link to="/services" className="text-[15px] text-white/70 hover:text-bronze transition-colors">Digital transformation &amp; tools</Link>
+              <Link to="/services" className="text-[15px] text-white/70 hover:text-bronze transition-colors">HR &amp; talent management systems</Link>
+              <Link to="/services" className="text-[15px] text-white/70 hover:text-bronze transition-colors">Inventory &amp; asset management</Link>
+              <Link to="/services" className="text-[15px] text-white/70 hover:text-bronze transition-colors">Accounting &amp; financial tools</Link>
+              <Link to="/services" className="text-[15px] text-white/70 hover:text-bronze transition-colors">Custom software &amp; integrations</Link>
             </div>
           </div>
 
-          {/* Services */}
+          {/* Quick Links */}
           <div>
-            <h4 className="text-[15px] font-bold text-white uppercase tracking-wider mb-4">Services</h4>
+            <h4 className="text-[15px] font-bold text-white uppercase tracking-wider mb-4">Quick Links</h4>
             <div className="flex flex-col gap-2">
-              <span className="text-[15px] text-white/70">Business Development</span>
-              <span className="text-[15px] text-white/70">Project Management</span>
-              <span className="text-[15px] text-white/70">Digital Solutions</span>
-              <span className="text-[15px] text-white/70">Training & Capacity</span>
+              <Link to="/about" className="text-[15px] text-white/70 hover:text-bronze transition-colors">About us</Link>
+              <Link to="/services" className="text-[15px] text-white/70 hover:text-bronze transition-colors">Our services</Link>
+              <Link to="/contact" className="text-[15px] text-white/70 hover:text-bronze transition-colors">Contact us</Link>
             </div>
           </div>
         </div>
