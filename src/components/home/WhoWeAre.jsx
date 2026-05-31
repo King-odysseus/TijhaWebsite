@@ -9,7 +9,7 @@ function WhoWeAre() {
             <img
               src="/images/Team.png"
               alt="Tijha team"
-              className="w-4/5 h-auto object-contain rounded-2xl"
+              className="w-full h-auto object-contain rounded-2xl"
               loading="lazy"
             />
           </div>
@@ -17,10 +17,10 @@ function WhoWeAre() {
             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-indigo leading-tight mb-8">
               <span className="border-b-2 border-bronze pb-1">Our</span> Vision For You
             </h2>
-            <p className="text-brand-body leading-relaxed mb-8 text-sm sm:text-base md:text-lg text-justify">
+            <p className="text-brand-body leading-relaxed mb-8 text-sm sm:text-base md:text-lg text-left">
               We don't just offer advise we give you the knowledge and digital tools to seamlessly integrate change.
             </p>
-            <p className="text-brand-body leading-relaxed mb-8 text-sm sm:text-base md:text-lg text-justify">
+            <p className="text-brand-body leading-relaxed mb-8 text-sm sm:text-base md:text-lg text-left">
               We believe that true transformation comes from pairing expert guidance with practical digital tools, ensuring every update integrates smoothly and creates lasting impact. By combining deep knowledge with seamless execution, we help you not only implement changes quickly but also build adaptable systems that keep delivering value over time.
             </p>
             <Link
