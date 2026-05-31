@@ -23,13 +23,14 @@ function FAQ() {
   const [open, setOpen] = useState(0);
 
   return (
-    <section className="section-padding bg-[#F5F5F7]">
-      <div className="container-main max-w-3xl">
-        <div className="text-center mb-12">
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-brand-dark mb-4">Frequently Asked Questions</h2>
-        </div>
+    <section id="faq" className="section-padding bg-[#F5F5F7]">
+      <div className="container-main max-w-6xl">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          {/* FAQ accordion */}
+          <div>
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-brand-dark mb-8">Frequently Asked Questions</h2>
 
-        <div className="space-y-4">
+            <div className="space-y-4">
           {faqs.map((f, i) => {
             const isOpen = open === i;
             return (
@@ -56,6 +57,18 @@ function FAQ() {
               </div>
             );
           })}
+            </div>
+          </div>
+
+          {/* Image */}
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1573164574308-edcb95e8b261?w=900&q=80&auto=format&fit=crop"
+              alt="A Tijha consultant ready to help"
+              className="w-full h-72 lg:h-[460px] object-cover rounded-2xl shadow-lg"
+              loading="lazy"
+            />
+          </div>
         </div>
       </div>
     </section>
