@@ -1,12 +1,3 @@
-import { useState } from 'react';
-
-const inquiryOptions = [
-  'Management Consulting',
-  'Project Management',
-  'Digital & IT Solutions',
-  'Training & Capacity',
-];
-
 const contactDetails = [
   {
     title: 'Phone & WhatsApp',
@@ -41,20 +32,6 @@ const socials = [
 ];
 
 function ContactPage() {
-  const [form, setForm] = useState({ name: '', email: '', phone: '', inquiry: '', message: '' });
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 4000);
-    setForm({ name: '', email: '', phone: '', inquiry: '', message: '' });
-  };
-
   return (
     <div className="pt-[70px]">
       {/* Hero */}
@@ -124,85 +101,14 @@ function ContactPage() {
               </div>
             </div>
 
-            {/* Form */}
-            <div>
-              <h2 className="text-2xl font-bold text-brand-dark mb-8">Send a Message</h2>
-              <form onSubmit={handleSubmit} className="neo-card p-8">
-                <div className="space-y-5">
-                  <div>
-                    <label className="block text-sm font-medium text-brand-dark mb-2">Your Name</label>
-                    <input
-                      type="text"
-                      name="name"
-                      value={form.name}
-                      onChange={handleChange}
-                      required
-                      className="neo-input w-full text-brand-dark"
-                      placeholder="Your name"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-brand-dark mb-2">Email</label>
-                    <input
-                      type="email"
-                      name="email"
-                      value={form.email}
-                      onChange={handleChange}
-                      required
-                      className="neo-input w-full text-brand-dark"
-                      placeholder="your@email.com"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-brand-dark mb-2">Contact Number</label>
-                    <input
-                      type="tel"
-                      name="phone"
-                      value={form.phone}
-                      onChange={handleChange}
-                      required
-                      className="neo-input w-full text-brand-dark"
-                      placeholder="+234 ..."
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-brand-dark mb-2">Area of Inquiry</label>
-                    <select
-                      name="inquiry"
-                      value={form.inquiry}
-                      onChange={handleChange}
-                      required
-                      className="neo-input w-full text-brand-dark"
-                    >
-                      <option value="" disabled>Select an area</option>
-                      {inquiryOptions.map((opt) => (
-                        <option key={opt} value={opt}>{opt}</option>
-                      ))}
-                    </select>
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-brand-dark mb-2">Comment</label>
-                    <textarea
-                      name="message"
-                      value={form.message}
-                      onChange={handleChange}
-                      required
-                      rows={5}
-                      className="neo-input w-full text-brand-dark resize-none"
-                      placeholder="How can we help?"
-                    />
-                  </div>
-                  <button
-                    type="submit"
-                    className="w-full py-3.5 bg-bronze hover:bg-[#b8895c] text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200"
-                  >
-                    Send Message
-                  </button>
-                  {submitted && (
-                    <p className="text-sm text-green-600 text-center font-medium">Thank you! We'll be in touch soon.</p>
-                  )}
-                </div>
-              </form>
+            {/* Image */}
+            <div className="lg:h-full">
+              <img
+                src="/images/people-technology.jpg"
+                alt="The Tijha team at work"
+                className="w-full h-full min-h-[360px] object-cover rounded-3xl shadow-lg"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
