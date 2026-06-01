@@ -90,8 +90,8 @@ function SolutionsPage() {
             </div>
             <div className="relative">
               <img
-                src="/images/operations-delivery.jpg"
-                alt="Developers building digital solutions"
+                src="https://images.unsplash.com/photo-1639322537228-f710d846310a?w=1000&q=80&auto=format&fit=crop"
+                alt="Abstract network of connected nodes"
                 className="w-full h-72 md:h-[420px] object-cover rounded-3xl shadow-xl"
                 loading="lazy"
               />
@@ -144,8 +144,8 @@ function SolutionsPage() {
             </div>
             <div className="order-1 lg:order-2">
               <img
-                src="/images/people-technology.jpg"
-                alt="Team working with digital tools"
+                src="https://images.unsplash.com/photo-1544006659-f0b21884ce1d?w=1000&q=80&auto=format&fit=crop"
+                alt="Hands collaborating over a laptop and notes"
                 className="w-full h-72 md:h-[400px] object-cover rounded-3xl shadow-lg"
                 loading="lazy"
               />

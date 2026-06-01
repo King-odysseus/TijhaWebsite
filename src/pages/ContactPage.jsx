@@ -51,8 +51,8 @@ function ContactPage() {
             </div>
             <div className="relative">
               <img
-                src="/images/support%20team.png"
-                alt="The Tijha support team"
+                src="https://images.unsplash.com/photo-1507208773393-40d9fc670acf?w=1000&q=80&auto=format&fit=crop"
+                alt="Hands at a laptop with a phone"
                 className="w-full h-72 md:h-[400px] object-cover rounded-3xl shadow-xl"
                 loading="lazy"
               />
@@ -104,8 +104,8 @@ function ContactPage() {
             {/* Image */}
             <div className="lg:h-full">
               <img
-                src="/images/people-technology.jpg"
-                alt="The Tijha team at work"
+                src="https://images.unsplash.com/photo-1499914485622-a88fac536970?w=900&q=80&auto=format&fit=crop"
+                alt="Hands typing on a keyboard"
                 className="w-full h-full min-h-[360px] object-cover rounded-3xl shadow-lg"
                 loading="lazy"
               />

@@ -84,8 +84,8 @@ function AboutPage() {
             </div>
             <div className="relative">
               <img
-                src="/images/Team.png"
-                alt="The Tijha team"
+                src="https://images.unsplash.com/photo-1518005135182-62fd125ae47f?w=1000&q=80&auto=format&fit=crop"
+                alt="Modern architecture"
                 className="w-full h-72 md:h-[420px] object-cover rounded-3xl shadow-xl"
                 loading="lazy"
               />
