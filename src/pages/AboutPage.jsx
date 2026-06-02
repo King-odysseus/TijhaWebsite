@@ -186,16 +186,20 @@ function AboutPage() {
       </section>
 
       {/* Methodology */}
-      <section className="section-padding bg-[#F5F5F7]">
-        <div className="container-main">
+      <section className="section-padding relative overflow-hidden bg-gradient-to-br from-[#F0EDF7] via-[#F8F7FC] to-[#F0EDF5]">
+        {/* Decorative blurred blobs behind glass cards */}
+        <div className="absolute top-20 left-10 w-72 h-72 bg-indigo/8 rounded-full blur-3xl" />
+        <div className="absolute bottom-10 right-10 w-64 h-64 bg-bronze/8 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-indigo/4 rounded-full blur-3xl" />
+        <div className="container-main relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-bronze mb-4">How We Work</span>
             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-brand-dark">Our Methodology</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
             {approach.map((s) => (
-              <div key={s.step} className="neo-card p-6 text-center">
-                <div className="neo-circle w-14 h-14 mx-auto mb-4 text-indigo font-bold">{s.step}</div>
+              <div key={s.step} className="glass-card p-6 text-center">
+                <div className="glass-circle w-14 h-14 mx-auto mb-4 text-indigo font-bold">{s.step}</div>
                 <h3 className="text-sm font-bold text-indigo">{s.title}</h3>
               </div>
             ))}
