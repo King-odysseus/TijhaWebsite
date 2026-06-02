@@ -19,16 +19,16 @@ const testimonials = [
 
 const gallery = [
   {
-    src: 'https://images.unsplash.com/photo-1550592704-6c76defa9985?w=800&q=80&auto=format&fit=crop',
-    alt: 'Abstract glass geometry with soft gradient',
+    src: 'https://images.unsplash.com/photo-1712385224652-f881a9ba4067?w=800&q=80&auto=format&fit=crop',
+    alt: 'African business professionals in suits',
   },
   {
-    src: 'https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=800&q=80&auto=format&fit=crop',
-    alt: 'Abstract organic flowing shapes',
+    src: 'https://images.unsplash.com/photo-1605602517387-ec78b947335e?w=800&q=80&auto=format&fit=crop',
+    alt: 'African business professional portrait',
   },
   {
-    src: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80&auto=format&fit=crop',
-    alt: 'Abstract dashboard and data visualization',
+    src: 'https://images.unsplash.com/photo-1702310242650-eb100f583df9?w=800&q=80&auto=format&fit=crop',
+    alt: 'African entrepreneur in business attire',
   },
 ];
 

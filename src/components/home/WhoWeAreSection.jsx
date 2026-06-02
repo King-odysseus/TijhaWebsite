@@ -2,16 +2,16 @@ import { Link } from 'react-router-dom';
 
 const gallery = [
   {
-    src: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80&auto=format&fit=crop',
-    alt: 'Abstract geometric shapes in soft tones',
+    src: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80&auto=format&fit=crop',
+    alt: 'African business handshake — partnership and collaboration',
   },
   {
-    src: 'https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=800&q=80&auto=format&fit=crop',
-    alt: 'Abstract layered geometric design',
+    src: 'https://images.unsplash.com/photo-1655720357872-ce227e4164ba?w=800&q=80&auto=format&fit=crop',
+    alt: 'African business team reviewing work on a laptop',
   },
   {
-    src: 'https://images.unsplash.com/photo-1507208773393-40d9fc670acf?w=800&q=80&auto=format&fit=crop',
-    alt: 'Abstract hands and object composition',
+    src: 'https://images.unsplash.com/photo-1528901166007-3784c7dd3653?w=800&q=80&auto=format&fit=crop',
+    alt: 'Nigerian business professional working on a laptop',
   },
 ];
 
