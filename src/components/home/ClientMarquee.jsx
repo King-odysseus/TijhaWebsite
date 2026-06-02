@@ -19,16 +19,16 @@ const testimonials = [
 
 const gallery = [
   {
-    src: 'https://images.unsplash.com/photo-1712385224652-f881a9ba4067?w=800&q=80&auto=format&fit=crop',
-    alt: 'African business professionals in suits',
+    src: '/images/woman-smartphone.jpg',
+    alt: 'African business woman on smartphone',
   },
   {
-    src: 'https://images.unsplash.com/photo-1605602517387-ec78b947335e?w=800&q=80&auto=format&fit=crop',
-    alt: 'African business professional portrait',
+    src: '/images/employee-financial-review.jpg',
+    alt: 'African professional analyzing financial data',
   },
   {
-    src: 'https://images.unsplash.com/photo-1702310242650-eb100f583df9?w=800&q=80&auto=format&fit=crop',
-    alt: 'African entrepreneur in business attire',
+    src: '/images/business-meeting.jpg',
+    alt: 'African business professionals in a meeting',
   },
 ];
 

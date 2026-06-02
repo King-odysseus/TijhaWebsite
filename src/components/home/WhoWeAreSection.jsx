@@ -2,16 +2,16 @@ import { Link } from 'react-router-dom';
 
 const gallery = [
   {
-    src: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80&auto=format&fit=crop',
-    alt: 'African business handshake — partnership and collaboration',
+    src: '/images/team-collaboration.jpg',
+    alt: 'African business team collaborating in a modern office',
   },
   {
-    src: 'https://images.unsplash.com/photo-1655720357872-ce227e4164ba?w=800&q=80&auto=format&fit=crop',
-    alt: 'African business team reviewing work on a laptop',
+    src: '/images/business-woman-phone.jpg',
+    alt: 'African business woman on phone',
   },
   {
-    src: 'https://images.unsplash.com/photo-1528901166007-3784c7dd3653?w=800&q=80&auto=format&fit=crop',
-    alt: 'Nigerian business professional working on a laptop',
+    src: '/images/professional-man-office.jpg',
+    alt: 'African business professional in modern office',
   },
 ];
 
