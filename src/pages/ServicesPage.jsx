@@ -211,17 +211,32 @@ function ServicesPage() {
 
       {/* Why choose Tijha */}
       <section className="section-padding bg-white">
-        <div className="container-main max-w-4xl">
-          <div className="text-center mb-12">
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-brand-dark">Why Choose Tijha</h2>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-            {whyChoose.map((item) => (
-              <div key={item} className="neo-card-sm p-5 flex items-start gap-3">
-                <span className="neo-circle w-8 h-8 flex-shrink-0 text-bronze"><Check /></span>
-                <span className="text-brand-body leading-relaxed">{item}</span>
+        <div className="container-main max-w-7xl">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Image column */}
+            <div className="order-1 lg:order-1">
+              <img
+                src="/images/employee-financial-review.jpg"
+                alt="African professional analyzing financial data and charts"
+                className="w-full h-auto object-cover rounded-2xl shadow-md"
+                loading="lazy"
+              />
+            </div>
+
+            {/* Content column */}
+            <div className="order-2 lg:order-2">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-brand-dark mb-8">
+                Why Choose Tijha
+              </h2>
+              <div className="space-y-4">
+                {whyChoose.map((item) => (
+                  <div key={item} className="neo-card-sm p-5 flex items-start gap-3">
+                    <span className="neo-circle w-8 h-8 flex-shrink-0 text-bronze"><Check /></span>
+                    <span className="text-brand-body leading-relaxed">{item}</span>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </section>
