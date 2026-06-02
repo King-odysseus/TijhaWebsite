@@ -2,16 +2,16 @@ import { Link } from 'react-router-dom';
 
 const gallery = [
   {
-    src: 'https://images.unsplash.com/photo-1573164574511-73c773193279?w=800&q=80&auto=format&fit=crop',
-    alt: 'Team collaborating around a meeting table',
+    src: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80&auto=format&fit=crop',
+    alt: 'Abstract geometric shapes in soft tones',
   },
   {
-    src: 'https://images.unsplash.com/photo-1573164574397-dd250bc8a598?w=800&q=80&auto=format&fit=crop',
-    alt: 'Colleagues discussing strategy in a meeting',
+    src: 'https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=800&q=80&auto=format&fit=crop',
+    alt: 'Abstract layered geometric design',
   },
   {
-    src: 'https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=800&q=80&auto=format&fit=crop',
-    alt: 'Boardroom team planning session',
+    src: 'https://images.unsplash.com/photo-1507208773393-40d9fc670acf?w=800&q=80&auto=format&fit=crop',
+    alt: 'Abstract hands and object composition',
   },
 ];
 

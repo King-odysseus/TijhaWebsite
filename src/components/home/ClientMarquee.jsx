@@ -19,16 +19,16 @@ const testimonials = [
 
 const gallery = [
   {
-    src: 'https://images.unsplash.com/photo-1573879404555-3f82d0582798?w=800&q=80&auto=format&fit=crop',
-    alt: 'Consultant in discussion with a client',
+    src: 'https://images.unsplash.com/photo-1550592704-6c76defa9985?w=800&q=80&auto=format&fit=crop',
+    alt: 'Abstract glass geometry with soft gradient',
   },
   {
-    src: 'https://images.unsplash.com/photo-1573496130141-209d200cebd8?w=800&q=80&auto=format&fit=crop',
-    alt: 'Two professionals collaborating',
+    src: 'https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=800&q=80&auto=format&fit=crop',
+    alt: 'Abstract organic flowing shapes',
   },
   {
-    src: 'https://images.unsplash.com/photo-1573164574001-518958d9baa2?w=800&q=80&auto=format&fit=crop',
-    alt: 'Professional working on a laptop',
+    src: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80&auto=format&fit=crop',
+    alt: 'Abstract dashboard and data visualization',
   },
 ];
 
