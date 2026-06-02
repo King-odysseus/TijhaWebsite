@@ -7,8 +7,8 @@ function WhoWeAre() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="flex items-center justify-center order-2 lg:order-1">
             <img
-              src="/images/Team.png"
-              alt="Tijha team"
+              src="/images/trader-analyzing-stocks.jpg"
+              alt="Tijha financial analyst at work"
               className="w-full h-auto object-contain rounded-2xl"
               loading="lazy"
             />
