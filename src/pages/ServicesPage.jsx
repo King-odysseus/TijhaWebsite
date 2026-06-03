@@ -219,13 +219,13 @@ function ServicesPage() {
             <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-bronze mb-4">What We Offer</span>
             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-brand-dark">Service Areas</h2>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
             {/* Image column */}
-            <div className="lg:sticky lg:top-24">
+            <div>
               <img
                 src="/images/business-meeting.jpg"
                 alt="Business strategy consultation"
-                className="w-full h-72 md:h-[420px] lg:h-[500px] object-cover rounded-3xl shadow-lg"
+                className="w-full h-72 md:h-[400px] object-cover rounded-3xl shadow-lg"
                 loading="lazy"
               />
             </div>
