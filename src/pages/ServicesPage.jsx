@@ -219,53 +219,66 @@ function ServicesPage() {
             <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-bronze mb-4">What We Offer</span>
             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-brand-dark">Service Areas</h2>
           </div>
-          <div className="max-w-3xl mx-auto space-y-4">
-            {serviceAreas.map((area) => {
-              const isOpen = openArea === area.title;
-              return (
-                <div key={area.title} className={`neo-card overflow-hidden transition-all duration-300 ${isOpen ? 'ring-2 ring-bronze/30' : ''}`}>
-                  <button
-                    onClick={() => setOpenArea(isOpen ? null : area.title)}
-                    className="w-full flex items-center gap-4 px-6 py-5 text-left transition-colors"
-                  >
-                    <span className={`neo-circle w-11 h-11 flex-shrink-0 transition-colors ${isOpen ? 'text-bronze bg-white' : 'text-indigo bg-white'}`}>
-                      {area.icon}
-                    </span>
-                    <div className="flex-1 min-w-0">
-                      <h3 className={`text-lg font-bold transition-colors ${isOpen ? 'text-bronze' : 'text-brand-dark'}`}>{area.title}</h3>
-                      <p className="text-sm text-brand-body leading-relaxed mt-0.5 line-clamp-1">{area.intro}</p>
-                    </div>
-                    <svg
-                      className={`w-5 h-5 flex-shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180 text-bronze' : 'text-brand-body'}`}
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+            {/* Image column */}
+            <div className="lg:sticky lg:top-24">
+              <img
+                src="/images/business-meeting.jpg"
+                alt="Business strategy consultation"
+                className="w-full h-72 md:h-[420px] lg:h-[500px] object-cover rounded-3xl shadow-lg"
+                loading="lazy"
+              />
+            </div>
+
+            {/* Accordion column */}
+            <div className="space-y-4">
+              {serviceAreas.map((area) => {
+                const isOpen = openArea === area.title;
+                return (
+                  <div key={area.title} className={`neo-card overflow-hidden transition-all duration-300 ${isOpen ? 'ring-2 ring-bronze/30' : ''}`}>
+                    <button
+                      onClick={() => setOpenArea(isOpen ? null : area.title)}
+                      className="w-full flex items-center gap-4 px-6 py-5 text-left transition-colors"
                     >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </button>
-                  <div
-                    className={`overflow-hidden transition-all duration-300 ${
-                      isOpen ? 'max-h-[800px] opacity-100' : 'max-h-0 opacity-0'
-                    }`}
-                  >
-                    <div className="px-6 pb-6 pt-0">
-                      <div className="border-t border-silver pt-5 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        {area.subs.map((sub) => (
-                          <div key={sub.name} className="flex items-start gap-3">
-                            <span className="neo-circle w-7 h-7 flex-shrink-0 text-bronze mt-0.5"><Check /></span>
-                            <div>
-                              <h4 className="text-sm font-semibold text-brand-dark mb-1">{sub.name}</h4>
-                              <p className="text-xs text-brand-body leading-relaxed">{sub.desc}</p>
+                      <span className={`neo-circle w-11 h-11 flex-shrink-0 transition-colors ${isOpen ? 'text-bronze bg-white' : 'text-indigo bg-white'}`}>
+                        {area.icon}
+                      </span>
+                      <div className="flex-1 min-w-0">
+                        <h3 className={`text-lg font-bold transition-colors ${isOpen ? 'text-bronze' : 'text-brand-dark'}`}>{area.title}</h3>
+                        <p className="text-sm text-brand-body leading-relaxed mt-0.5 line-clamp-1">{area.intro}</p>
+                      </div>
+                      <svg
+                        className={`w-5 h-5 flex-shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180 text-bronze' : 'text-brand-body'}`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </button>
+                    <div
+                      className={`overflow-hidden transition-all duration-300 ${
+                        isOpen ? 'max-h-[800px] opacity-100' : 'max-h-0 opacity-0'
+                      }`}
+                    >
+                      <div className="px-6 pb-6 pt-0">
+                        <div className="border-t border-silver pt-5 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                          {area.subs.map((sub) => (
+                            <div key={sub.name} className="flex items-start gap-3">
+                              <span className="neo-circle w-7 h-7 flex-shrink-0 text-bronze mt-0.5"><Check /></span>
+                              <div>
+                                <h4 className="text-sm font-semibold text-brand-dark mb-1">{sub.name}</h4>
+                                <p className="text-xs text-brand-body leading-relaxed">{sub.desc}</p>
+                              </div>
                             </div>
-                          </div>
-                        ))}
+                          ))}
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
         </div>
       </section>
