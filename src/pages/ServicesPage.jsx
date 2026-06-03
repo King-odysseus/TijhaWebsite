@@ -163,7 +163,7 @@ function ServicesPage() {
               <img
                 src="/images/business-development.jpg"
                 alt="Partnership handshake"
-                className="w-full h-72 md:h-[400px] object-cover rounded-3xl shadow-lg"
+                className="w-full h-[420px] md:h-[520px] object-cover rounded-3xl shadow-lg"
                 loading="lazy"
               />
             </div>
@@ -225,7 +225,7 @@ function ServicesPage() {
               <img
                 src="/images/business-meeting.jpg"
                 alt="Business strategy consultation"
-                className="w-full h-72 md:h-[400px] object-cover rounded-3xl shadow-lg"
+                className="w-full h-[420px] md:h-[560px] object-cover rounded-3xl shadow-lg"
                 loading="lazy"
               />
             </div>
@@ -292,7 +292,7 @@ function ServicesPage() {
               <img
                 src="/images/employee-financial-review.jpg"
                 alt="African professional analyzing financial data and charts"
-                className="w-full h-auto object-cover rounded-2xl shadow-md"
+                className="w-full h-[420px] md:h-[560px] object-cover rounded-2xl shadow-md"
                 loading="lazy"
               />
             </div>

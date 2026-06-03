@@ -65,7 +65,7 @@ function FAQ() {
             <img
               src="https://images.unsplash.com/photo-1573164574308-edcb95e8b261?w=900&q=80&auto=format&fit=crop"
               alt="A Tijha consultant ready to help"
-              className="w-full h-72 lg:h-[460px] object-cover rounded-2xl shadow-lg"
+              className="w-full h-[420px] md:h-[520px] object-cover rounded-2xl shadow-lg"
               loading="lazy"
             />
           </div>

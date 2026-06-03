@@ -103,7 +103,7 @@ function AboutPage() {
               <img
                 src="/images/business-development.jpg"
                 alt="A partnership in action"
-                className="w-full h-72 md:h-[400px] object-cover rounded-3xl shadow-lg"
+                className="w-full h-[380px] md:h-[520px] object-cover rounded-3xl shadow-lg"
                 loading="lazy"
               />
             </div>

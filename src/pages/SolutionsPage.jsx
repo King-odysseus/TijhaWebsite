@@ -146,7 +146,7 @@ function SolutionsPage() {
               <img
                 src="https://images.unsplash.com/photo-1544006659-f0b21884ce1d?w=1000&q=80&auto=format&fit=crop"
                 alt="Hands collaborating over a laptop and notes"
-                className="w-full h-72 md:h-[400px] object-cover rounded-3xl shadow-lg"
+                className="w-full h-[420px] md:h-[520px] object-cover rounded-3xl shadow-lg"
                 loading="lazy"
               />
             </div>
