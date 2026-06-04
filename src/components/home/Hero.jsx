@@ -30,7 +30,7 @@ function Hero() {
               See Services
             </Link>
           </div>
-          <div className="order-1 lg:order-2 flex items-end justify-center pl-8 md:pl-16">
+          <div className="hidden lg:order-2 lg:flex items-end justify-center pl-8 md:pl-16">
             <img
               src="/images/Friendly%20ally.png"
               alt="Friendly ally illustration"
