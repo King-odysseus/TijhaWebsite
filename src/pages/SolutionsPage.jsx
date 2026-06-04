@@ -154,6 +154,31 @@ function SolutionsPage() {
         </div>
       </section>
 
+      {/* Image grid */}
+      <section className="section-padding bg-[#F5F5F7]">
+        <div className="container-main">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
+            <div className="group overflow-hidden rounded-2xl shadow-md">
+              <img src="/images/solutions-data.jpg" alt="Analyst reviewing real-time data on screens" className="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+            </div>
+            <div className="group overflow-hidden rounded-2xl shadow-md">
+              <img src="/images/solutions-infrastructure.jpg" alt="IT lead maintaining systems in a server room" className="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+            </div>
+            <div className="group overflow-hidden rounded-2xl shadow-md">
+              <img src="/images/solutions-mobile.jpg" alt="Professional using a smartphone on the move" className="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+            </div>
+            <div className="flex flex-col justify-center rounded-2xl bg-white shadow-md p-8 md:p-10 min-h-[14rem]">
+              <h3 className="text-2xl md:text-3xl font-bold text-indigo leading-tight mb-4">
+                Technology Built <span className="text-bronze">Around You</span>
+              </h3>
+              <p className="text-brand-body leading-relaxed text-base md:text-lg">
+                From data and dashboards to resilient infrastructure and mobile-ready systems, we build digital solutions that fit how your organisation actually works.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA banner */}
       <section
         className="relative py-24 overflow-hidden bg-cover bg-center"

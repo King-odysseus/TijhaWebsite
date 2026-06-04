@@ -319,6 +319,31 @@ function ServicesPage() {
         </div>
       </section>
 
+      {/* Image grid */}
+      <section className="section-padding bg-[#F5F5F7]">
+        <div className="container-main">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
+            <div className="group overflow-hidden rounded-2xl shadow-md">
+              <img src="/images/services-consulting.jpg" alt="Consultant advising a client by phone" className="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+            </div>
+            <div className="group overflow-hidden rounded-2xl shadow-md">
+              <img src="/images/services-analysis.jpg" alt="Analyst crosschecking financial figures" className="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+            </div>
+            <div className="group overflow-hidden rounded-2xl shadow-md">
+              <img src="/images/services-advisor.jpg" alt="Confident business advisor in a modern office" className="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+            </div>
+            <div className="flex flex-col justify-center rounded-2xl bg-white shadow-md p-8 md:p-10 min-h-[14rem]">
+              <h3 className="text-2xl md:text-3xl font-bold text-indigo leading-tight mb-4">
+                Strategy Meets <span className="text-bronze">Execution</span>
+              </h3>
+              <p className="text-brand-body leading-relaxed text-base md:text-lg">
+                From first diagnosis to hands-on delivery, our consultants pair sharp analysis with practical tools, turning plans into results your team can sustain.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA banner */}
       <section
         className="relative py-36 overflow-hidden bg-cover bg-center"
