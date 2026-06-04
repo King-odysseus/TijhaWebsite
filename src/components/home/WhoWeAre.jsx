@@ -4,12 +4,12 @@ function WhoWeAre() {
   return (
     <section className="bg-white py-[30px] py-[50px]">
       <div className="w-full px-8 md:px-16 lg:px-28">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div className="flex items-center justify-center order-2 lg:order-1">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-stretch">
+          <div className="order-2 lg:order-1">
             <img
               src="/images/trader-analyzing-stocks.jpg"
               alt="Tijha financial analyst at work"
-              className="w-full h-auto object-contain rounded-2xl"
+              className="w-full h-full object-cover rounded-2xl"
               loading="lazy"
             />
           </div>
