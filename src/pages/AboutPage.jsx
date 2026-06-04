@@ -28,13 +28,6 @@ const values = [
   },
 ];
 
-const stats = [
-  { value: '50+', label: 'Projects Delivered' },
-  { value: '30+', label: 'Teams Trained' },
-  { value: '120+', label: 'Processes Optimised' },
-  { value: '98%', label: 'Client Success Rate' },
-];
-
 const approach = [
   { step: '01', title: 'Discover & Assess' },
   { step: '02', title: 'Design & Plan' },
@@ -161,23 +154,6 @@ function AboutPage() {
                 </div>
                 <h3 className="text-base font-bold text-indigo mb-2">{v.title}</h3>
                 <p className="text-xs text-brand-body leading-relaxed">{v.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Stats band */}
-      <section
-        className="relative py-20 overflow-hidden bg-cover bg-center"
-        style={{ backgroundImage: `url('/images/Best Team.png')` }}
-      >
-        <div className="container-main relative z-10">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-            {stats.map((s) => (
-              <div key={s.label}>
-                <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-bronze mb-2">{s.value}</div>
-                <div className="text-sm md:text-base text-white/80">{s.label}</div>
               </div>
             ))}
           </div>
