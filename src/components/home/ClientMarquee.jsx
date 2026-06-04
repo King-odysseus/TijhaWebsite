@@ -12,7 +12,7 @@ const testimonials = [
     id: 2,
     quote:
       "From brand design to social media setup and sharp business development insights, Tijha exceeded every expectation. They didn't just give us a look, they gave us a strategy that's already driving real growth. Extremely satisfied.",
-    name: 'Vlad Clothing',
+    name: 'Braige & Company',
     role: 'Client',
   },
 ];
