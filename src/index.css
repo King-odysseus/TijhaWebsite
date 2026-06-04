@@ -121,8 +121,8 @@ body {
 .container-main {
   max-width: 1200px;
   margin: 0 auto;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 @media (min-width: 768px) {
