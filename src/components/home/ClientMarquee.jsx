@@ -27,8 +27,8 @@ const gallery = [
     alt: 'African professional analyzing financial data',
   },
   {
-    src: '/images/video-conference-workshop.jpg',
-    alt: 'African professionals in a video conference workshop',
+    src: '/images/office-work-day.jpg',
+    alt: 'African business team during an office work day',
   },
 ];
 
