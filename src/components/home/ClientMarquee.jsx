@@ -151,7 +151,7 @@ function ClientMarquee() {
               Your Success Is Our <span className="text-[#C49A6C]">Commitment</span>
             </h3>
             <p className="text-[#6b7280] leading-relaxed text-base md:text-lg">
-              Every engagement is a partnership. We stay close to your team, measure what matters, and refine as we go, so the results we deliver keep compounding long after the project wraps.
+              Every engagement is a partnership. We stay close to your team, measure what matters, and refine as we go, so results keep compounding long after we wrap.
             </p>
           </div>
         </div>
