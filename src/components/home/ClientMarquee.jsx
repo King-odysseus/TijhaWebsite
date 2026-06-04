@@ -51,7 +51,7 @@ function ClientMarquee() {
 
   return (
     <section className="bg-[#FAFAFC] py-16 md:py-24 overflow-hidden">
-      <div className="max-w-3xl mx-auto px-6">
+      <div className="max-w-3xl mx-auto px-6 pb-12 md:pb-16">
         {/* Section header */}
         <div className="text-center mb-12">
           <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-[#C49A6C] mb-4 text-shadow-bronze">
