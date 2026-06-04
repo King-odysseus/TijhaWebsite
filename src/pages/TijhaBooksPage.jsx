@@ -104,8 +104,8 @@ function TijhaBooksPage() {
             </div>
             <div className="relative">
               <img
-                src="/images/services-analysis.jpg"
-                alt="Financial figures and analytics on screen"
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1000&q=80&auto=format&fit=crop"
+                alt="Analytics dashboard with charts and figures"
                 className="w-full h-72 md:h-[420px] object-cover rounded-3xl shadow-xl"
                 loading="lazy"
               />
@@ -121,9 +121,9 @@ function TijhaBooksPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="order-2 lg:order-1">
               <img
-                src="/images/tijha-accounting-presentation.jpg"
-                alt="Businesswoman reviewing accounting data"
-                className="w-full h-[360px] md:h-[500px] object-cover object-top rounded-3xl shadow-lg"
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1000&q=80&auto=format&fit=crop"
+                alt="Business analytics dashboard on a laptop"
+                className="w-full h-[360px] md:h-[500px] object-cover rounded-3xl shadow-lg"
                 loading="lazy"
               />
             </div>
@@ -207,8 +207,8 @@ function TijhaBooksPage() {
             </div>
             <div className="lg:h-full">
               <img
-                src="/images/employee-financial-review.jpg"
-                alt="Professional analyzing financial data"
+                src="https://images.unsplash.com/photo-1644088379091-d574269d422f?w=1000&q=80&auto=format&fit=crop"
+                alt="Abstract digital network design"
                 className="w-full h-72 lg:h-full object-cover rounded-3xl shadow-lg"
                 loading="lazy"
               />
