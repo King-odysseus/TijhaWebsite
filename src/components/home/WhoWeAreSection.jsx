@@ -17,7 +17,7 @@ const gallery = [
 
 function WhoWeAreSection() {
   return (
-    <section className="bg-white py-[200px]">
+    <section className="bg-white pt-16 pb-24 md:pt-24 md:pb-32">
       <div className="w-full px-8 md:px-16 lg:px-28">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center pb-20 md:pb-28">
           <div className="lg:pl-12">
