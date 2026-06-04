@@ -120,6 +120,47 @@ function SolutionsPage() {
         </div>
       </section>
 
+      {/* Featured product: Tijha Books */}
+      <section className="section-padding bg-white">
+        <div className="container-main">
+          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-indigo via-indigo to-[#1b1850] px-8 py-12 md:px-14 md:py-16 shadow-xl">
+            <div className="absolute -top-10 -right-10 w-56 h-56 bg-bronze/15 rounded-full blur-3xl" />
+            <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+              <div>
+                <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-bronze mb-4">Featured Product</span>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white leading-tight mb-4">
+                  Tijha Books, Accounting Built For African SMBs
+                </h2>
+                <p className="text-white/80 leading-relaxed mb-8 max-w-xl">
+                  Our ready-to-use business management platform: professional invoicing, expense tracking, inventory, tax compliance (VAT &amp; WHT), and real-time analytics, all in one clean app.
+                </p>
+                <Link
+                  to="/tijha-books"
+                  className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full text-sm md:text-base font-semibold bg-bronze text-white hover:bg-[#b8895c] shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200"
+                >
+                  Explore Tijha Books
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
+              <div className="grid grid-cols-2 gap-3">
+                {['Invoicing', 'Expense Tracking', 'Inventory', 'Tax Compliance', 'Analytics', 'Team Access'].map((f) => (
+                  <div key={f} className="flex items-center gap-2 rounded-xl bg-white/10 border border-white/15 px-4 py-3">
+                    <span className="text-bronze flex-shrink-0">
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </span>
+                    <span className="text-sm font-medium text-white">{f}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Feature band */}
       <section className="section-padding bg-white">
         <div className="container-main">
