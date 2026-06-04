@@ -30,11 +30,11 @@ const values = [
 ];
 
 const approach = [
-  { step: '01', title: 'Discover & Assess' },
-  { step: '02', title: 'Design & Plan' },
-  { step: '03', title: 'Deliver & Implement' },
-  { step: '04', title: 'Monitor & Optimise' },
-  { step: '05', title: 'Build Capability' },
+  { step: '01', title: 'Discover & Assess', desc: 'We start by understanding your organisational goals, challenges, and market context.' },
+  { step: '02', title: 'Design & Plan', desc: 'We develop tailored strategies and solutions mapped to clear priorities and outcomes.' },
+  { step: '03', title: 'Deliver & Implement', desc: 'We execute with discipline, using proven tools and frameworks alongside your team.' },
+  { step: '04', title: 'Monitor & Optimise', desc: 'We track progress, measure results, and adapt to keep improvements on course.' },
+  { step: '05', title: 'Build Capability', desc: 'We equip your teams to sustain the improvements independently, long after delivery.' },
 ];
 
 const people = [
@@ -174,11 +174,16 @@ function AboutPage() {
             <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-bronze mb-4">How We Work</span>
             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-brand-dark">Our Methodology</h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+          <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-6">
+            {/* Connecting line running through the numbered circles (desktop only) */}
+            <div className="pointer-events-none absolute top-7 left-[10%] right-[10%] h-px bg-indigo/20 hidden lg:block" />
             {approach.map((s) => (
-              <div key={s.step} className="glass-card p-6 text-center">
-                <div className="glass-circle w-14 h-14 mx-auto mb-4 text-indigo font-bold">{s.step}</div>
-                <h3 className="text-sm font-bold text-indigo">{s.title}</h3>
+              <div key={s.step} className="flex h-full flex-col items-center text-center">
+                <div className="glass-circle relative z-10 w-14 h-14 mb-5 text-indigo font-bold">{s.step}</div>
+                <div className="glass-card w-full flex-1 p-6">
+                  <h3 className="text-base font-bold text-indigo mb-2">{s.title}</h3>
+                  <p className="text-sm text-brand-body leading-relaxed">{s.desc}</p>
+                </div>
               </div>
             ))}
           </div>
