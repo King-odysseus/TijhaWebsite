@@ -204,9 +204,9 @@ function ServicesPage() {
             {/* Connecting line running through the numbered circles (desktop only) */}
             <div className="pointer-events-none absolute top-7 left-[10%] right-[10%] h-px bg-indigo/20 hidden lg:block" />
             {approach.map((s) => (
-              <div key={s.step} className="flex flex-col items-center text-center">
+              <div key={s.step} className="flex h-full flex-col items-center text-center">
                 <div className="glass-circle relative z-10 w-14 h-14 mb-5 text-indigo font-bold">{s.step}</div>
-                <div className="glass-card p-6">
+                <div className="glass-card w-full flex-1 p-6">
                   <h3 className="text-base font-bold text-indigo mb-2">{s.title}</h3>
                   <p className="text-sm text-brand-body leading-relaxed">{s.desc}</p>
                 </div>
@@ -294,8 +294,8 @@ function ServicesPage() {
             {/* Image column */}
             <div className="order-1 lg:order-1">
               <img
-                src="/images/employee-financial-review.jpg"
-                alt="African professional analyzing financial data and charts"
+                src="/images/support team.png"
+                alt="Tijha support team collaborating"
                 className="w-full h-[420px] md:h-[560px] object-cover rounded-2xl shadow-md"
                 loading="lazy"
               />
