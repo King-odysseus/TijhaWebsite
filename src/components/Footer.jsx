@@ -29,10 +29,10 @@ function Footer() {
 
           {/* Useful Links */}
           <div className="pl-8 lg:pl-12">
-            <h4 className="text-[15px] font-bold text-white uppercase tracking-wider mb-4">Useful Links</h4>
+            <h4 className="text-[15px] font-bold text-white uppercase tracking-wider mb-4">Useful links</h4>
             <div className="flex flex-col gap-2">
               <Link to="/" className="text-[15px] text-white/70 hover:text-bronze transition-colors">Home</Link>
-              <Link to="/about" className="text-[15px] text-white/70 hover:text-bronze transition-colors">About Us</Link>
+              <Link to="/about" className="text-[15px] text-white/70 hover:text-bronze transition-colors">About us</Link>
               <Link to="/services" className="text-[15px] text-white/70 hover:text-bronze transition-colors">Services</Link>
               <Link to="/contact" className="text-[15px] text-white/70 hover:text-bronze transition-colors">Contact</Link>
             </div>
@@ -53,7 +53,7 @@ function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-[15px] font-bold text-white uppercase tracking-wider mb-4">Quick Links</h4>
+            <h4 className="text-[15px] font-bold text-white uppercase tracking-wider mb-4">Quick links</h4>
             <div className="flex flex-col gap-2">
               <Link to="/about" className="text-[15px] text-white/70 hover:text-bronze transition-colors">About us</Link>
               <Link to="/services" className="text-[15px] text-white/70 hover:text-bronze transition-colors">Our services</Link>
@@ -64,10 +64,10 @@ function Footer() {
 
         <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-[15px] text-white/60">
-            © 2025 TIJHA CONSULT | ALL RIGHT RESERVED
+            © 2025 Tijha Consult | All rights reserved
           </p>
           <p className="text-[15px] text-white/60">
-            POWERED BY ATARIFIX
+            Powered by Atarifix
           </p>
         </div>
       </div>
