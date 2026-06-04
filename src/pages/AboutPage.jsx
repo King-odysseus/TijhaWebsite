@@ -172,7 +172,6 @@ function AboutPage() {
         className="relative py-20 overflow-hidden bg-cover bg-center"
         style={{ backgroundImage: `url('/images/Best Team.png')` }}
       >
-        <div className="absolute inset-0 bg-indigo/85" />
         <div className="container-main relative z-10">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             {stats.map((s) => (
