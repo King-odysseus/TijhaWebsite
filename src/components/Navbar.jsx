@@ -53,7 +53,7 @@ function Navbar() {
         </div>
 
         {/* Right: CTA */}
-        <div className="flex items-center justify-end gap-3">
+        <div className="col-start-3 flex items-center justify-end gap-3">
           <Link
             to="/contact"
             className="hidden md:flex bg-bronze text-white pr-5 pl-2 py-2 rounded-full text-sm font-semibold hover:bg-[#b8895c] transition items-center animate-pulse-glow"
