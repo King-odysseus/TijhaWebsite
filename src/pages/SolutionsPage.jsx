@@ -68,7 +68,7 @@ function SolutionsPage() {
   return (
     <div className="pt-[70px]">
       {/* Hero */}
-      <section className="pt-16 pb-16 md:pt-24 md:pb-20 bg-white">
+      <section className="pt-24 pb-24 md:pt-32 md:pb-32 bg-white">
         <div className="container-main">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div>
