@@ -111,7 +111,7 @@ function ServiceOfferings() {
             <div
               key={pillar.id}
               data-id={pillar.id}
-              className={`group relative rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-xl border border-[#D9D9D9]/50 transition-all duration-700 ease-out ${
+              className={`group relative rounded-2xl overflow-hidden neo-card hover:-translate-y-1 transition-all duration-300 ease-out ${
                 animated[pillar.id]
                   ? 'opacity-100 translate-y-0'
                   : 'opacity-100'
