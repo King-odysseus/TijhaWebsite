@@ -202,10 +202,16 @@ function ServicesPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
             {approach.map((s) => (
-              <div key={s.step} className="glass-card p-6 text-center">
-                <div className="glass-circle w-14 h-14 mx-auto mb-4 text-indigo font-bold">{s.step}</div>
-                <h3 className="text-base font-bold text-indigo mb-2">{s.title}</h3>
-                <p className="text-sm text-brand-body leading-relaxed">{s.desc}</p>
+              <div key={s.step} className="glass-card relative overflow-hidden p-6 pt-10">
+                {/* Large translucent step number watermark behind the content */}
+                <span
+                  aria-hidden="true"
+                  className="pointer-events-none absolute -top-2 right-1 select-none text-7xl font-black leading-none text-indigo/10"
+                >
+                  {s.step}
+                </span>
+                <h3 className="relative z-10 text-base font-bold text-indigo mb-2">{s.title}</h3>
+                <p className="relative z-10 text-sm text-brand-body leading-relaxed">{s.desc}</p>
               </div>
             ))}
           </div>
