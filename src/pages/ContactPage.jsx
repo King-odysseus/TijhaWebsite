@@ -101,12 +101,12 @@ function ContactPage() {
               </div>
             </div>
 
-            {/* Image */}
-            <div className="lg:h-full">
+            {/* Image — absolutely filled on desktop so its height matches the contact cards beside it */}
+            <div className="relative">
               <img
                 src="/images/tijha-ceo-briefing.jpg"
                 alt="Executive leading a corporate briefing"
-                className="w-full h-full min-h-[360px] object-cover rounded-3xl shadow-lg"
+                className="w-full h-72 object-cover rounded-3xl shadow-lg lg:absolute lg:inset-0 lg:h-full"
                 loading="lazy"
               />
             </div>
