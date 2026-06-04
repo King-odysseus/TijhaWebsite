@@ -200,18 +200,16 @@ function ServicesPage() {
             <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-bronze mb-4">How We Work</span>
             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-brand-dark">Our Approach</h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+          <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-6">
+            {/* Connecting line running through the numbered circles (desktop only) */}
+            <div className="pointer-events-none absolute top-7 left-[10%] right-[10%] h-px bg-indigo/20 hidden lg:block" />
             {approach.map((s) => (
-              <div key={s.step} className="glass-card relative overflow-hidden p-6 pt-10">
-                {/* Large translucent step number watermark behind the content */}
-                <span
-                  aria-hidden="true"
-                  className="pointer-events-none absolute -top-2 right-1 select-none text-7xl font-black leading-none text-indigo/10"
-                >
-                  {s.step}
-                </span>
-                <h3 className="relative z-10 text-base font-bold text-indigo mb-2">{s.title}</h3>
-                <p className="relative z-10 text-sm text-brand-body leading-relaxed">{s.desc}</p>
+              <div key={s.step} className="flex flex-col items-center text-center">
+                <div className="glass-circle relative z-10 w-14 h-14 mb-5 text-indigo font-bold">{s.step}</div>
+                <div className="glass-card p-6">
+                  <h3 className="text-base font-bold text-indigo mb-2">{s.title}</h3>
+                  <p className="text-sm text-brand-body leading-relaxed">{s.desc}</p>
+                </div>
               </div>
             ))}
           </div>
