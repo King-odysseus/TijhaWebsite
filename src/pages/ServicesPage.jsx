@@ -294,8 +294,8 @@ function ServicesPage() {
             {/* Image column */}
             <div className="order-1 lg:order-1">
               <img
-                src="/images/support team.png"
-                alt="Tijha support team collaborating"
+                src="/images/business-team-discussion.jpg"
+                alt="Business team standing together discussing over a laptop"
                 className="w-full h-[420px] md:h-[560px] object-cover rounded-2xl shadow-md"
                 loading="lazy"
               />
