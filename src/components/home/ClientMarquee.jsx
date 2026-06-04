@@ -4,15 +4,29 @@ const testimonials = [
   {
     id: 1,
     quote:
-      "Tijha delivered an outstanding website for us and their accounting tool has completely streamlined our financial operations. We couldn't be more pleased with the results. Professional, on time, and exactly what we needed.",
-    name: 'Braige',
+      "Tijha built us a modern, fast, and beautifully designed website that truly reflects our brand. The team was professional, responsive, and delivered on time. We've received great feedback from our clients and seen a noticeable uptick in inquiries since launch.",
+    name: 'Braige & Company',
     role: 'Client',
   },
   {
     id: 2,
     quote:
-      "From brand design to social media setup and sharp business development insights, Tijha exceeded every expectation. They didn't just give us a look, they gave us a strategy that's already driving real growth. Extremely satisfied.",
-    name: 'Braige & Company',
+      "From brand design to custom templates and thoughtful technology advisory, Tijha exceeded every expectation. They didn't just give us a fresh look — they gave us a cohesive identity and practical tools that are already driving real growth. Extremely satisfied.",
+    name: 'Vlad Clothing',
+    role: 'Client',
+  },
+  {
+    id: 3,
+    quote:
+      "Tijha developed a sleek, high-performing website for us and delivered tailored technology solutions that streamlined how we manage client engagements. Their ability to understand our unique needs and translate them into practical systems was outstanding.",
+    name: 'FortC Consulting',
+    role: 'Client',
+  },
+  {
+    id: 4,
+    quote:
+      "The technology advisory we received from Tijha was practical, clear, and transformative. They helped us identify the right tools for our operations and guided us through implementation with patience and deep expertise. A genuinely valuable partnership.",
+    name: 'Jefnox',
     role: 'Client',
   },
 ];
