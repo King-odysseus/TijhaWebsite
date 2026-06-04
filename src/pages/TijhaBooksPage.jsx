@@ -111,7 +111,7 @@ function TijhaBooksPage() {
               <img
                 src="/images/tijhabooks-dashboard.png"
                 alt="TijhaBooks dashboard showing revenue, expenses and profit"
-                className="w-full h-72 md:h-[420px] object-cover object-top rounded-3xl shadow-xl border border-gray-200"
+                className="w-full h-auto rounded-xl shadow-xl border border-gray-200"
                 loading="lazy"
               />
               <div className="absolute -bottom-5 -right-5 w-28 h-28 rounded-2xl bg-bronze/15 -z-0 hidden md:block" />
@@ -128,7 +128,7 @@ function TijhaBooksPage() {
               <img
                 src="/images/tijhabooks-analytics.png"
                 alt="TijhaBooks analytics with profit margins and cash flow"
-                className="w-full h-[360px] md:h-[500px] object-cover object-top rounded-3xl shadow-lg border border-gray-200"
+                className="w-full h-auto rounded-xl shadow-lg border border-gray-200"
                 loading="lazy"
               />
             </div>
@@ -210,11 +210,11 @@ function TijhaBooksPage() {
                 ))}
               </ul>
             </div>
-            <div className="lg:h-full">
+            <div>
               <img
                 src="/images/tijhabooks-signin.png"
                 alt="TijhaBooks sign-in screen — Financials Made Easy"
-                className="w-full h-72 lg:h-full object-cover object-top rounded-3xl shadow-lg border border-gray-200"
+                className="w-full h-auto rounded-xl shadow-lg border border-gray-200"
                 loading="lazy"
               />
             </div>
