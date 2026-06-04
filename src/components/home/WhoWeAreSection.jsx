@@ -70,7 +70,7 @@ function WhoWeAreSection() {
                 Built On <span className="text-bronze">Collaboration</span>, Driven By Results
               </h3>
               <p className="text-brand-body leading-relaxed text-base md:text-lg">
-                From strategy and market research to digital systems and hands-on delivery, we work alongside your team at every stage. Our consultants pair deep expertise with practical tools, turning ambitious goals into measurable, lasting outcomes.
+                From strategy and research to digital systems and hands-on delivery, we work alongside your team at every stage, turning ambitious goals into measurable, lasting outcomes.
               </p>
             </div>
           </div>
