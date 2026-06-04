@@ -51,13 +51,13 @@ function Footer() {
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* Get in touch */}
           <div>
-            <h4 className="text-[15px] font-bold text-white uppercase tracking-wider mb-4">Quick links</h4>
-            <div className="flex flex-col gap-2">
-              <Link to="/about" className="text-[15px] text-white/70 hover:text-bronze transition-colors">About us</Link>
-              <Link to="/services" className="text-[15px] text-white/70 hover:text-bronze transition-colors">Our services</Link>
-              <Link to="/contact" className="text-[15px] text-white/70 hover:text-bronze transition-colors">Contact us</Link>
+            <h4 className="text-[15px] font-bold text-white uppercase tracking-wider mb-4">Get in touch</h4>
+            <div className="flex flex-col gap-3">
+              <p className="text-[15px] text-white/70">+234 707 070 3935</p>
+              <p className="text-[15px] text-white/70">enquiries@tijha.com</p>
+              <p className="text-[15px] text-white/70">Sapele Road, Benin City</p>
             </div>
           </div>
         </div>
