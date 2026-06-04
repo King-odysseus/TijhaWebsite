@@ -159,7 +159,7 @@ function ServicesPage() {
       <section className="section-padding bg-[#F5F5F7]">
         <div className="container-main">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div className="order-2 lg:order-1">
+            <div className="order-2 lg:order-2">
               <img
                 src="/images/business-development.jpg"
                 alt="Partnership handshake"
@@ -167,7 +167,7 @@ function ServicesPage() {
                 loading="lazy"
               />
             </div>
-            <div className="order-1 lg:order-2">
+            <div className="order-1 lg:order-1">
               <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-brand-dark mb-6">Why Our Services Matter</h2>
               <p className="text-brand-body leading-relaxed mb-4">
                 Organisations face scattered priorities, unclear processes, and stretched resources, leading to inefficiencies and frustrated teams.
@@ -224,18 +224,8 @@ function ServicesPage() {
             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-brand-dark">Service Areas</h2>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
-            {/* Image column */}
-            <div>
-              <img
-                src="/images/business-meeting.jpg"
-                alt="Business strategy consultation"
-                className="w-full h-[420px] md:h-[560px] object-cover rounded-3xl shadow-lg"
-                loading="lazy"
-              />
-            </div>
-
             {/* Accordion column */}
-            <div className="space-y-4">
+            <div className="space-y-4 order-2 lg:order-1">
               {serviceAreas.map((area) => {
                 const isOpen = openArea === area.title;
                 return (
@@ -283,6 +273,16 @@ function ServicesPage() {
                 );
               })}
             </div>
+
+            {/* Image column */}
+            <div className="order-1 lg:order-2">
+              <img
+                src="/images/business-meeting.jpg"
+                alt="African business professionals in a meeting"
+                className="w-full h-[420px] md:h-[560px] object-cover rounded-3xl shadow-lg"
+                loading="lazy"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -292,7 +292,7 @@ function ServicesPage() {
         <div className="container-main max-w-7xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Image column */}
-            <div className="order-1 lg:order-1">
+            <div className="order-1 lg:order-2">
               <img
                 src="/images/business-team-discussion.jpg"
                 alt="Business team standing together discussing over a laptop"
@@ -302,7 +302,7 @@ function ServicesPage() {
             </div>
 
             {/* Content column */}
-            <div className="order-2 lg:order-2">
+            <div className="order-2 lg:order-1">
               <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-brand-dark mb-8">
                 Why Choose Tijha
               </h2>
