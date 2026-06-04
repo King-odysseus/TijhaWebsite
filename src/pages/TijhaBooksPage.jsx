@@ -169,6 +169,34 @@ function TijhaBooksPage() {
         </div>
       </section>
 
+      {/* Invoicing showcase */}
+      <section className="section-padding bg-[#F5F5F7]">
+        <div className="container-main">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div>
+              <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-bronze mb-4">Invoicing</span>
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-indigo mb-6">
+                Create Professional Invoices In Minutes
+              </h2>
+              <p className="text-brand-body leading-relaxed mb-4">
+                Add your customer, set a due date and currency, and let TijhaBooks handle the rest, including VAT (7.5%) and withholding tax. Save it as a draft or send it the moment it is ready.
+              </p>
+              <p className="text-brand-body leading-relaxed">
+                Every invoice is tracked end to end, so you always know what has been paid and what is still outstanding.
+              </p>
+            </div>
+            <div>
+              <img
+                src="/images/tijhabooks-invoice.png"
+                alt="TijhaBooks new invoice form with bill-to, details and tax settings"
+                className="w-full h-auto rounded-xl shadow-lg border border-gray-200"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* How it works */}
       <section className="section-padding relative overflow-hidden bg-gradient-to-br from-[#F0EDF7] via-[#F8F7FC] to-[#F0EDF5]">
         <div className="absolute top-20 left-10 w-72 h-72 bg-indigo/8 rounded-full blur-3xl" />
@@ -212,8 +240,8 @@ function TijhaBooksPage() {
             </div>
             <div>
               <img
-                src="/images/tijhabooks-signin.png"
-                alt="TijhaBooks sign-in screen — Financials Made Easy"
+                src="/images/tijhabooks-tax.png"
+                alt="TijhaBooks tax management with VAT history and company tax"
                 className="w-full h-auto rounded-xl shadow-lg border border-gray-200"
                 loading="lazy"
               />
