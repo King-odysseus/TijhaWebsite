@@ -68,7 +68,7 @@ function SolutionsPage() {
   return (
     <div className="pt-[70px]">
       {/* Hero */}
-      <section className="pt-24 pb-24 md:pt-32 md:pb-32 bg-white">
+      <section className="pt-16 pb-16 md:pt-32 md:pb-32 bg-white">
         <div className="container-main">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div>
@@ -164,7 +164,7 @@ function SolutionsPage() {
             <div className="group overflow-hidden rounded-2xl shadow-md">
               <img src="/images/solutions-infrastructure.jpg" alt="IT lead maintaining systems in a server room" className="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
             </div>
-            <div className="group overflow-hidden rounded-2xl shadow-md">
+            <div className="group overflow-hidden rounded-2xl shadow-md hidden sm:block">
               <img src="/images/solutions-mobile.jpg" alt="Professional using a smartphone on the move" className="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
             </div>
             <div className="flex flex-col justify-center rounded-2xl bg-white shadow-md p-8 md:p-10 min-h-[14rem]">
