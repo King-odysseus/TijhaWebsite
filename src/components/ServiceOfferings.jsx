@@ -1,6 +1,14 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 
+function Check({ className = '' }) {
+  return (
+    <svg className={`w-4 h-4 ${className}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+    </svg>
+  );
+}
+
 const pillars = [
   {
     id: 'strategy',
@@ -90,13 +98,13 @@ function ServiceOfferings() {
             animated['header'] ? 'opacity-100 translate-y-0' : ''
           }`}
         >
-          <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-[#C49A6C] mb-4 text-shadow-bronze">
+          <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-bronze mb-4 text-shadow-bronze">
             What We Do
           </span>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#262262] mb-6">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-indigo mb-6">
             Our Service Offerings
           </h2>
-          <p className="text-base md:text-lg text-[#6b7280] leading-relaxed">
+          <p className="text-base md:text-lg text-brand-body leading-relaxed">
             Four integrated pillars that cover every stage of your organisation's growth journey.
           </p>
         </div>
@@ -119,33 +127,41 @@ function ServiceOfferings() {
                 <img
                   src={pillar.image}
                   alt={pillar.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-[#262262]/50" />
+                {/* Soft bottom gradient so the photo eases into the card */}
+                <div className="absolute inset-0 bg-gradient-to-t from-indigo/70 via-indigo/15 to-transparent" />
               </div>
 
               {/* Text content */}
-              <div className="p-6 md:p-8 text-center">
+              <div className="p-6 md:p-8">
                 {/* Tagline */}
-                <span className="text-[10px] font-bold uppercase tracking-[0.15em] text-[#C49A6C] mb-1 block text-shadow-bronze">
+                <span className="text-[10px] font-bold uppercase tracking-[0.15em] text-bronze mb-1 block text-shadow-bronze">
                   {pillar.tagline}
                 </span>
 
                 {/* Title */}
-                <h3 className="text-xl font-bold text-[#262262] mb-3 group-hover:text-[#C49A6C] transition-colors duration-300">
+                <h3 className="text-xl font-bold text-indigo mb-4 group-hover:text-bronze transition-colors duration-300">
                   {pillar.title}
                 </h3>
 
-                {/* Service list — comma separated */}
-                <p className="text-xs text-[#1f2937] leading-relaxed mb-5">
-                  {pillar.services.join(', ')}
-                </p>
+                {/* Service list — checkmark items, matching the rest of the site */}
+                <ul className="space-y-2.5 mb-6">
+                  {pillar.services.map((service) => (
+                    <li key={service} className="flex items-start gap-3">
+                      <span className="neo-circle w-6 h-6 flex-shrink-0 text-bronze mt-0.5">
+                        <Check className="w-3.5 h-3.5" />
+                      </span>
+                      <span className="text-sm text-brand-body leading-relaxed">{service}</span>
+                    </li>
+                  ))}
+                </ul>
 
                 {/* CTA Button */}
                 <Link
                   to="/services"
-                  className="inline-flex items-center gap-1.5 px-5 py-2 rounded-full text-xs font-semibold bg-[#C49A6C] text-white hover:bg-[#b8895c] hover:scale-105 active:scale-95 transition-all duration-200"
+                  className="inline-flex items-center gap-1.5 px-5 py-2 rounded-full text-xs font-semibold bg-bronze text-white hover:bg-[#b8895c] hover:scale-105 active:scale-95 transition-all duration-200"
                 >
                   View Services
                   <svg
