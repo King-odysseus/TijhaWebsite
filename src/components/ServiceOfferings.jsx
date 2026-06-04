@@ -14,7 +14,6 @@ const pillars = [
     id: 'strategy',
     title: 'Strategy & Growth',
     tagline: 'From vision to market leadership',
-    image: '/images/strategy-growth.jpg',
     services: [
       'Business Strategy Development',
       'Market Research & Intelligence',
@@ -27,7 +26,6 @@ const pillars = [
     id: 'development',
     title: 'Business Development',
     tagline: 'Partnerships, funding & expansion',
-    image: '/images/business-development.jpg',
     services: [
       'Stakeholder Engagement Strategy',
       'Business Plan Development',
@@ -40,7 +38,6 @@ const pillars = [
     id: 'operations',
     title: 'Operations & Delivery',
     tagline: 'Efficiency, control & execution',
-    image: '/images/operations-delivery.jpg',
     services: [
       'Operational Diagnostics & Mapping',
       'Workflow Optimization & Automation',
@@ -53,7 +50,6 @@ const pillars = [
     id: 'people',
     title: 'People & Technology',
     tagline: 'Capability, systems & scale',
-    image: '/images/people-technology.jpg',
     services: [
       'Leadership & Management Training',
       'Executive Coaching & Workshops',
@@ -122,18 +118,6 @@ function ServiceOfferings() {
               }`}
               style={{ transitionDelay: `${i * 120}ms` }}
             >
-              {/* Image area */}
-              <div className="relative h-44 overflow-hidden">
-                <img
-                  src={pillar.image}
-                  alt={pillar.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  loading="lazy"
-                />
-                {/* Soft bottom gradient so the photo eases into the card */}
-                <div className="absolute inset-0 bg-gradient-to-t from-indigo/70 via-indigo/15 to-transparent" />
-              </div>
-
               {/* Text content */}
               <div className="p-6 md:p-8">
                 {/* Tagline */}
