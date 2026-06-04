@@ -106,7 +106,7 @@ function ContactPage() {
               <img
                 src="/images/tijha-ceo-briefing.jpg"
                 alt="Executive leading a corporate briefing"
-                className="w-full h-72 object-cover rounded-3xl shadow-lg lg:absolute lg:inset-0 lg:h-full"
+                className="w-full h-72 object-cover object-top rounded-3xl shadow-lg lg:absolute lg:inset-0 lg:h-full"
                 loading="lazy"
               />
             </div>
