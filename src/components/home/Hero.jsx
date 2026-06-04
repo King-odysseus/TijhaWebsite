@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 function Hero() {
   return (
     <section
-      className="w-full pt-20 pb-0 relative overflow-hidden"
+      className="w-full pt-28 pb-12 md:pt-32 lg:pb-0 relative overflow-hidden"
       style={{
         backgroundImage: `url('/images/Globe.png')`,
         backgroundSize: 'cover',
@@ -16,7 +16,7 @@ function Hero() {
       <div className="w-full px-6 md:px-12 lg:px-20 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1 pl-8 md:pl-16">
-            <h1 className="animate-fade-in-up text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-5xl font-extrabold text-indigo leading-tight mb-6">
+            <h1 className="animate-fade-in-up text-3xl sm:text-4xl md:text-4xl lg:text-3xl xl:text-5xl font-extrabold text-indigo leading-tight mb-6">
               Your Partner In <span className="text-bronze text-shadow-bronze">Digital And Operational</span> Excellence
             </h1>
             <p className="animate-fade-in-up-delay-1 text-brand-body leading-relaxed mb-8 text-sm sm:text-base md:text-lg">
