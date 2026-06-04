@@ -15,7 +15,7 @@ function Hero() {
 
       <div className="w-full px-6 md:px-12 lg:px-20 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="pl-8 md:pl-16">
+          <div className="order-2 lg:order-1 pl-8 md:pl-16">
             <h1 className="animate-fade-in-up text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-5xl font-extrabold text-indigo leading-tight mb-6">
               Your Partner In <span className="text-bronze text-shadow-bronze">Digital And Operational</span> Excellence
             </h1>
@@ -30,7 +30,7 @@ function Hero() {
               See Services
             </Link>
           </div>
-          <div className="flex items-end justify-center pl-8 md:pl-16">
+          <div className="order-1 lg:order-2 flex items-end justify-center pl-8 md:pl-16">
             <img
               src="/images/Friendly%20ally.png"
               alt="Friendly ally illustration"
