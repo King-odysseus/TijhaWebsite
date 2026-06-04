@@ -28,7 +28,7 @@ function FAQ() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* FAQ accordion */}
           <div>
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-brand-dark mb-8">Frequently Asked Questions</h2>
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-indigo mb-8">Frequently Asked Questions</h2>
 
             <div className="space-y-4">
           {faqs.map((f, i) => {
@@ -39,7 +39,7 @@ function FAQ() {
                   onClick={() => setOpen(isOpen ? null : i)}
                   className="w-full flex items-center justify-between px-6 py-5 text-left font-semibold transition-colors"
                 >
-                  <span className={isOpen ? 'text-indigo' : 'text-brand-dark'}>{f.q}</span>
+                  <span className={isOpen ? 'text-indigo' : 'text-indigo'}>{f.q}</span>
                   <svg
                     className={`w-5 h-5 flex-shrink-0 ml-4 transition-transform duration-300 ${isOpen ? 'rotate-180 text-indigo' : 'text-brand-body'}`}
                     fill="none"

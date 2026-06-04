@@ -30,7 +30,7 @@ function Services() {
     <section className="section-padding bg-[#F5F5F7]">
       <div className="container-main">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-brand-dark text-center mb-12">Amazing Offers</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-indigo text-center mb-12">Amazing Offers</h2>
 
           <div className="space-y-4">
             {services.map((s) => {
@@ -40,7 +40,7 @@ function Services() {
                   <button
                     onClick={() => setOpen(isOpen ? null : s.id)}
                     className={`w-full flex items-center justify-between px-6 py-5 text-left font-semibold transition-colors ${
-                      isOpen ? 'text-indigo bg-brand-blue/5' : 'text-brand-dark hover:text-indigo'
+                      isOpen ? 'text-indigo bg-brand-blue/5' : 'text-indigo hover:text-indigo'
                     }`}
                   >
                     <span>{s.title}</span>

@@ -75,7 +75,7 @@ function SolutionsPage() {
               <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-bronze mb-4">
                 Our Solutions
               </span>
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] font-bold text-brand-dark leading-tight mb-6">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] font-bold text-indigo leading-tight mb-6">
                 Digital Solutions Built Around <span className="text-bronze">Your Business.</span>
               </h1>
               <p className="text-sm sm:text-base md:text-lg text-brand-body leading-relaxed mb-8">
@@ -106,13 +106,13 @@ function SolutionsPage() {
         <div className="container-main">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-bronze mb-4">What We Build</span>
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-brand-dark">Solutions for Every Stage of Growth</h2>
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-indigo">Solutions for Every Stage of Growth</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {solutions.map((s) => (
               <div key={s.title} className="group neo-card p-8 hover:-translate-y-1 transition-transform duration-300">
-                <div className="neo-circle w-14 h-14 mb-5 text-indigo">{s.icon}</div>
-                <h3 className="text-lg font-bold text-brand-dark mb-3 group-hover:text-bronze transition-colors">{s.title}</h3>
+                <div className="neo-circle w-14 h-14 mb-5 text-bronze">{s.icon}</div>
+                <h3 className="text-lg font-bold text-indigo mb-3 group-hover:text-bronze transition-colors">{s.title}</h3>
                 <p className="text-sm text-brand-body leading-relaxed">{s.desc}</p>
               </div>
             ))}
@@ -125,7 +125,7 @@ function SolutionsPage() {
         <div className="container-main">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="order-2 lg:order-1">
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-brand-dark mb-6">Technology That Works The Way You Do</h2>
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-indigo mb-6">Technology That Works The Way You Do</h2>
               <p className="text-brand-body leading-relaxed mb-8">
                 We don't just hand over software, we build solutions that fit your processes and equip your team to own them. Every tool is designed for clarity, reliability, and real-world use.
               </p>

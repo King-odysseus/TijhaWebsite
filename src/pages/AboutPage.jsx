@@ -71,7 +71,7 @@ function AboutPage() {
               <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-bronze mb-4">
                 About Us
               </span>
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] font-bold text-brand-dark leading-tight mb-6">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] font-bold text-indigo leading-tight mb-6">
                 A Team That Stands <span className="text-bronze">Beside You</span>, Not Just Behind You.
               </h1>
               <p className="text-sm sm:text-base md:text-lg text-brand-body leading-relaxed">
@@ -104,7 +104,7 @@ function AboutPage() {
               />
             </div>
             <div className="order-1 lg:order-2">
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-brand-dark mb-6">Our Purpose</h2>
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-indigo mb-6">Our Purpose</h2>
               <p className="text-brand-body leading-relaxed mb-4">
                 We exist to close the gap between planning and doing for African organisations, converting strategic plans into actionable solutions that work in practice, not just on paper.
               </p>
@@ -121,7 +121,7 @@ function AboutPage() {
         <div className="container-main">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-14">
             <div className="neo-card p-8">
-              <div className="neo-circle w-12 h-12 mb-5 text-indigo">
+              <div className="neo-circle w-12 h-12 mb-5 text-bronze">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
@@ -132,7 +132,7 @@ function AboutPage() {
               </p>
             </div>
             <div className="neo-card p-8">
-              <div className="neo-circle w-12 h-12 mb-5 text-indigo">
+              <div className="neo-circle w-12 h-12 mb-5 text-bronze">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
@@ -147,7 +147,7 @@ function AboutPage() {
 
           <div className="text-center max-w-3xl mx-auto mb-10">
             <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-bronze mb-4">What Drives Us</span>
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-brand-dark">Our Core Values</h2>
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-indigo">Our Core Values</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
             {values.map((v) => (
@@ -172,14 +172,14 @@ function AboutPage() {
         <div className="container-main relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-bronze mb-4">How We Work</span>
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-brand-dark">Our Methodology</h2>
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-indigo">Our Methodology</h2>
           </div>
           <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-6">
             {/* Connecting line running through the numbered circles (desktop only) */}
             <div className="pointer-events-none absolute top-7 left-[10%] right-[10%] h-px bg-indigo/20 hidden lg:block" />
             {approach.map((s) => (
               <div key={s.step} className="flex h-full flex-col items-center text-center">
-                <div className="glass-circle relative z-10 w-14 h-14 mb-5 text-indigo font-bold">{s.step}</div>
+                <div className="glass-circle relative z-10 w-14 h-14 mb-5 text-bronze font-bold">{s.step}</div>
                 <div className="glass-card w-full flex-1 p-6">
                   <h3 className="text-base font-bold text-indigo mb-2">{s.title}</h3>
                   <p className="text-sm text-brand-body leading-relaxed">{s.desc}</p>
@@ -219,7 +219,7 @@ function AboutPage() {
       <section className="section-padding bg-white">
         <div className="container-main">
           <div className="text-center mb-16 max-w-2xl mx-auto">
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-brand-dark mb-4">Our People</h2>
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-indigo mb-4">Our People</h2>
             <p className="text-brand-body leading-relaxed">
               At Tijha, our strength lies in the calibre, diversity, and dedication of the people behind our work.
             </p>
@@ -233,11 +233,11 @@ function AboutPage() {
                     onClick={() => setOpenPerson(isOpen ? null : group.title)}
                     className="w-full flex items-center gap-4 px-6 py-5 text-left transition-colors"
                   >
-                    <span className={`neo-circle w-11 h-11 flex-shrink-0 font-bold bg-white transition-colors ${isOpen ? 'text-bronze' : 'text-indigo'}`}>
+                    <span className={`neo-circle w-11 h-11 flex-shrink-0 font-bold bg-white transition-colors ${isOpen ? 'text-bronze' : 'text-bronze'}`}>
                       {`0${i + 1}`}
                     </span>
                     <div className="flex-1 min-w-0">
-                      <h3 className={`text-lg font-bold transition-colors ${isOpen ? 'text-bronze' : 'text-brand-dark'}`}>{group.title}</h3>
+                      <h3 className={`text-lg font-bold transition-colors ${isOpen ? 'text-bronze' : 'text-indigo'}`}>{group.title}</h3>
                       <p className="text-sm text-brand-body leading-relaxed mt-0.5 line-clamp-1">{group.desc}</p>
                     </div>
                     <svg
@@ -278,7 +278,7 @@ function AboutPage() {
       {/* CTA banner */}
       <section className="py-24 bg-[#F5F5F7]">
         <div className="container-main text-center max-w-3xl">
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-brand-dark mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-indigo mb-4">
             Let's build something that lasts.
           </h2>
           <p className="text-brand-body leading-relaxed mb-10 max-w-2xl mx-auto">

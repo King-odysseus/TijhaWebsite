@@ -42,7 +42,7 @@ function ContactPage() {
               <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-bronze mb-4">
                 Get In Touch
               </span>
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] font-bold text-brand-dark leading-tight mb-6">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] font-bold text-indigo leading-tight mb-6">
                 Let's Start A <span className="text-bronze">Conversation.</span>
               </h1>
               <p className="text-sm sm:text-base md:text-lg text-brand-body leading-relaxed">
@@ -67,22 +67,22 @@ function ContactPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
             {/* Contact Info */}
             <div>
-              <h2 className="text-2xl font-bold text-brand-dark mb-8">Reach Out</h2>
+              <h2 className="text-2xl font-bold text-indigo mb-8">Reach Out</h2>
               <div className="space-y-5">
                 {contactDetails.map((d) => (
                   <div key={d.title} className="neo-card p-6 flex items-start gap-4">
-                    <div className="neo-circle w-11 h-11 flex-shrink-0 text-indigo">
+                    <div className="neo-circle w-11 h-11 flex-shrink-0 text-bronze">
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">{d.icon}</svg>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-brand-dark mb-1">{d.title}</h3>
+                      <h3 className="font-semibold text-indigo mb-1">{d.title}</h3>
                       <p className="text-brand-body text-sm">{d.value}</p>
                     </div>
                   </div>
                 ))}
 
                 <div className="neo-card p-6">
-                  <h3 className="font-semibold text-brand-dark mb-3">Follow Us</h3>
+                  <h3 className="font-semibold text-indigo mb-3">Follow Us</h3>
                   <div className="flex gap-3">
                     {socials.map((s) => (
                       <a

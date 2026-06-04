@@ -2,7 +2,7 @@ function Consultation() {
   return (
     <section id="contact" className="section-padding bg-white">
       <div className="container-main text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-brand-dark mb-4">Free Consultation</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-indigo mb-4">Free Consultation</h2>
         <p className="text-brand-body max-w-2xl mx-auto leading-relaxed mb-10">
           Ready to transform your organisation? Book a free consultation with our team and discover how Tijha can help you achieve your goals.
         </p>

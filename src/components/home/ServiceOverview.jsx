@@ -47,7 +47,7 @@ function ServiceOverview() {
           <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-indigo mb-4">
             What We Do
           </span>
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-brand-dark mb-6">Our Service Offerings</h2>
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-indigo mb-6">Our Service Offerings</h2>
           <p className="text-brand-body max-w-3xl mx-auto leading-relaxed">
             At Tijha, we provide a suite of consulting and digital solutions designed to help organisations operate smarter, faster, and more sustainably. Our services span business process optimisation, project management, and digital transformation enabling clients to streamline operations, improve efficiency, and deliver measurable results.
           </p>
@@ -56,10 +56,10 @@ function ServiceOverview() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {services.map((s) => (
             <div key={s.title} className="neo-card p-8 hover:-translate-y-1 transition-transform duration-300">
-              <div className="neo-circle w-14 h-14 text-indigo mb-5">
+              <div className="neo-circle w-14 h-14 text-bronze mb-5">
                 {s.icon}
               </div>
-              <h3 className="text-xl font-bold text-brand-dark mb-3">{s.title}</h3>
+              <h3 className="text-xl font-bold text-indigo mb-3">{s.title}</h3>
               <p className="text-sm text-brand-body leading-relaxed mb-5">{s.desc}</p>
               <Link to="/services" className="text-sm font-semibold text-indigo hover:underline">
                 Learn more →

@@ -32,7 +32,7 @@ function WhoWeAreSection() {
             </p>
             <Link
               to="/about"
-              className="inline-block px-6 py-3 neo-btn text-brand-dark font-semibold text-sm hover:text-bronze transition-colors"
+              className="inline-block px-6 py-3 neo-btn text-indigo font-semibold text-sm hover:text-bronze transition-colors"
             >
               Learn more
             </Link>
@@ -48,7 +48,7 @@ function WhoWeAreSection() {
         </div>
 
         {/* Image grid with an inline text tile in the fourth cell */}
-        <div className="mt-20 md:mt-28">
+        <div className="my-20 md:my-28">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
             {gallery.map((img) => (
               <div

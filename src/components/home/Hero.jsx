@@ -25,7 +25,7 @@ function Hero() {
 
             <Link
               to="/services"
-              className="animate-fade-in-up-delay-2 inline-block px-8 py-4 neo-btn text-brand-dark font-semibold text-sm hover:text-bronze transition-colors"
+              className="animate-fade-in-up-delay-2 inline-block px-8 py-4 neo-btn text-indigo font-semibold text-sm hover:text-bronze transition-colors"
             >
               See Services
             </Link>

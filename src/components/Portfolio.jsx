@@ -20,7 +20,7 @@ function Portfolio() {
     <section id="portfolio" className="section-padding bg-white">
       <div className="container-main">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-brand-dark mb-4">Our Work</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-indigo mb-4">Our Work</h2>
           <p className="text-brand-body max-w-2xl mx-auto leading-relaxed mb-8">
             Explore a selection of projects that showcase our expertise in strategy, operations, and digital transformation.
           </p>
@@ -34,7 +34,7 @@ function Portfolio() {
                 className={`px-5 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
                   active === cat
                     ? 'bg-brand-blue text-white shadow-lg'
-                    : 'neo-btn text-brand-body hover:text-brand-dark'
+                    : 'neo-btn text-brand-body hover:text-indigo'
                 }`}
               >
                 {cat}
@@ -55,7 +55,7 @@ function Portfolio() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-lg font-bold text-brand-dark mb-1">{project.title}</h3>
+                <h3 className="text-lg font-bold text-indigo mb-1">{project.title}</h3>
                 <span className="text-sm text-brand-body">{project.category}</span>
               </div>
             </div>

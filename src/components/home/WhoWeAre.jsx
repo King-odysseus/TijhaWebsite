@@ -25,7 +25,7 @@ function WhoWeAre() {
             </p>
             <Link
               to="/about"
-              className="inline-block px-6 py-3 neo-btn text-brand-dark font-semibold text-sm hover:text-bronze transition-colors"
+              className="inline-block px-6 py-3 neo-btn text-indigo font-semibold text-sm hover:text-bronze transition-colors"
             >
               Learn more
             </Link>

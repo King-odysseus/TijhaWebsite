@@ -10,7 +10,7 @@ function Team() {
     <section className="section-padding bg-white">
       <div className="container-main">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-brand-dark mb-4">Our Team</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-indigo mb-4">Our Team</h2>
           <p className="text-brand-body max-w-2xl mx-auto leading-relaxed">
             A diverse group of strategists, analysts, and technologists dedicated to delivering measurable impact.
           </p>
@@ -19,10 +19,10 @@ function Team() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {team.map((member) => (
             <div key={member.name} className="neo-card p-8 text-center hover:-translate-y-1 transition-transform duration-300">
-              <div className="neo-circle w-20 h-20 mx-auto mb-5 text-indigo text-xl font-bold">
+              <div className="neo-circle w-20 h-20 mx-auto mb-5 text-bronze text-xl font-bold">
                 {member.initials}
               </div>
-              <h3 className="text-lg font-bold text-brand-dark mb-1">{member.name}</h3>
+              <h3 className="text-lg font-bold text-indigo mb-1">{member.name}</h3>
               <p className="text-sm text-brand-body mb-4">{member.role}</p>
               <div className="flex justify-center gap-3">
                 <a href="#" className="neo-btn w-8 h-8 flex items-center justify-center text-brand-body hover:text-indigo">

@@ -129,7 +129,7 @@ function ServicesPage() {
               <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-bronze mb-4">
                 Our Services
               </span>
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] font-bold text-brand-dark leading-tight mb-6">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] font-bold text-indigo leading-tight mb-6">
                 Intelligence, Innovation, and Execution, <span className="text-bronze">Delivered Together.</span>
               </h1>
               <p className="text-sm sm:text-base md:text-lg text-brand-body leading-relaxed mb-8">
@@ -168,7 +168,7 @@ function ServicesPage() {
               />
             </div>
             <div className="order-1 lg:order-1">
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-brand-dark mb-6">Why Our Services Matter</h2>
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-indigo mb-6">Why Our Services Matter</h2>
               <p className="text-brand-body leading-relaxed mb-4">
                 Organisations face scattered priorities, unclear processes, and stretched resources, leading to inefficiencies and frustrated teams.
               </p>
@@ -198,14 +198,14 @@ function ServicesPage() {
         <div className="container-main relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-bronze mb-4">How We Work</span>
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-brand-dark">Our Approach</h2>
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-indigo">Our Approach</h2>
           </div>
           <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-6">
             {/* Connecting line running through the numbered circles (desktop only) */}
             <div className="pointer-events-none absolute top-7 left-[10%] right-[10%] h-px bg-indigo/20 hidden lg:block" />
             {approach.map((s) => (
               <div key={s.step} className="flex h-full flex-col items-center text-center">
-                <div className="glass-circle relative z-10 w-14 h-14 mb-5 text-indigo font-bold">{s.step}</div>
+                <div className="glass-circle relative z-10 w-14 h-14 mb-5 text-bronze font-bold">{s.step}</div>
                 <div className="glass-card w-full flex-1 p-6">
                   <h3 className="text-base font-bold text-indigo mb-2">{s.title}</h3>
                   <p className="text-sm text-brand-body leading-relaxed">{s.desc}</p>
@@ -221,7 +221,7 @@ function ServicesPage() {
         <div className="container-main">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-bronze mb-4">What We Offer</span>
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-brand-dark">Service Areas</h2>
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-indigo">Service Areas</h2>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
             {/* Accordion column */}
@@ -234,11 +234,11 @@ function ServicesPage() {
                       onClick={() => setOpenArea(isOpen ? null : area.title)}
                       className="w-full flex items-center gap-4 px-6 py-5 text-left transition-colors"
                     >
-                      <span className={`neo-circle w-11 h-11 flex-shrink-0 transition-colors ${isOpen ? 'text-bronze bg-white' : 'text-indigo bg-white'}`}>
+                      <span className={`neo-circle w-11 h-11 flex-shrink-0 transition-colors ${isOpen ? 'text-bronze bg-white' : 'text-bronze bg-white'}`}>
                         {area.icon}
                       </span>
                       <div className="flex-1 min-w-0">
-                        <h3 className={`text-lg font-bold transition-colors ${isOpen ? 'text-bronze' : 'text-brand-dark'}`}>{area.title}</h3>
+                        <h3 className={`text-lg font-bold transition-colors ${isOpen ? 'text-bronze' : 'text-indigo'}`}>{area.title}</h3>
                         <p className="text-sm text-brand-body leading-relaxed mt-0.5 line-clamp-1">{area.intro}</p>
                       </div>
                       <svg
@@ -261,7 +261,7 @@ function ServicesPage() {
                             <div key={sub.name} className="flex items-start gap-3">
                               <span className="neo-circle w-7 h-7 flex-shrink-0 text-bronze mt-0.5"><Check /></span>
                               <div>
-                                <h4 className="text-sm font-semibold text-brand-dark mb-1">{sub.name}</h4>
+                                <h4 className="text-sm font-semibold text-indigo mb-1">{sub.name}</h4>
                                 <p className="text-xs text-brand-body leading-relaxed">{sub.desc}</p>
                               </div>
                             </div>
@@ -303,7 +303,7 @@ function ServicesPage() {
 
             {/* Content column */}
             <div className="order-2 lg:order-2">
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-brand-dark mb-8">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-indigo mb-8">
                 Why Choose Tijha
               </h2>
               <div className="space-y-4">

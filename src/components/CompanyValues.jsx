@@ -26,7 +26,7 @@ function CompanyValues() {
     <section id="values" className="section-padding bg-white">
       <div className="container-main">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-brand-dark mb-4">Company Values</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-indigo mb-4">Company Values</h2>
           <p className="text-brand-body max-w-2xl mx-auto leading-relaxed">
             At Tijha, our values guide every engagement. We combine integrity, innovation, and impact to deliver lasting results for our clients.
           </p>
@@ -36,7 +36,7 @@ function CompanyValues() {
           {values.map((v) => (
             <div key={v.num} className="neo-card p-8 text-center hover:-translate-y-1 transition-transform duration-300">
               <span className="block text-4xl font-extrabold text-indigo/20 mb-4">{v.num}</span>
-              <h3 className="text-lg font-bold text-brand-dark mb-3">{v.title}</h3>
+              <h3 className="text-lg font-bold text-indigo mb-3">{v.title}</h3>
               <p className="text-sm text-brand-body leading-relaxed">{v.desc}</p>
             </div>
           ))}

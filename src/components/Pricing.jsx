@@ -29,7 +29,7 @@ function Pricing() {
     <section id="pricing" className="section-padding bg-white">
       <div className="container-main">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-brand-dark mb-4">Our Plans</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-indigo mb-4">Our Plans</h2>
           <p className="text-brand-body max-w-2xl mx-auto leading-relaxed">
             Flexible retainers designed to match your organisation's size, goals, and budget.
           </p>
@@ -38,7 +38,7 @@ function Pricing() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {plans.map((plan) => (
             <div key={plan.subtitle} className="neo-card p-8 text-center hover:-translate-y-1 transition-transform duration-300">
-              <div className="text-5xl font-extrabold text-brand-dark mb-2">{plan.price}</div>
+              <div className="text-5xl font-extrabold text-indigo mb-2">{plan.price}</div>
               <p className="text-lg font-semibold text-brand-body mb-6">{plan.subtitle}</p>
 
               <ul className="space-y-3 mb-8 text-left">

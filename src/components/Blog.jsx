@@ -34,7 +34,7 @@ function Blog() {
     <section id="blog" className="section-padding bg-[#F5F5F7]">
       <div className="container-main">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-brand-dark mb-4">Our Blog</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-indigo mb-4">Our Blog</h2>
           <p className="text-brand-body max-w-2xl mx-auto leading-relaxed">
             Insights, tips, and stories from our team of experts.
           </p>
@@ -52,7 +52,7 @@ function Blog() {
               </div>
               <div>
                 <p className="text-xs text-brand-body mb-1">{post.meta}</p>
-                <h3 className="text-base font-bold text-brand-dark mb-2 group-hover:text-indigo transition-colors">
+                <h3 className="text-base font-bold text-indigo mb-2 group-hover:text-indigo transition-colors">
                   {post.title}
                 </h3>
                 <p className="text-sm text-brand-body line-clamp-2">{post.excerpt}</p>
