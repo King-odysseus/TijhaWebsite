@@ -42,19 +42,19 @@ const people = [
     title: 'Board of Consultants',
     desc: 'Seasoned industry professionals with over a decade of experience in management consulting, sustainability, digital transformation, and public sector reform.',
     expertise: 'Large-scale organisational transformations, market expansion strategies, ESG compliance, and policy implementation.',
-    quals: 'MBAs, MSc in Development Studies, PMP and PRINCE2 certifications, CCMP, and other sector-specific accreditations.',
+    quals: 'MBA, MSc, PMP, PRINCE2, CCMP.',
   },
   {
     title: 'Core Team',
     desc: 'Drives day-to-day delivery, combining analytical insight, operational efficiency, and technical innovation.',
     expertise: 'Business development, market access facilitation, project delivery, process optimisation, and digital solution deployment.',
-    quals: "Bachelor's and master's degrees in Business Administration, Economics, or IT, alongside agile and project management certifications.",
+    quals: 'BSc, BA, MSc, MBA, PMP.',
   },
   {
     title: 'Collaborators',
     desc: 'External subject matter experts and partner organisations engaged when specific expertise is required.',
     expertise: 'Sustainability reporting (GRI, SASB), sector-focused process design, NGO fundraising, leadership development, and regional trade facilitation.',
-    quals: 'Postgraduate degrees, certified trainers, and consultants with over 10 years of proven industry impact.',
+    quals: 'MSc, MA, PhD.',
   },
 ];
 
