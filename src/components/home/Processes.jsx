@@ -132,7 +132,7 @@ function TimelineStep({ process, index, visible }) {
 
   return (
     <div
-      className={`relative flex items-center w-full mb-28 md:mb-16 last:mb-0 transition-all duration-700 ease-out ${
+      className={`relative flex items-center w-full transition-all duration-700 ease-out ${
         visible
           ? 'opacity-100 translate-y-0'
           : 'opacity-0 translate-y-10'
@@ -297,7 +297,7 @@ function Processes() {
 
           {/* Steps */}
           {processes.map((p, i) => (
-            <div key={p.step} data-id={`step-${p.step}`}>
+            <div key={p.step} data-id={`step-${p.step}`} className="mb-16 md:mb-20 last:mb-0">
               <TimelineStep
                 process={p}
                 index={i}
