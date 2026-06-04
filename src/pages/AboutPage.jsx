@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const values = [
@@ -58,6 +59,8 @@ const people = [
 ];
 
 function AboutPage() {
+  const [openPerson, setOpenPerson] = useState(people[0].title);
+
   return (
     <div className="pt-[70px]">
       {/* Hero */}
@@ -191,21 +194,53 @@ function AboutPage() {
               At Tijha, our strength lies in the calibre, diversity, and dedication of the people behind our work.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {people.map((group) => (
-              <div key={group.title} className="neo-card p-8">
-                <h3 className="text-xl font-bold text-brand-dark mb-3">{group.title}</h3>
-                <p className="text-sm text-brand-body leading-relaxed mb-4">{group.desc}</p>
-                <div className="mb-3">
-                  <span className="text-xs font-bold uppercase tracking-wider text-indigo">Expertise</span>
-                  <p className="text-sm text-brand-body mt-1">{group.expertise}</p>
+          <div className="space-y-4 max-w-3xl mx-auto">
+            {people.map((group, i) => {
+              const isOpen = openPerson === group.title;
+              return (
+                <div key={group.title} className={`neo-card overflow-hidden transition-all duration-300 ${isOpen ? 'ring-2 ring-bronze/30' : ''}`}>
+                  <button
+                    onClick={() => setOpenPerson(isOpen ? null : group.title)}
+                    className="w-full flex items-center gap-4 px-6 py-5 text-left transition-colors"
+                  >
+                    <span className={`neo-circle w-11 h-11 flex-shrink-0 font-bold bg-white transition-colors ${isOpen ? 'text-bronze' : 'text-indigo'}`}>
+                      {`0${i + 1}`}
+                    </span>
+                    <div className="flex-1 min-w-0">
+                      <h3 className={`text-lg font-bold transition-colors ${isOpen ? 'text-bronze' : 'text-brand-dark'}`}>{group.title}</h3>
+                      <p className="text-sm text-brand-body leading-relaxed mt-0.5 line-clamp-1">{group.desc}</p>
+                    </div>
+                    <svg
+                      className={`w-5 h-5 flex-shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180 text-bronze' : 'text-brand-body'}`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                  <div
+                    className={`overflow-hidden transition-all duration-300 ${
+                      isOpen ? 'max-h-[800px] opacity-100' : 'max-h-0 opacity-0'
+                    }`}
+                  >
+                    <div className="px-6 pb-6 pt-0">
+                      <div className="border-t border-silver pt-5 space-y-4">
+                        <p className="text-sm text-brand-body leading-relaxed">{group.desc}</p>
+                        <div>
+                          <span className="text-xs font-bold uppercase tracking-wider text-bronze">Expertise</span>
+                          <p className="text-sm text-brand-body mt-1 leading-relaxed">{group.expertise}</p>
+                        </div>
+                        <div>
+                          <span className="text-xs font-bold uppercase tracking-wider text-bronze">Qualifications</span>
+                          <p className="text-sm text-brand-body mt-1 leading-relaxed">{group.quals}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <span className="text-xs font-bold uppercase tracking-wider text-indigo">Qualifications</span>
-                  <p className="text-sm text-brand-body mt-1">{group.quals}</p>
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
