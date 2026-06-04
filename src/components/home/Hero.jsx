@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 function Hero() {
   return (
     <section
-      className="w-full pt-28 pb-12 md:pt-32 lg:pb-0 relative overflow-hidden"
+      className="w-full pt-36 pb-12 md:pt-40 lg:pb-0 relative overflow-hidden"
       style={{
         backgroundImage: `url('/images/Globe.png')`,
         backgroundSize: 'cover',
