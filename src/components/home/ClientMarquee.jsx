@@ -130,7 +130,7 @@ function ClientMarquee() {
 
       {/* Image grid with an inline text tile in the fourth cell */}
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 mt-16 md:mt-24">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 items-start">
           {gallery.map((img) => (
             <div
               key={img.src}
