@@ -321,7 +321,7 @@ function ServicesPage() {
 
       {/* CTA banner */}
       <section
-        className="relative py-24 overflow-hidden bg-cover bg-center"
+        className="relative py-36 overflow-hidden bg-cover bg-center"
         style={{ backgroundImage: `url('/images/cta-team-working.jpg')` }}
       >
         <div className="absolute inset-0 bg-indigo/85" />
