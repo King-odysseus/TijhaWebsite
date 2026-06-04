@@ -80,8 +80,8 @@ function AboutPage() {
             </div>
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1518005135182-62fd125ae47f?w=1000&q=80&auto=format&fit=crop"
-                alt="Modern architecture"
+                src="/images/tijha-colleagues-paperwork.jpg"
+                alt="Tijha colleagues analyzing documents and data together"
                 className="w-full h-72 md:h-[420px] object-cover rounded-3xl shadow-xl"
                 loading="lazy"
               />
@@ -97,8 +97,8 @@ function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="order-2 lg:order-1">
               <img
-                src="/images/business-development.jpg"
-                alt="A partnership in action"
+                src="/images/tijha-accounting-presentation.jpg"
+                alt="Businesswoman presenting accounting data to a colleague"
                 className="w-full h-[380px] md:h-[520px] object-cover rounded-3xl shadow-lg"
                 loading="lazy"
               />
