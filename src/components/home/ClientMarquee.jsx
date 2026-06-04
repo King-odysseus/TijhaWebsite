@@ -139,7 +139,7 @@ function ClientMarquee() {
               <img
                 src={img.src}
                 alt={img.alt}
-                className="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-105"
+                className="w-full h-full min-h-[14rem] object-cover transition-transform duration-500 group-hover:scale-105"
                 loading="lazy"
               />
             </div>
